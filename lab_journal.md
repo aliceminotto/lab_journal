@@ -1,7 +1,7 @@
 ##Lab journal  
 ####_Alice Minotto_
 
-#####29-30/09/2015
+#####29 and 30/09/2015
 
 * downloaded Anaconda (already with the numpy library).
 * updated Ipython (use the command _jupyter notebook &_ to open the tab)  
