@@ -15,3 +15,5 @@
 * read markdown tutorial and began the journal lab (i hope)   
 * lab journal is now online in my github account (remember that i had to change the file name adding *.md to make it be displayed in the right way)  
  _notes for myself to remember: it looks like I have to committ deleted files too unless i want to pull and merge each time, plus this way should prevent me to dlete it manually online_
+* read some vim tutorial to have an alternative to gedit (still to be downloaded), and of course used it
+* catch up w/ some of the stuff on biocamp, downloaded some items to be read
