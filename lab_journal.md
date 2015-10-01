@@ -13,4 +13,5 @@
 #####1/10/2015
 
 * read markdown tutorial and began the journal lab (i hope)   
-* lab journal is now online in my github account (remember that i had to change the file name adding *.md to make it be displayed in the right way)
+* lab journal is now online in my github account (remember that i had to change the file name adding *.md to make it be displayed in the right way)  
+ _notes for myself to remember: it looks like I have to committ deleted files too unless i want to pull and merge each time, plus this way should prevent me to dlete it manually online_
