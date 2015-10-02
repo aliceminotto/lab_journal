@@ -22,6 +22,11 @@
 
 * so the data in A (carlos' file) were an array w/ two lists, one with the number of genes and one with the length
 * reading this paper:
+  
  > Large-Scale Genomic Analysis Suggests a Neutral Punctuated Dynamics of Transposable Elements in Bacterial Genomes
+  
  _notes on this:_
-* looking at the last C's script to plot the final figures and try to run it on the cluster  
+* looking at the last C's script to plot the final figures and try to run it on the cluster
+* go trough C's simplest model:
+ ![model](url)
+  
