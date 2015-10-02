@@ -36,9 +36,16 @@
 we can have a series of events (shown in figure), each w/ its own probability (given in the model after read some paper on real data set). note that we are not considering, at the moment, events of TE mutations, because we're supposing they basically just get disrupted after a mutation, cause they just have transposase activity. Plus we are considering the event a TE is inserted in an effector gene, and here we could or not consider the effector in the count (this issue is being considered right now).
 there will be a more complex model that for instance will consider pathogen effectors and their target, so we don't just get a fitness number (that by the way changes each jump), but it's a matching model. Moreover it will be considered the possibility that a mutation or an effector gene after a jump is not just worst than before, but it can harm the pathogen, causing its extinction.
 * running mprocstest.py to get the data, looking at the code:
+
  _notes for myself to remember: floor (in math lib) return the biggest int number <= of its argument_
+
  _rng in pygsl it's the random number generator, and it needs a seed to be set. if u give the same seed multiple times u'll end up w/ the same results again and again_
+
  _m1 to m8 are the different probability for each event considered in the model, just look at the comment lines to get which one_
+
+ _uniform(low, high, size) returns a sample from a uniform distribution
+
+ _the line **Lth=floor((RXCLRPTS[0]+CRKPTS[0]+TES[0])*(1.0/3.0)*(av1+av2+av3))** is calculating a treshold value, the last part is an average of avrages then multiplied for the total number of genes, see at the drawing in the exercise book to get what this treshold is
 
 ####_work in progress/to do list_
 
@@ -47,3 +54,4 @@ there will be a more complex model that for instance will consider pathogen effe
 * get gedit on the cluster (ask m?)
 * get trhough C's scripts and run them in the cluster (in progress, will take a few days), then try to change some numbers, eg the probabilities or the seed and run again
 * run the last notebook script to get the final graphs 
+* install pygsl locally
