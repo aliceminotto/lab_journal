@@ -17,3 +17,11 @@
  _notes for myself to remember: it looks like I have to committ deleted files too unless i want to pull and merge each time, plus this way should prevent me to dlete it manually online_
 * read some vim tutorial to have an alternative to gedit (still to be downloaded), and of course used it
 * catch up w/ some of the stuff on biocamp, downloaded some items to be read
+
+#####2/10/2015
+
+* so the data in A (carlos' file) were an array w/ two lists, one with the number of genes and one with the length
+* reading this paper:
+ > Large-Scale Genomic Analysis Suggests a Neutral Punctuated Dynamics of Transposable Elements in Bacterial Genomes
+ _notes on this:_
+* looking at the last C's script to plot the final figures and try to run it on the cluster  
