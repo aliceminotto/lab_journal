@@ -59,6 +59,10 @@ there will be a more complex model that for instance will consider pathogen effe
 
 * I need a bash script to launch program in the cluster. changed the script so that there are no jumps (ie the new score is just the same as the old one, while before there was a modification + or - their initial score), moreover removed the orinting of plots from the code, this way the program is running much faster.
 
+* after looking at the plot created in the notebbok and seen everything is fine changed the seed (cause in one of the run i had extinction so the folder was empty) and run the simulation again in 50 runs. now i'm waiting for it tpo finish: even without creating all the graphs i think it will take some days. after that the plan is to do it again and again each time slightly modifying the c (for the evolution in jumps i think)
+
+_NB i get a mail from the cluster when a process is killed, gives an error and die and when it finishes_
+
 ####_work in progress/to do list
 
 * find a way to fix git issues
