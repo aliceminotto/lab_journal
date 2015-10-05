@@ -47,11 +47,20 @@ there will be a more complex model that for instance will consider pathogen effe
 
  _the line **Lth=floor((RXCLRPTS[0]+CRKPTS[0]+TES[0])*(1.0/3.0)*(av1+av2+av3))** is calculating a treshold value, the last part is an average of avrages then multiplied for the total number of genes, see at the drawing in the exercise book to get what this treshold is
 
-####_work in progress/to do list_
+#####3/10/2015
 
-* read C's paper
+* read the paper
+
+> Biological applications of the theory of birth-and-death processes.
+
+* installed atom as an editor
+
+* learned to mount this computer as a volume in the cluster (in the bar, connect to server, after logging in)
+
+* I need a bash script to launch program in the cluster. changed the script so that there are no jumps (ie the new score is just the same as the old one, while before there was a modification + or - their initial score), moreover removed the orinting of plots from the code, this way the program is running much faster.
+
+####_work in progress/to do list
+
 * find a way to fix git issues
-* get gedit on the cluster (ask m?)
-* get trhough C's scripts and run them in the cluster (in progress, will take a few days), then try to change some numbers, eg the probabilities or the seed and run again
 * run the last notebook script to get the final graphs 
 * install pygsl locally
