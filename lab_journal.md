@@ -47,7 +47,7 @@ there will be a more complex model that for instance will consider pathogen effe
 
  _the line **Lth=floor((RXCLRPTS[0]+CRKPTS[0]+TES[0])*(1.0/3.0)*(av1+av2+av3))** is calculating a treshold value, the last part is an average of avrages then multiplied for the total number of genes, see at the drawing in the exercise book to get what this treshold is
 
-#####3/10/2015
+#####5/10/2015
 
 * read the paper
 
@@ -57,14 +57,28 @@ there will be a more complex model that for instance will consider pathogen effe
 
 * learned to mount this computer as a volume in the cluster (in the bar, connect to server, after logging in)
 
-* I need a bash script to launch program in the cluster. changed the script so that there are no jumps (ie the new score is just the same as the old one, while before there was a modification + or - their initial score), moreover removed the orinting of plots from the code, this way the program is running much faster.
+* I need a bash script to launch program in the cluster.
+
+* stopped the script launche don Fri, changed the script so that there are no jumps (ie the new score is just the same as the old one, while before there was a modification + or - their initial score), moreover removed the orinting of plots from the code, this way the program is running much faster.
 
 * after looking at the plot created in the notebbok and seen everything is fine changed the seed (cause in one of the run i had extinction so the folder was empty) and run the simulation again in 50 runs. now i'm waiting for it tpo finish: even without creating all the graphs i think it will take some days. after that the plan is to do it again and again each time slightly modifying the c (for the evolution in jumps i think)
 
 _NB i get a mail from the cluster when a process is killed, gives an error and die and when it finishes_
+
+#####6/10/2015
+
+* discussed w/ c about the models. the simpler one is just as i've alredy take notes as. I'm running the code (this time c=Qi in code IS changing, meaning that we have jump events w/ changes of score for a number of effector genes.
+ I'm doing 20 RUNS for each of this:
+  * DT=5000, JUMPS=40
+  * DT=10000, JUMPS=20
+  * DT=15000, JUMPS=13 (the integer that most resemble the real number for the condition below)
+  * DT=20000, JUMPS=10
+ All these parameters are chosen so that DT is an arbitrarial interval of time (expressed in evolutionary events) between two jumps from/to different host.
+ Moreover we want to consider always the same interval of time, so the number are chosen so that DT*JUMPS always give the same results. (again i commented the code to create figures in here to make it faster and each time i used a diifferent seed)
 
 ####_work in progress/to do list
 
 * find a way to fix git issues
 * run the last notebook script to get the final graphs 
 * install pygsl locally
+* parallel python, what's the main difference between multiprocessing and pp?
