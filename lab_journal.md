@@ -68,13 +68,24 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 #####6/10/2015
 
 * discussed w/ c about the models. the simpler one is just as i've alredy take notes as. I'm running the code (this time c=Qi in code IS changing, meaning that we have jump events w/ changes of score for a number of effector genes.
+ 
  I'm doing 20 RUNS for each of this:
   * DT=5000, JUMPS=40
   * DT=10000, JUMPS=20
   * DT=15000, JUMPS=13 (the integer that most resemble the real number for the condition below)
   * DT=20000, JUMPS=10
+
  All these parameters are chosen so that DT is an arbitrarial interval of time (expressed in evolutionary events) between two jumps from/to different host.
  Moreover we want to consider always the same interval of time, so the number are chosen so that DT*JUMPS always give the same results. (again i commented the code to create figures in here to make it faster and each time i used a diifferent seed)
+ other general notes: in the more sophisticated model we are considering connection between effectors gene and their target, so we need to consider not just the pathogen population, but the host population too. for the cases of interested we are considering a host population Nh, where Nh is constant in time: this is because we are considering something like a small area, so the host is going to become exctincetd, but in this case the pathogen will be exctincetd to and we don't care, or the Nh has to be >> Np.
+  each effector will be characterized not just by [s,l] as before (score/expression, length), but by a list of attributes in the following form:
+  eff=[s,l,[list of targets], where s is actually going to be another list because we will have different scores for different targets.
+
+  when there is a jump, as before, we will randomly change this score (and so the fitness, that more or less is calculated as a sum of the score for the links eff-target that are present for the pair pathogen-host that we are considering), this can also modify the list of targets recognized by the effector. But each jump we are also going to create a random new host as a subset of length L of the set of all the known target. this way we are going to see a lot of excinction.
+
+the fact is we are introducing sometimes new strains, so we don't just have a population of pathogens, but a number of different strains. Each time an evolutionary events occurs we are going to extimate the fitness of the new organism, if it's worst than the previous one we are not considering this case cause this is not going to be fixed, but if the fitness score is >= than the previous we create a new strain, that from now on will evolve indipendently form the other one.
+
+In this new model we consider time as realistic, in fact each mutation event will be considered as seasonal (this pathogens are), so we are going to have a jump, let's say, once in 5000 years, for exaple. every time there is an evolutionary event we consider each organism per se and each one of its gene and we use the probabilities in the model to decide if there will be a duplication/deletion/silensing/mutation. (the formula in the model suppose that the duplication rate is lower if the pathogen is alredy well fitted to the host, moreover it's considering a max capacity for the number of gene that can be present in a genome, and an ideal max number of nucleotides that can be present because of polymer extention capacity [i actually want to check if this kind of organism could take in additional chrs cause in this case we should set this treshold very high).  
 
 ####_work in progress/to do list
 
