@@ -87,9 +87,9 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
  In this new model we consider time as realistic, in fact each mutation event will be considered as seasonal (this pathogens are), so we are going to have a jump, let's say, once in 5000 years, for exaple. every time there is an evolutionary event we consider each organism per se and each one of its gene and we use the probabilities in the model to decide if there will be a duplication/deletion/silensing/mutation. (the formula in the model suppose that the duplication rate is lower if the pathogen is alredy well fitted to the host, moreover it's considering a max capacity for the number of gene that can be present in a genome, and an ideal max number of nucleotides that can be present because of polymer extention capacity [i actually want to check if this kind of organism could take in additional chrs cause in this case we should set this treshold very high).  
 
-*reading a lot of stuff on working in parallel w/ python (multiprocessing and pp)
+* reading a lot of stuff on working in parallel w/ python (multiprocessing and pp)
 
-####_work in progress/to do list
+####_work in progress/to do list_
 
 * find a way to fix git issues
 * run the last notebook script to get the final graphs 
