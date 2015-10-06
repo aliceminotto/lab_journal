@@ -30,7 +30,7 @@
 * looking at the last C's script to plot the final figures and run it on the cluster
  to get in the cluster i need to write in the terminal: **_ssh hpc.tsl.ac.uk_**
 * go trough C's simplest model:
- ![model] (https://cdn.rawgit.com/aliceminotto/lab_journal/master/transformsnew2.svg)
+ ![model] (https://cdn.rawgit.com/aliceminotto/lab_journal/master/transformsnew2.svg?raw=true)
  
  basically we have Np (pathogen population, fixed), and Nh (host population, fixed). In Np we are considering Nte, the # of TE, and Neff, the # of effector genes. what we want is a simple model that shows how the genome length of this kind of pathogen is getting longer in the evolution (the model in theory should be fine for animals too, the thing is that in this last case things are more complicated, here we have that plants can;t move, so the pathigen has to do it, and doing this it should be able to change host species quite often, that could drive a faster evolution and a larger genome size). the size of the genome is calculate d Neff+Nte, considering their length (infact each gene or TE has its own list of characteristics like length, score for fitness).
 we can have a series of events (shown in figure), each w/ its own probability (given in the model after read some paper on real data set). note that we are not considering, at the moment, events of TE mutations, because we're supposing they basically just get disrupted after a mutation, cause they just have transposase activity. Plus we are considering the event a TE is inserted in an effector gene, and here we could or not consider the effector in the count (this issue is being considered right now).
