@@ -110,7 +110,7 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
   ![4th graph, average of the 1st](https://www.dropbox.com/s/wh8jgouikhjpias/averagesl.png?dl=1)
 
-  ![5th graph, average of the 2nd](https://www.dropbox.com/s/t0s90hxqik0bgvi/averagesn.png?dl=1 =200x200)
+  ![5th graph, average of the 2nd](https://www.dropbox.com/s/t0s90hxqik0bgvi/averagesn.png?dl=1)
 
 ####_work in progress/to do list_
 
