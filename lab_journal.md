@@ -95,9 +95,12 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
 * i probably found a way to display the model image above: i hosted it in my dropbox, got the link to it. what you have to do then is to change the end of the link from _?dl=0_ to _?dl=1_ -just like when i coded the games-
 
+* talked to martin about getting involved in one of the projects he's working on
+
+* tried to modify the CLUSTERV notebook script to run in the cluster but i get an error when the code tries to save images (_RuntimeError: Could not allocate memory for image_)
+
 ####_work in progress/to do list_
 
-* find a way to fix git issues
 * run the last notebook script to get the final graphs 
-* install pygsl locally
+* install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
 * parallel python, what's the main difference between multiprocessing and pp?
