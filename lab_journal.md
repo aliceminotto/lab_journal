@@ -97,7 +97,20 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
 * talked to martin about getting involved in one of the projects he's working on
 
-* tried to modify the CLUSTERV notebook script to run in the cluster but i get an error when the code tries to save images (_RuntimeError: Could not allocate memory for image_)
+* tried to modify the CLUSTERV notebook script to run in the cluster but i get an error when the code tries to save images (_RuntimeError: Could not allocate memory for image_).
+  Correction: it works (I don't know what happened before), but I had to comment the saving of jpg images cause i kept having the error they are not supported. I don't think there is something of particoular interest/strange in this images, but we need them to copare them with the situation of evolutionary jumps from one host to another.
+
+  here's the images:
+  
+  ![first graph, length over evolutionary time](https://www.dropbox.com/s/8jmp98f2op9z58a/typrunlength.png?dl=1)
+
+  ![second graph. number of genes over evolutionary time](https://www.dropbox.com/s/wc0wk4io4st6sg5/typrunnumbers.png?dl=1)
+
+  ![3rd graph, ratio Transposable Element/Effector Genes](https://www.dropbox.com/s/s367fjxe156jre3/randomwalk.png?dl=1)
+
+  ![4th graph, average of the 1st](https://www.dropbox.com/s/wh8jgouikhjpias/averagesl.png?dl=1)
+
+  ![5th graph, average of the 2nd](https://www.dropbox.com/s/t0s90hxqik0bgvi/averagesn.png?dl=1)
 
 ####_work in progress/to do list_
 
