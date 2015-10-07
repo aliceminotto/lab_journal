@@ -110,10 +110,11 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
   ![4th graph, average of the 1st](https://www.dropbox.com/s/wh8jgouikhjpias/averagesl.png?dl=1)
 
-  ![5th graph, average of the 2nd](https://www.dropbox.com/s/t0s90hxqik0bgvi/averagesn.png?dl=1)
+  ![5th graph, average of the 2nd](https://www.dropbox.com/s/t0s90hxqik0bgvi/averagesn.png?dl=1 =200x200)
 
 ####_work in progress/to do list_
 
+* check the multiprocessing execution in the run i did of clusterV, cause i'm worried the order could be wrong
 * run the last notebook script to get the final graphs 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
 * parallel python, what's the main difference between multiprocessing and pp?
