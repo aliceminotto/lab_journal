@@ -30,7 +30,7 @@
 * looking at the last C's script to plot the final figures and run it on the cluster
  to get in the cluster i need to write in the terminal: **_ssh hpc.tsl.ac.uk_**
 * go trough C's simplest model:
- ![model] (https://www.dropbox.com/s/sznv7nm5mt9lbu5/transformsnew2.svg?dl=0)
+ ![model] (https://www.dropbox.com/s/sznv7nm5mt9lbu5/transformsnew2.svg?dl=1)
  
  basically we have Np (pathogen population, fixed), and Nh (host population, fixed). In Np we are considering Nte, the # of TE, and Neff, the # of effector genes. what we want is a simple model that shows how the genome length of this kind of pathogen is getting longer in the evolution (the model in theory should be fine for animals too, the thing is that in this last case things are more complicated, here we have that plants can;t move, so the pathigen has to do it, and doing this it should be able to change host species quite often, that could drive a faster evolution and a larger genome size). the size of the genome is calculate d Neff+Nte, considering their length (infact each gene or TE has its own list of characteristics like length, score for fitness).
 we can have a series of events (shown in figure), each w/ its own probability (given in the model after read some paper on real data set). note that we are not considering, at the moment, events of TE mutations, because we're supposing they basically just get disrupted after a mutation, cause they just have transposase activity. Plus we are considering the event a TE is inserted in an effector gene, and here we could or not consider the effector in the count (this issue is being considered right now).
@@ -88,6 +88,12 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
  In this new model we consider time as realistic, in fact each mutation event will be considered as seasonal (this pathogens are), so we are going to have a jump, let's say, once in 5000 years, for exaple. every time there is an evolutionary event we consider each organism per se and each one of its gene and we use the probabilities in the model to decide if there will be a duplication/deletion/silensing/mutation. (the formula in the model suppose that the duplication rate is lower if the pathogen is alredy well fitted to the host, moreover it's considering a max capacity for the number of gene that can be present in a genome, and an ideal max number of nucleotides that can be present because of polymer extention capacity [i actually want to check if this kind of organism could take in additional chrs cause in this case we should set this treshold very high).  
 
 * reading a lot of stuff on working in parallel w/ python (multiprocessing and pp)
+
+#####7/10/2015
+
+* the code running 50x for c=0 finished with exctinctions in 2 runs (18 and 49), now waiting for carlos to find a way to check the results without using the notebook, given that i can't upload all this stuff on this computer. (I'll probably just try to do it by myself later)
+
+* i probably found a way to display the model image above: i hosted it in my dropbox, got the link to it. what you have to do then is to change the end of the link from _?dl=0_ to _?dl=1_ -just like when i coded the games-
 
 ####_work in progress/to do list_
 
