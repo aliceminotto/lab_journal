@@ -120,6 +120,8 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
   * create a database w/ c's model results w/ m?
   * use methods and programs to check/test my code
 
+* going trough make documentation, the advantage is that it will create the output if and just if the prerequisites have changed after its last creation
+
 ####_work in progress/to do list_
 
 * create a makefile that takes the data and create the plots 
