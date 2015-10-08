@@ -43,9 +43,9 @@ there will be a more complex model that for instance will consider pathogen effe
 
  _m1 to m8 are the different probability for each event considered in the model, just look at the comment lines to get which one_
 
- _uniform(low, high, size) returns a sample from a uniform distribution
+ _uniform(low, high, size) returns a sample from a uniform distribution_
 
- _the line **Lth=floor((RXCLRPTS[0]+CRKPTS[0]+TES[0])*(1.0/3.0)*(av1+av2+av3))** is calculating a treshold value, the last part is an average of avrages then multiplied for the total number of genes, see at the drawing in the exercise book to get what this treshold is
+ _the line **Lth=floor((RXCLRPTS[0]+CRKPTS[0]+TES[0])*(1.0/3.0)*(av1+av2+av3))** is calculating a treshold value, the last part is an average of avrages then multiplied for the total number of genes, see at the drawing in the exercise book to get what this treshold is_
 
 #####5/10/2015
 
@@ -112,9 +112,16 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
   ![5th graph, average of the 2nd](https://www.dropbox.com/s/t0s90hxqik0bgvi/averagesn.png?dl=1)
 
+#####8/10/2015
+
+* meeting w/ dan about models and what to do in the next months:
+  * first: create a make file (see to do list below, so i'm reading about it, at the moment i don' really get why i should use make if i don't have to compile stuff)
+  * during spare time i need to read about the main algorithms that are already used in libraries
+  * create a database w/ c's model results w/ m?
+  * use methods and programs to check/test my code
+
 ####_work in progress/to do list_
 
-* check the multiprocessing execution in the run i did of clusterV, cause i'm worried the order could be wrong
-* run the last notebook script to get the final graphs 
+* create a makefile that takes the data and create the plots 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
 * parallel python, what's the main difference between multiprocessing and pp?
