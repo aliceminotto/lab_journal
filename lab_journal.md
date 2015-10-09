@@ -122,6 +122,16 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
 * going trough make documentation, the advantage is that it will create the output if and just if the prerequisites have changed after its last creation
 
+#####9/10/2015
+
+* finished make tutorial:
+
+ > Automated build tools such as Make can help us in a number of ways. They help us to automate repetitive commands and, so, save us time and reduce the risk of us making errors we might make if running these commands manually.
+ They can also save time by ensuring that automatically-generated artefacts (such as data files or plots) are only recreated when the files that were used to create these have changed in some way.
+ Through their notion of targets, dependencies and actions they serve as a form of documentation, recording dependencies between code, scripts, tools, configurations, raw data, derived data, plots and papers.
+
+ if i need it the link is: **http://swcarpentry.github.io/make-novice/**
+
 ####_work in progress/to do list_
 
 * create a makefile that takes the data and create the plots 
