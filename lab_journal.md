@@ -139,7 +139,7 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
   * looks like the path in python script had to be changed cause the relative path is referred to the folder i'm running make into and not the folder where the py script is, so i changed ../../ w/ ../ and ../ w/ ./
   * i kept getting an error because the second script (clusterV.py) i wanted to run began running before the first script finished (even if i added output_data as his dependency) and couln't find the files. So now i changed the order in the make script, all is depending on plot and output_data (and not the opposite, i don't know if this is relevant, but btw). then i changed in the makefile the order of the target: the first one is now plot, that depends on output_data, so now it should start and wait until the other script finishes (i hope at least). If it will work, here below the congif.mk and Makefile:
     * config.mk (here the variables are defined, when want to use a variable, remember $() around it):
-      ```Makefile
+```makefile
 IM_SRC=./LNKMODEL/mprostest.py
 
 #SIM_EXE=bash ./LNKMODEL/launch.sh
