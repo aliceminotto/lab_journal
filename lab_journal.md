@@ -132,6 +132,8 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
  if i need it the link is: **http://swcarpentry.github.io/make-novice/**
 
+* m explained me the very basics of schemas, so i basically got two (or more of course) tables, each line is an entry, and each line has got its own ID. the other table is constructed the same way (but w/ lines and colums w/ diferent meaning, but again each line has its own ID (this time the ID don't have to be unique, because it's linking that entry to the one in the other table. so m's example is fb: we got a table w/ all the people signed up, each w/ its very own ID. we can have another table w/ each line correspondiong to a post, in each line we have also the id of the person who posted it, in tjhis way we can link each post to the person and if we want we can extract a list of all the posts of a person. so this is how a basic database is constructed, will be a little bit more complicated w/ c's files cause we don't have an input that changes but all the parameters are just inside the code.
+
 #####12/10/2015
 
 * trying to fix issues w/ Makefile (especially I don't get why the path has to change, and why it is working if i call the previous existing launch.sh files, but not if i copy and paste their content into the Makefile itself?):
@@ -180,6 +182,5 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
 ####_work in progress/to do list_
 
-* create a makefile that takes the data and create the plots 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
 * parallel python, what's the main difference between multiprocessing and pp?
