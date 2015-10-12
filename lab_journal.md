@@ -138,6 +138,20 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
   * the bash script, that as more than one line as to be put in just one line, separeted w/ semicolons and eventually i can put \+return to write it in two lines, this because each command is run by make in a different shell
   * looks like the path in python script had to be changed cause the relative path is referred to the folder i'm running make into and not the folder where the py script is, so i changed ../../ w/ ../ and ../ w/ ./
   * i kept getting an error because the second script (clusterV.py) i wanted to run began running before the first script finished (even if i added output_data as his dependency) and couln't find the files. So now i changed the order in the make script, all is depending on plot and output_data (and not the opposite, i don't know if this is relevant, but btw). then i changed in the makefile the order of the target: the first one is now plot, that depends on output_data, so now it should start and wait until the other script finishes (i hope at least). If it will work, here below the congif.mk and Makefile:
+    * config.mk (here the variables are defined, when want to use a variable, remember $() around it):
+      ```IM_SRC=./LNKMODEL/mprostest.py
+
+#SIM_EXE=bash ./LNKMODEL/launch.sh
+SIM_EXE=export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/tsl/software/testing/gsl/1.16/x86_64/bin/lib; \
+bsub -q TSL-Prod128 -We 1 "source python-2.7.4; python $(SIM_SRC)"
+
+PLOT_SRC=./clusterV.py
+
+#PLOT_EXE=bash launch_clusterV.sh
+PLOT_EXE=export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/tsl/software/testing/gsl/1.16/x86_64/bin/lib; \
+bsub -q TSL-Prod128 -We 1 "source python-2.7.4; python $(PLOT_SRC)"```
+    * Makefile (the bash part above are from C's launch scripts):
+
 
 * update: the clean part doesn't work neither, in this case i supose it is because i have no filename as output_data or plot, btw need a new solution
 
