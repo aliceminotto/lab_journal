@@ -132,6 +132,15 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
  if i need it the link is: **http://swcarpentry.github.io/make-novice/**
 
+#####12/10/2015
+
+* trying to fix issues w/ Makefile (especially I don't get why the path has to change, and why it is working if i call the previous existing launch.sh files, but not if i copy and paste their content into the Makefile itself?):
+  * the bash script, that as more than one line as to be put in just one line, separeted w/ semicolons and eventually i can put \+return to write it in two lines, this because each command is run by make in a different shell
+  * looks like the path in python script had to be changed cause the relative path is referred to the folder i'm running make into and not the folder where the py script is, so i changed ../../ w/ ../ and ../ w/ ./
+  * i kept getting an error because the second script (clusterV.py) i wanted to run began running before the first script finished (even if i added output_data as his dependency) and couln't find the files. So now i changed the order in the make script, all is depending on plot and output_data (and not the opposite, i don't know if this is relevant, but btw). then i changed in the makefile the order of the target: the first one is now plot, that depends on output_data, so now it should start and wait until the other script finishes (i hope at least). If it will work, here below the congif.mk and Makefile:
+
+* update: the clean part doesn't work neither, in this case i supose it is because i have no filename as output_data or plot, btw need a new solution
+
 ####_work in progress/to do list_
 
 * create a makefile that takes the data and create the plots 
