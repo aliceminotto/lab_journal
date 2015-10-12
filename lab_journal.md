@@ -153,7 +153,28 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
       bsub -q TSL-Prod128 -We 1 "source python-2.7.4; python $(PLOT_SRC)"
       ```
     * Makefile (the bash part above are from C's launch scripts):
-
+      ```makefile
+      include config.mk
+      
+      DATA_FILES=$(wildcard ../*.dat)
+      
+      all : plot output_data
+      
+      .PHONY : plot
+      plot : output_data $(PLOT_SRC)
+              $(PLOT_EXE)
+      #$(PLOT_EXE2)
+      
+      .PHONY : output_data
+      output_data : $(SIM_SRC) $(DATA_FILES)
+              $(SIM_EXE)
+      #$(SIM_EXE2)
+      
+      .PHONY : clean
+      clean :
+              rm -f output_data
+              rm -f plot
+      ```
 
 * update: the clean part doesn't work neither, in this case i supose it is because i have no filename as output_data or plot, btw need a new solution
 
