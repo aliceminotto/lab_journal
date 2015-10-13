@@ -215,6 +215,18 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
   > Note that parameters are represented in the SQL statement by a @ marker. The SQL engine checks each parameter to ensure that it is correct for its column and are treated literally, and not as part of the SQL to be executed.
 
+  about **BETWEEN**, its inclusive or exclusive behaviour depends on the database, so it must be checked before using it.
+  most important syntax part i need to remember:
+
+  > SELECT column_name(s)
+  > FROM table1
+  > JOIN table2
+  > ON table1.column_name=table2.column_name;
+
+  NB. **JOIN** and **INNER JOIN** are just the same
+
+* discussed w/ c again the new model, that needs to be parallelized. no new notes about it except for the fact that c is going to implement the part i talked about, ie the fact that too much connection between an effector gene and target could be deleterious because of immune system of the plant or even because it could damge the plant too much preventing a proper infeciton. this is going to be implmented as a treshold, over which the score (transcription) will increase, bu the fitness score will decrease.
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
