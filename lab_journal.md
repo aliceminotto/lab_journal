@@ -183,6 +183,7 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 #####13/10/2015
 
 * SQL notes: SQL is not case sensitive; semicolon ate the end of each statement (this depends from the database system btw)
+
   > SELECT - extracts data from a database
    UPDATE - updates data in a database
    DELETE - deletes data from a database
