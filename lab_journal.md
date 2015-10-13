@@ -210,7 +210,9 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
   Here is an example to avoid it:
 
   > txtUserId = getRequestString("UserId");
+ 
     txtSQL = "SELECT * FROM Users WHERE UserId = @0";
+  
     db.Execute(txtSQL,txtUserId);
 
   > Note that parameters are represented in the SQL statement by a @ marker. The SQL engine checks each parameter to ensure that it is correct for its column and are treated literally, and not as part of the SQL to be executed.
@@ -218,9 +220,9 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
   about **BETWEEN**, its inclusive or exclusive behaviour depends on the database, so it must be checked before using it.
   most important syntax part i need to remember:
 
-  > SELECT column_name(s)
-  > FROM table1
-  > JOIN table2
+  > SELECT column_name(s)  
+  > FROM table1  
+  > JOIN table2  
   > ON table1.column_name=table2.column_name;
 
   NB. **JOIN** and **INNER JOIN** are just the same
