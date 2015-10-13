@@ -206,6 +206,8 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
   > DROP INDEX - deletes an index
 
+  beware when using database on the internet cause the user input are transformed in sql commands potentially creating security issues!! especially one could write 'or 1=1' or, more strangely, 'or ""="' and for some reasons these always evaluate to True (this way one couldd see a whole database!).
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
