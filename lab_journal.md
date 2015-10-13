@@ -206,7 +206,14 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
   > DROP INDEX - deletes an index
 
-  beware when using database on the internet cause the user input are transformed in sql commands potentially creating security issues!! especially one could write 'or 1=1' or, more strangely, 'or ""="' and for some reasons these always evaluate to True (this way one couldd see a whole database!).
+  beware when using database on the internet cause the user input are transformed in sql commands potentially creating security issues!! especially one could write 'or 1=1' or, more strangely, 'or ""="' and for some reasons these always evaluate to True (this way one couldd see a whole database!). moreover, one could write a semicolon (that divides instructions) and then drop table, this would cause the table to be deleted from the database... very bad again.
+  Here is an example to avoid it:
+
+  > txtUserId = getRequestString("UserId");
+    txtSQL = "SELECT * FROM Users WHERE UserId = @0";
+    db.Execute(txtSQL,txtUserId);
+
+  > Note that parameters are represented in the SQL statement by a @ marker. The SQL engine checks each parameter to ensure that it is correct for its column and are treated literally, and not as part of the SQL to be executed.
 
 ####_work in progress/to do list_
 
