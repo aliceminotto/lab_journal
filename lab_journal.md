@@ -227,8 +227,25 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
 * going on w/ the sql tutorial, registered into oracle mysql
 
+* the c's code i launched on 6th it is stuck, doing **bpeek job_id** gave me the following for each time frequency:
+  ```bash
+  Traceback (most recent call last):
+  File "/tsl/software/testing/python/2.7.4/x86_64/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/tsl/software/testing/python/2.7.4/x86_64/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/users/TSL_20/minottoa/change_DT/DT15000/LNKMODEL/mprostest.py", line 91, in evolx
+    trs=Lffit.trates(gen,MU)
+  File "/usr/users/TSL_20/minottoa/change_DT/DT15000/LNKMODEL/Lffit.py", line 76, in trates
+    Ws=1.0-((Wn/neff)/((Wn/neff)+(Wo)))
+  ZeroDivisionError: float division by zero
+  ```
+  I'm trying to run again the DT5000 making it print out the Genome, cause it looks like we had all extinctions here? (have to ask carlos why the program didn't stop by itself it these are exctintions indeed)
+
+* about the fixation time for a new mutation in a population of size N, the most important paper is probably http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1212239/pdf/763.pdf
+  here Kimura gets to the cocnclusion that the fixation time is 4N generations, where N is the size population, BUT he's supposing NEUTRAL mutation and a DYPLOID population. I asked c and for our sample the assumption t~N should work fine.
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
 * parallel python, what's the main difference between multiprocessing and pp?
-* look for the fixation time of a new mutation in a popolation of size N (formula)
