@@ -221,7 +221,14 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
 
 * discussed w/ c again the new model, that needs to be parallelized. no new notes about it except for the fact that c is going to implement the part i talked about, ie the fact that too much connection between an effector gene and target could be deleterious because of immune system of the plant or even because it could damge the plant too much preventing a proper infeciton. this is going to be implmented as a treshold, over which the score (transcription) will increase, bu the fitness score will decrease.
 
+#####14/10/2015
+
+* I launched the make again (it didn't create figures), i did it the same way cause i want to check if it didn't because of some changes (yesterday i gave c acces to these files and they are now in a different color in the terminal)
+
+* going on w/ the sql tutorial, registered into oracle mysql
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
 * parallel python, what's the main difference between multiprocessing and pp?
+* look for the fixation time of a new mutation in a popolation of size N (formula)
