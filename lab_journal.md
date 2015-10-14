@@ -241,9 +241,97 @@ _NB i get a mail from the cluster when a process is killed, gives an error and d
   ZeroDivisionError: float division by zero
   ```
   I'm trying to run again the DT5000 making it print out the Genome, cause it looks like we had all extinctions here? (have to ask carlos why the program didn't stop by itself it these are exctintions indeed)
+  UPDATE: mailed c, they are extinctions indeed, on Fri we'll run another version that should have the right flag to avoid the code gets stuck during the simulations.
 
 * about the fixation time for a new mutation in a population of size N, the most important paper is probably http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1212239/pdf/763.pdf
-  here Kimura gets to the cocnclusion that the fixation time is 4N generations, where N is the size population, BUT he's supposing NEUTRAL mutation and a DYPLOID population. I asked c and for our sample the assumption t~N should work fine.
+  here Kimura gets to the cocnclusion that the fixation time is 4N generations, where N is the size population, BUT he's supposing NEUTRAL mutation and a DYPLOID population. I asked c and for our sample the assumption t~N should work fine. So the probability of a neutral mutation n to become fixed in a population on size N (fixed) is just 1/N.
+  I wrote a simple script:
+  ```python
+  #simulation for fixation time of an allele in a population of fixed size N
+
+import sys
+import random
+MOD=int(sys.argv[1])
+if MOD==1 or MOD==0:
+    pass
+else:
+    print 'write 0 to perform a simulation with each individual witha different allele'
+    print 'write 1 to add a new mutation in a population with a fixed allele'
+    exit()
+
+def initialize_variable():
+    global INIT_ALL
+    if MOD==0:
+        INIT_ALL=N #number of initial different alleles in the population
+        d={}
+        for j in range(N):
+            d[j]=j
+    else:
+        INIT_ALL=2
+        d={}
+        for j in range(N):
+            if j==0:
+                d[j]=0
+            else:
+                d[j]=1
+    T=0 #number of generations
+    return T, d
+
+N=500 #population size
+TRIALS=10000 #number of trials
+nt=0 #number of trials performed
+average=0.0 #average fixation time of an allele
+somma=0 #sum to calculate average number of generation
+T=0 #number of generations
+INIT_ALL=0 #number of alleles in pop, to be initialized
+correction=0 #dont want to count trials where the allele dont get fixated in pop when calculating average
+
+for x in range(TRIALS):
+    iv=initialize_variable()
+    T=iv[0]
+    d=iv[1]
+    #print str(d)+'*****'
+    #print T
+    print
+    print "TRIAL # "+str(x)
+    while True:
+        print d
+        dnew={} #this will be the new population
+        for x in range(N):
+            allele=d[random.choice(d.keys())]
+            dnew[x]=allele
+        del d
+        d=dnew
+        T+=1
+        test=d[0]
+        if all(alls==test for alls in d.values()):
+            print d
+            print
+            if MOD==0:
+                somma+=T
+                print 'fixation time of allele '+str(test)+': '+str(T)
+            else:
+                if test==0:
+                    somma+=T
+                    print 'fixation time of allele: '+str(T)
+                else:
+                    correction-=1
+                    print 'new allele no more present in the sample population'
+            break
+
+if TRIALS+correction==0:
+    print 'the allele was never fixated in pop in these trials'
+else:
+    average=float(somma)/(TRIALS+correction)
+    print
+    print 'average number of generation for fixation of the allele: '+str(average)
+print 'size of population '+str(N)
+print 'initial number of alleles in population '+str(INIT_ALL)
+if MOD==1:
+    print 'fixation rate: '+str(float(TRIALS+correction)/TRIALS)
+  ```
+  to perform a simulation both of a population of fied size N with N different alleles and an omogeneous population of size N with a single new allele to have a fixation, respectively, for any allele or for the new allele. in the second case i calculate the rate of fixation and it looks like the previous formula it's a good approximation. the formula was made with the hypotesis of fixed size N and non overlapping generations (this should be a good approximation of overlapping generations too, ad should work well w/ our seasonal pathogens). Moreover i'm calculating the average time of fixation and here i'm getting some results that are not great with the previous assumption of N~t.
+  This code was inspired by http://www.biology.arizona.edu/evolution/act/drift/frame.html, as it has the same logic.
 
 ####_work in progress/to do list_
 
