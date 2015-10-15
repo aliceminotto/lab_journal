@@ -330,8 +330,12 @@ print 'initial number of alleles in population '+str(INIT_ALL)
 if MOD==1:
     print 'fixation rate: '+str(float(TRIALS+correction)/TRIALS)
   ```
-  to perform a simulation both of a population of fied size N with N different alleles and an omogeneous population of size N with a single new allele to have a fixation, respectively, for any allele or for the new allele. in the second case i calculate the rate of fixation and it looks like the previous formula it's a good approximation. the formula was made with the hypotesis of fixed size N and non overlapping generations (this should be a good approximation of overlapping generations too, ad should work well w/ our seasonal pathogens). Moreover i'm calculating the average time of fixation and here i'm getting some results that are not great with the previous assumption of N~t.
+  to perform a simulation both of a population of fied size N with N different alleles and an omogeneous population of size N with a single new allele to have a fixation, respectively, for any allele or for the new allele. in the second case i calculate the rate of fixation and it looks like the previous formula it's a good approximation (rate of mutation/size of population). the formula was made with the hypotesis of fixed size N and non overlapping generations (this should be a good approximation of overlapping generations too, ad should work well w/ our seasonal pathogens). Moreover i'm calculating the average time of fixation and here i'm getting some results that are not great with the previous assumption of N~t. In this case it looks more like t~2N, and I found a couple of website/slides with this result for haploid organisms, but i can't find the original mathematical demonstration.
   This code was inspired by http://www.biology.arizona.edu/evolution/act/drift/frame.html, as it has the same logic.
+
+#####15/10/2015
+
+* running the code again for the jumps in different time intervals, id DT5000, DT10000, DT15000 and DT20000, changing the seed to avoi extintions. c has the correct code and we'll run it tomorrow anyway.
 
 ####_work in progress/to do list_
 
