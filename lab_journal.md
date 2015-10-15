@@ -335,9 +335,21 @@ if MOD==1:
 
 #####15/10/2015
 
-* running the code again for the jumps in different time intervals, id DT5000, DT10000, DT15000 and DT20000, changing the seed to avoi extintions. c has the correct code and we'll run it tomorrow anyway.
+* killed the previous running codes, running the code again for the jumps in different time intervals, id DT5000, DT10000, DT15000 and DT20000, changing the seed to avoi extintions. c has the correct code and we'll run it tomorrow anyway.
+
+* look trhough various evolution model for rates and time of fixation: the main models are the moran's for overlapping generations, and the wright-fisher model for non overlapping situation (my previous code). moran's is more accurate but more difficoult end expensive in a computer environment. w-f calculate the ratio as $P=(@N k)p^kq^(2N-k)$ where k is the number of copies of the allele p, for 1 copy as above. the two model are just the same for the ratio, but bcause of the different relative importance of stochastic fluctuation
+  > In practice the Moran model and Wrigth-Fisher model give qualitatively similar results, but genetic drifts runs twice as fast in the Moran model.
+  said this, T~2N, but for non overlapping population (talking haploid) T~N.
+
+* meeting time: have to design a propr database for c's data, modify c's code so that i can have a file with all the input it's using (create a branch in github) -->this repository will be private because the code is not mine, create a repository w/ all my scripts (including the makefile).
+  for now i'm considering two possible structures, they're basically the same just that one table could be a table with a very large number of columns, OR i could make 3/4 different tables (each for a kind of parameters, i.e. data files, mutation-hgt-duplication-deletion probabilities, size of genome and eff and tes, number of jumps-tie interval-seed). I would prefer the second option but i'd like a second opinion.
+  these tables (or this table) will have a primary key, the ID, created with auto_increment. the ID would then be the foreign key for another table, with columns: ID, RUN#, n# (n changing when Qi is changing). in this case the primary key would be the union of the three columns.
+  at this moment we are not changing any of the fors parameters except jumps,tn and seed, but if it has to be a database, one could decide to change the other parameters too. moreover there are kn, beta1, beta2 and i need to ask c what these are to decide if they should go in the database too.
 
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
 * parallel python, what's the main difference between multiprocessing and pp?
+* create database for c's data
+* create github repository with all my scripts
+* create a new repository w/ c's code and modify it in a branch to get all the inputs in an output file to be put in the database.
