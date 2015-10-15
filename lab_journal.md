@@ -346,6 +346,12 @@ if MOD==1:
   these tables (or this table) will have a primary key, the ID, created with auto_increment. the ID would then be the foreign key for another table, with columns: ID, RUN#, n# (n changing when Qi is changing). in this case the primary key would be the union of the three columns.
   at this moment we are not changing any of the fors parameters except jumps,tn and seed, but if it has to be a database, one could decide to change the other parameters too. moreover there are kn, beta1, beta2 and i need to ask c what these are to decide if they should go in the database too.
 
+* created new repository for my scripts and code, added wright and fisher model simulation. to remeber:
+  * git init <name_of_directory>
+  * git add <file_name>
+  * git commit -m 'description of commit'
+  * git push
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
