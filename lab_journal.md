@@ -354,7 +354,7 @@ if MOD==1:
 
 #####16/10/2015
 
-* deleted all previous results for DT changes cause i had the wrong code, more than getting stuck at extinctions it wasn't saving all the data we need. running the right c's code now, w/ the parameters above for DT an number of jumps. going trough the script to see if it's giving as an output everything i need to create a database
+* deleted all previous results for DT changes cause i had the wrong code, more than getting stuck at extinctions it wasn't saving all the data we need. running the right c's code now, w/ the parameters above for DT an number of jumps. going trough the script to see if it's giving as an output everything i need to create a database. so pickle() is serializing the data when you do pickle.dump(), meaning you need to invert the process before getting the data (i'll check exactly what it is stored in the file btw). so now i'm going trouh c's clusterV.py code to see if is possible to simply add the data I want in the previously existing funcion (btw i'd like to talk to martin about this, cause it's possible there's a more functional way to store the data if i want to create a database from those). i would need Neff, NTE, Np, JUMPS, tn [id est DT], plus it would probably be fine to have the run # and the n# here and not just in the folders' architecture).
 
 * fixed the makefile (probably a problem with a tab?)
 
