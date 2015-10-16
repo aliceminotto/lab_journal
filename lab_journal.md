@@ -355,6 +355,7 @@ if MOD==1:
 #####16/10/2015
 
 * deleted all previous results for DT changes cause i had the wrong code, more than getting stuck at extinctions it wasn't saving all the data we need. running the right c's code now, w/ the parameters above for DT an number of jumps. going trough the script to see if it's giving as an output everything i need to create a database. so pickle() is serializing the data when you do pickle.dump(), meaning you need to invert the process before getting the data (i'll check exactly what it is stored in the file btw). so now i'm going trouh c's clusterV.py code to see if is possible to simply add the data I want in the previously existing funcion (btw i'd like to talk to martin about this, cause it's possible there's a more functional way to store the data if i want to create a database from those). i would need Neff, NTE, Np, JUMPS, tn [id est DT], plus it would probably be fine to have the run # and the n# here and not just in the folders' architecture).
+    * in pdt.py savedata() when pickle.dump() add at the end of the list everything i want (i will need to add these when i call the function from mprostest as well of course), this shouldn't create any problem with the plot code cause there are no for loops or len(A) anywhere. I'll do it after these 20 runs finish.
 
 * fixed the makefile (probably a problem with a tab?)
 
@@ -364,6 +365,5 @@ if MOD==1:
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
 * parallel python, what's the main difference between multiprocessing and pp?
-* create database for c's data
-* create github repository with all my scripts
+* see first point on 16/10/2015
 * create a new repository w/ c's code and modify it in a branch to get all the inputs in an output file to be put in the database.
