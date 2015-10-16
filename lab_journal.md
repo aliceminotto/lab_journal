@@ -354,9 +354,11 @@ if MOD==1:
 
 #####16/10/2015
 
-* deleted all previous results for DT changes cause i had the wrong code, more than getting stuck at extinctions it wasn't saving all the data we need. running the right c's code now, w/ the parameters above for DT an number of jumps
+* deleted all previous results for DT changes cause i had the wrong code, more than getting stuck at extinctions it wasn't saving all the data we need. running the right c's code now, w/ the parameters above for DT an number of jumps. going trough the script to see if it's giving as an output everything i need to create a database
 
-* fix the makefile (probably a problem with a tab?)
+* fixed the makefile (probably a problem with a tab?)
+
+* to use programs in the cluster i need to source them, meaning **source name_and_version** (each time i log in the cluster), and then i can use it as usual. this way i cloned my git scripts repository and i should be able to put and pull stuff from there (and from other folders too)
 
 ####_work in progress/to do list_
 
