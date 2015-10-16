@@ -352,6 +352,12 @@ if MOD==1:
   * git commit -m 'description of commit'
   * git push
 
+#####16/10/2015
+
+* deleted all previous results for DT changes cause i had the wrong code, more than getting stuck at extinctions it wasn't saving all the data we need. running the right c's code now, w/ the parameters above for DT an number of jumps
+
+* fix the makefile (probably a problem with a tab?)
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
