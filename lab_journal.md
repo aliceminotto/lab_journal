@@ -362,6 +362,10 @@ if MOD==1:
 
 * to use programs in the cluster i need to source them, meaning **source name_and_version** (each time i log in the cluster), and then i can use it as usual. this way i cloned my git scripts repository and i should be able to put and pull stuff from there (and from other folders too)
 
+#####19/10/2015
+
+* read stuff about **pickle** and tried it. i should be able to get the data i want unpickling the output list. A[7] will be the list of probabiities (mutation, hgt, deletion, duplication), and A[8] will be the SEED. i will need to add the DT, number of jumps, run and n.
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
