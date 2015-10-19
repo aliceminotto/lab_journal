@@ -364,7 +364,10 @@ if MOD==1:
 
 #####19/10/2015
 
-* read stuff about **pickle** and tried it. i should be able to get the data i want unpickling the output list. A[7] will be the list of probabiities (mutation, hgt, deletion, duplication), and A[8] will be the SEED. i will need to add the DT, number of jumps, run and n.
+* read stuff about **pickle** and tried it. i should be able to get the data i want unpickling the output list. A[7] will be the list of probabiities (mutation, hgt, deletion, duplication), and A[8] will be the SEED. i will need to add the DT, number of jumps, run and n. i changed the code  of mprosest.p and pdt/p (here is the function to save the data), so that A[11],A1[12] and A[13] are the DT the number of total jumps in the simulation and a list with [run_number, n_number,jump_number]. for this last list i justh use the already existing variable pth (string wi/ this format: '../RUN#/n#'), doing **stringa.strip(./).split(/)**; there are other options, the main would be re.split(r'\b\d+\b','stringa') to have a list of the numbers in the string, but in that case i should import the re library, so in this case my solution should be more simple. I tried to retrieve the data i need for a new run and it looks like it's working.
+
+* pysqlite3 is a library used to build a DB from Python (so I can directly access the data pickled in the output files); this library 
+  > provides a disk-based db that allows accessing database using a nonstandard variant if SQL query language.
 
 ####_work in progress/to do list_
 
