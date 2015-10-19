@@ -368,6 +368,9 @@ if MOD==1:
 
 * **pysqlite3** is a library used to build a DB from Python (so I can directly access the data pickled in the output files); this library 
   > provides a disk-based db that allows accessing database using a nonstandard variant if SQL query language.
+  another option would be the MySQLdb library, but it's not installed on this computer nor in the cluster yet, so sqlite3 should be easier 
+
+* mysql is already in the cluster, but not on this computer. i'm downloading and installing it from the website to follow a tutorial to create a db from the very beginning.
 
 ####_work in progress/to do list_
 
