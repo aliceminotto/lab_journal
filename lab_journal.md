@@ -370,7 +370,11 @@ if MOD==1:
   > provides a disk-based db that allows accessing database using a nonstandard variant if SQL query language.
   another option would be the MySQLdb library, but it's not installed on this computer nor in the cluster yet, so sqlite3 should be easier 
 
-* mysql is already in the cluster, but not on this computer. i'm downloading and installing it from the website to follow a tutorial to create a db from the very beginning.
+* mysql is already in the cluster, but not on this computer. i'm downloading and installing it from the website to follow a tutorial to create a db from the very beginning. Installed mysql on this computer from dmg file. by default it is not running, so need to go in system preference, look up for mysql and start it.
+
+#####20/10/2015
+
+* modified c's clusterV code to have just one copy of the script in the main directory (need to change just the launch file when using it), added parser to give options from the command line, plus pickle an additional file CDATAV_par.p that saves the parameters given from the command line (including tha path to the directory). The line i modified are marked with **###***.
 
 ####_work in progress/to do list_
 
