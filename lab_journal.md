@@ -375,6 +375,11 @@ if MOD==1:
 #####20/10/2015
 
 * modified c's clusterV code to have just one copy of the script in the main directory (need to change just the launch file when using it), added parser to give options from the command line, plus pickle an additional file CDATAV_par.p that saves the parameters given from the command line (including tha path to the directory). The line i modified are marked with **###***.
+  btw still need to make it handle extinctions automathically
+
+* used sqlite3 in python to create a tutorial database
+
+* c's code for DT was running with Qi=1 (mutation rate), instead of 0.1. so I created a new folder named **changeDT_Qi** where Qi is correct and I'm running everything again. In the meanwhile i'll use the other duta to fix ClusterV.py
 
 ####_work in progress/to do list_
 
