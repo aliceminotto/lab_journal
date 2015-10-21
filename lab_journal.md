@@ -450,7 +450,8 @@ clean :
   > 
   > If the AUTOINCREMENT keyword appears after INTEGER PRIMARY KEY, that changes the automatic ROWID assignment algorithm to prevent the reuse of ROWIDs over the lifetime of the database. In other words, the purpose of AUTOINCREMENT is to prevent the reuse of ROWIDs from previously deleted rows.
  
-  at this very moment iput autoincrement (mainly because i was using plain mysql syntax, btw i need to think better about this. at first sight it still looks to me like it would be a better idea to use it, giving i will have other tables linked via id, to prevent wrong connections).
+  at this very moment i put autoincrement (mainly because i was using plain mysql syntax, btw i need to think better about this. at first sight it still looks to me like it would be a better idea to use it, giving i will have other tables linked via id, to prevent wrong connections).
+ I'll need to go trough this: http://stackoverflow.com/questions/19759349/how-to-insert-variable-into-sqlite-database-in-python as i can't directly insert reference to abject in list while using conn.excute().
 
 ####_work in progress/to do list_
 
