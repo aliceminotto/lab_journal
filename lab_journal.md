@@ -453,6 +453,12 @@ clean :
   at this very moment i put autoincrement (mainly because i was using plain mysql syntax, btw i need to think better about this. at first sight it still looks to me like it would be a better idea to use it, giving i will have other tables linked via id, to prevent wrong connections).
  I'll need to go trough this: http://stackoverflow.com/questions/19759349/how-to-insert-variable-into-sqlite-database-in-python as i can't directly insert reference to abject in list while using conn.excute().
 
+NB. remember the possibility to use the following synthax: 
+```python
+lista=[(tupla),(tupla),tupla)]
+c.executemany('do this value(?,?,?);', lista)
+```
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
