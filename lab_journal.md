@@ -449,6 +449,7 @@ clean :
   > On an INSERT, if the ROWID or INTEGER PRIMARY KEY column is not explicitly given a value, then it will be filled automatically with an unused integer, usually one more than the largest ROWID currently in use. This is true regardless of whether or not the AUTOINCREMENT keyword is used.
   > 
   > If the AUTOINCREMENT keyword appears after INTEGER PRIMARY KEY, that changes the automatic ROWID assignment algorithm to prevent the reuse of ROWIDs over the lifetime of the database. In other words, the purpose of AUTOINCREMENT is to prevent the reuse of ROWIDs from previously deleted rows.
+ 
   at this very moment iput autoincrement (mainly because i was using plain mysql syntax, btw i need to think better about this. at first sight it still looks to me like it would be a better idea to use it, giving i will have other tables linked via id, to prevent wrong connections).
 
 ####_work in progress/to do list_
