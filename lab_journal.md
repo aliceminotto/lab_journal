@@ -439,6 +439,18 @@ clean :
         rm ./DT20000/*.eps
 ```
 
+* fixed typo in last lines of clusterV.py that caused the code not to save CDATAVcomp and par.
+
+* note i will need about sqlite3:
+  > The AUTOINCREMENT keyword imposes extra CPU, memory, disk space, and disk I/O overhead and should be avoided if not strictly needed. It is usually not needed.
+  >
+  > In SQLite, a column with type INTEGER PRIMARY KEY is an alias for the ROWID (except in WITHOUT ROWID tables) which is always a 64-bit signed integer.
+  >
+  > On an INSERT, if the ROWID or INTEGER PRIMARY KEY column is not explicitly given a value, then it will be filled automatically with an unused integer, usually one more than the largest ROWID currently in use. This is true regardless of whether or not the AUTOINCREMENT keyword is used.
+  > 
+  > If the AUTOINCREMENT keyword appears after INTEGER PRIMARY KEY, that changes the automatic ROWID assignment algorithm to prevent the reuse of ROWIDs over the lifetime of the database. In other words, the purpose of AUTOINCREMENT is to prevent the reuse of ROWIDs from previously deleted rows.
+  at this very moment iput autoincrement (mainly because i was using plain mysql syntax, btw i need to think better about this. at first sight it still looks to me like it would be a better idea to use it, giving i will have other tables linked via id, to prevent wrong connections).
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
