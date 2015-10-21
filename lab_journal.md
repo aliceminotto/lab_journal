@@ -385,7 +385,7 @@ if MOD==1:
 
 * the modified code for clusterV.py worked and was hable to handle extinctions authomatically. I created a Makefile and a config file (as below and as in script folder) to authomate the process over all the folders i need to plot.
 
-'''bash
+'''makefile
 SRC=./clusterV.py
 
 SRC_EXE_5000=export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/tsl/software/testing/gsl/1.16/x86_64/bin/lib; \
@@ -409,7 +409,7 @@ DATA_15000=./DT15000
 DATA_20000=./DT20000
 '''
 
-'''Makefile
+'''makefile
 include config.mk
 
 all : o5000 o10000 o15000 o20000
