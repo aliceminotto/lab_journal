@@ -383,7 +383,7 @@ if MOD==1:
 
 #####21/10/2015
 
-* the modified code for clusterV.py worked and was hable to handle extinctions authomatically. I created a Makefile and a config file (as below and as in script folder) to authomate the process over all the folders i need to plot.
+* the modified code for clusterV.py worked and was hable to handle extinctions authomatically [i imported os library and added a step to verify if the folder architecture is empty **os.listdir()==[]**, in this case ignore it]. I created a Makefile and a config file (as below and as in script folder) to authomate the process over all the folders i need to plot.
 
 ```makefile
 SRC=./clusterV.py
