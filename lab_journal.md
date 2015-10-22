@@ -459,6 +459,24 @@ lista=[(tupla),(tupla),tupla)]
 c.executemany('do this value(?,?,?);', lista)
 ```
 
+#####22/10/2015
+
+* goign on w/ the database script.
+  Notes:
+  * to use foreign key I have to use the sqlite synthax, not every SQL synthax will be ok (see script for example). I need the foreign id to prevent invalid values in the table that works as a connection between the other two (here otput ad plots).
+  * i need to put in the output table the last Ids of probabilities and inputs. 2 problems to solve:
+    * there is the funcion c.lastrowid that i could call in python, but this function can not distinguish between tables, so i would need to save in a variable the results just after updating each table. using auto increment (as i'm doing) could prevent this because I could do:
+    ```python
+    cursor=c.execute('''select max(id)
+	from mutation_probabilities;
+	''')
+    max_id1=cursor.fetchone()[0]
+    ```
+      BUT
+    * i don't want to save multiple lines. when i read the file, at the moment the script will update each table with the parameters AND a new ID despite the fact we can have another line with all the same values. I need to fix it as next step. (at the moment in the probabilities table i want just one row)
+
+* check what we are saving in CDATAV.p cause i could save that instead of png (that looks very annoying) in the image table.
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
