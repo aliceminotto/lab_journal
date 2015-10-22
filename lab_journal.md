@@ -477,6 +477,8 @@ c.executemany('do this value(?,?,?);', lista)
 
 * check what we are saving in CDATAV.p cause i could save that instead of png (that looks very annoying) in the image table.
 
+* ~~just i try to understand if git is now working after tha attack or not, can't push script repository~~
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
