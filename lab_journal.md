@@ -477,7 +477,11 @@ c.executemany('do this value(?,?,?);', lista)
 
 * check what we are saving in CDATAV.p cause i could save that instead of png (that looks very annoying) in the image table.
 
-* ~~just i try to understand if git is now working after tha attack or not, can't push script repository~~
+* ~~just i try to understand if git is now working after tha attack or not, can't push script repository~~ ~~works here, still can't push scrpt repository~~
+
+* changed the mprostest.py file in modoifiche/ to fix Qi=01 and not Qi=1.0! i want to import argparse as well to have just one code
+
+* i got a problem running clusterV.py on the (with wrong initial Qi) files for change_DT/DT5000: MemoryError at line 773, when calling pickle.dump(). [first, I can change the order so that at least the program will save CDATAVcom and par files. Looking on the web if there is a solution]
 
 ####_work in progress/to do list_
 
