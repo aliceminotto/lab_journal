@@ -474,6 +474,16 @@ c.executemany('do this value(?,?,?);', lista)
     ```
       BUT
     * i don't want to save multiple lines. when i read the file, at the moment the script will update each table with the parameters AND a new ID despite the fact we can have another line with all the same values. I need to fix it as next step. (at the moment in the probabilities table i want just one row)
+   So I created a tuple of all the parameters i'm going to give as an input, then 
+   ```python
+   c.execute('''select * from table where column=? and column=?;''', (tuple))
+   result=c.fetchone() #return last line and convert it to list type
+   if result==None:
+	#here instruciton to insert data
+   ```
+   plus this way, in else, i can save result[0], that is the id, or i can save c.lastrowid if i'm inserting a new row. Then i'll use these variables when updating the output table.
+
+  * again a problem w/ difference between sqlite and SQL: here I cannot define a column type as array (**BUT it doesn't raise an error when i do!**), so i will need to use **blob** to be able to insert a list.
 
 * check what we are saving in CDATAV.p cause i could save that instead of png (that looks very annoying) in the image table.
 
@@ -482,6 +492,8 @@ c.executemany('do this value(?,?,?);', lista)
 * changed the mprostest.py file in modoifiche/ to fix Qi=01 and not Qi=1.0! i want to import argparse as well to have just one code
 
 * i got a problem running clusterV.py on the (with wrong initial Qi) files for change_DT/DT5000: MemoryError at line 773, when calling pickle.dump(). [first, I can change the order so that at least the program will save CDATAVcom and par files. Looking on the web if there is a solution]
+
+#####
 
 ####_work in progress/to do list_
 
