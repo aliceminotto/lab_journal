@@ -488,12 +488,18 @@ c.executemany('do this value(?,?,?);', lista)
 * check what we are saving in CDATAV.p cause i could save that instead of png (that looks very annoying) in the image table.
 
 * ~~just i try to understand if git is now working after tha attack or not, can't push script repository~~ ~~works here, still can't push scrpt repository~~
+  SOLUTION: my problem, i talked to chris, no idea why it was working before, but anyway to use any internet connected application from the cluster i should connect to the software node via **ssh software**. then everything worked just fine.
+  The same way if I want to perform any interactive job, to avoid being crushed by the cluster i need to use the interactive node (e.g. to try python), this is one of the computing node (there are two job submitting nodes i directly conncet to) so no internet access from here.
 
-* changed the mprostest.py file in modoifiche/ to fix Qi=01 and not Qi=1.0! i want to import argparse as well to have just one code
+* changed the mprostest.py file in modifiche/ to fix Qi=01 and not Qi=1.0! i want to import argparse as well to have just one code
 
-* i got a problem running clusterV.py on the (with wrong initial Qi) files for change_DT/DT5000: MemoryError at line 773, when calling pickle.dump(). [first, I can change the order so that at least the program will save CDATAVcom and par files. Looking on the web if there is a solution]
+* i got a problem running clusterV.py on the (with wrong initial Qi) files for change_DT/DT5000: MemoryError at line 773, when calling pickle.dump(). [first, I can change the order so that at least the program will save CDATAVcom and par files. Looking on the web if there is a solution] (I'll talk to c about this given it's his code). Btw i noticed that in DT1500 and DT10000 (where the program finished just fine), we had a lot of extinctions (6 to 7 on 20 runs), while in DT5000 and DT20000 i checked and we only got 2 and 1 exctintions.
 
-#####
+#####23/10/2015
+
+* Trying to fix MemoryError when dumping CDATAV.p with pickle, setting **protocol=2**.
+  > Protocol version 2 was introduced in Python 2.3. It provides much more efficient pickling of new-style classes 
+  (i.e. lists too)
 
 ####_work in progress/to do list_
 
