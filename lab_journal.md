@@ -493,7 +493,7 @@ c.executemany('do this value(?,?,?);', lista)
 
 * changed the mprostest.py file in modifiche/ to fix Qi=01 and not Qi=1.0! i want to import argparse as well to have just one code
 
-* i got a problem running clusterV.py on the (with wrong initial Qi) files for change_DT/DT5000: MemoryError at line 773, when calling pickle.dump(). [first, I can change the order so that at least the program will save CDATAVcom and par files. Looking on the web if there is a solution] (I'll talk to c about this given it's his code). Btw i noticed that in DT1500 and DT10000 (where the program finished just fine), we had a lot of extinctions (6 to 7 on 20 runs), while in DT5000 and DT20000 i checked and we only got 2 and 1 exctintions.
+* i got a problem running clusterV.py on the (with wrong initial Qi) files for change_DT/DT5000: MemoryError at line 773, when calling pickle.dump(). /[first, I can change the order so that at least the program will save CDATAVcom and par files. Looking on the web if there is a solution/] (I'll talk to c about this given it's his code). Btw i noticed that in DT1500 and DT10000 (where the program finished just fine), we had a lot of extinctions (6 to 7 on 20 runs), while in DT5000 and DT20000 i checked and we only got 2 and 1 exctintions.
 
 #####23/10/2015
 
