@@ -501,7 +501,8 @@ c.executemany('do this value(?,?,?);', lista)
 
   > Protocol version 2 was introduced in Python 2.3. It provides much more efficient pickling of new-style classes 
   (i.e. lists too)
-  I also changed the order of saving so that CDATAVpar and CDATAVcom are saved first, they are less memory consuming so i hope if the program still crushes they will be saved anyway.
+ 
+   I also changed the order of saving so that CDATAVpar and CDATAVcom are saved first, they are less memory consuming so i hope if the program still crushes they will be saved anyway.
 
 ####_work in progress/to do list_
 
