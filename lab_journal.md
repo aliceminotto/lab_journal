@@ -504,6 +504,12 @@ c.executemany('do this value(?,?,?);', lista)
  
    I also changed the order of saving so that CDATAVpar and CDATAVcom are saved first, they are less memory consuming so i hope if the program still crushes they will be saved anyway.
 
+* notes on _Phytophtora_ life cycle from Marina's mail:
+
+  > Briefly, P. infestans has 2 mating types and genotypes with both mating types need to be present for sexual reproduction. In the centre of origin (central Mexico) populations are typically composed of diploids which undergo sexual recombination (both mating types are present). Sexual reproduction has also been found in other places of the world. However, in many agricultural settings (like in the US or in the UK) populations are mostly clonal, with a few predominant genotypes which reproduce asexually and typically have increased ploidy (triploids, tetraploids). In this situation, even if the two mating types are present, sexual recombination is rare or hasn’t been clearly detected.
+
+  Meaning there would be need of two different models depending on which strain and lineage you are interested in. In the case uf agricultural setting (that I think we are mainly interested in) in UK and US a model without sexual reproduction would work fine. Anyway in the implemented model there's nothing about increased ploidy (how would it change the model? is it possible to add this in a simple and useful way? we would need to know the rate of increase ploidy. Is it already mymed by the result of increase in size? Anyway I think that in the new model the paraeter about the treshold for too many nucleotides has to be very very high considering this.)
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
