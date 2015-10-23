@@ -1,5 +1,5 @@
-####**_Mathematical modelling of life and death decision during cellular stress_**
-#####_Dr. Orsolya Kapuy_
+####**_Mathematical modelling of life and death decision during cellular stress_**  
+#####_Dr. Orsolya Kapuy_  
 #####23/10/2015
 
 Cell can underg both programmed and unprogrammed death (necrosis). There are two kind of programmed cell death: apoptosis and autophagy. This last one can actually be considered a way of surviaval, given that the cell eats the damaged components, and this behaviour can be able to save its life. Autophagy is especially seen during starvation.  
@@ -33,3 +33,5 @@ The result of all these considerations is a deteministic model (add image here o
 **BUT** in a population analysis of course we have to consider stochastic processes as well (because not all the cells perceive the same level of stress at the very same moment). So adding stochastic process on a single cell the graph will stay more or less the same (but the curve won't be that smooth, it will be zzzz). Instead, if we watch at the population level (add image here) at high stress level we can see that the apoptosis response doesn't look anymore like a swithc, but seems to increase gradually. And this is what actually can be seen in a wet lab experiment.
 
 Another experiment was to wash out the stress factor after 30' or 60'. This way they were able to determine that at 30' the apoptotic response is reversible, while ti is no more at 60' (nad this makes biological sense if you think about it), so basically the second jumps in the curve doesn't exist (add image here).
+
+***
