@@ -512,6 +512,7 @@ c.executemany('do this value(?,?,?);', lista)
   Meaning there would be need of two different models depending on which strain and lineage you are interested in. In the case uf agricultural setting (that I think we are mainly interested in) in UK and US a model without sexual reproduction would work fine. Anyway in the implemented model there's nothing about increased ploidy (how would it change the model? is it possible to add this in a simple and useful way? we would need to know the rate of increase ploidy. Is it already mymed by the result of increase in size? Anyway I think that in the new model the paraeter about the treshold for too many nucleotides has to be very very high considering this.)
 
 * created provate repository w/ c's codes so that i can modify just the min to easily create a db from output (**REMEMBER TO DELETE THIS REPO BEFORE LEAVING!!!!!**)
+  here modified mprostest to import argparse and have just one code that takes all the parameters as an input (most of them have a default value anyway), you will need to mofify the launch/config.mk file to change them. i set the launch file to call -h so i can see a list of all the parameters i can give if i forget. the makefile and config.mk are work in progress at the moment.
 
 ####_work in progress/to do list_
 
@@ -519,11 +520,10 @@ c.executemany('do this value(?,?,?);', lista)
 * parallel python, what's the main difference between multiprocessing and pp?
 * see first point on 16/10/2015
 * create database for c's data
-* create a new repository w/ c's code and modify it in a branch to get all the inputs in an output file to be put in the database.
 
 PART 1:
 
-2. create Makefile and config.mk
+2. finish Makefile and config.mk
 
 PART 2:
 1. ask carlos what are the probabilites from m5 to m8 and what are the parameters saved with them (Lth, beta1, beta2, wo, Ntot)
