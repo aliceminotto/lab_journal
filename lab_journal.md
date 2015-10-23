@@ -503,6 +503,7 @@ c.executemany('do this value(?,?,?);', lista)
   (i.e. lists too)
  
    I also changed the order of saving so that CDATAVpar and CDATAVcom are saved first, they are less memory consuming so i hope if the program still crushes they will be saved anyway.
+  UPDATE: problem solved this way.
 
 * notes on _Phytophtora_ life cycle from Marina's mail:
 
