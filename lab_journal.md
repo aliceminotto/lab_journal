@@ -514,6 +514,28 @@ c.executemany('do this value(?,?,?);', lista)
 * created provate repository w/ c's codes so that i can modify just the min to easily create a db from output (**REMEMBER TO DELETE THIS REPO BEFORE LEAVING!!!!!**)
   here modified mprostest to import argparse and have just one code that takes all the parameters as an input (most of them have a default value anyway), you will need to mofify the launch/config.mk file to change them. i set the launch file to call -h so i can see a list of all the parameters i can give if i forget. the makefile and config.mk are work in progress at the moment.
 
+#####26/10/2015
+
+* going again trough makefile documentation cause I want to give the python script parameters from the command line, plus, i want to give them as long as the user wish, so that he can launch the code as many time as he wants in a single time.
+  I can give parameters from the command line writing **make target FOO=bar** and then i can just use $(FOO) in the makefile. Moreover, inside the makefile i can define **FOO?=other** (or just FOO=other because of the default behaviour) to have a default value for FOO. If I want to change the default behaviour (the variable given from the command line superior to the one with the same name in the file), in the makefile i have to write **overrride varibale=value**.
+  So I could write in the command line **make options='string w/ all the option i want to give to the python script', leave the config script as it is, and add in the makefile receipt $(options) after the rule.
+  BUT this way i would have to launche the makefile multiple times (i should add a dependecies for the value or something similar), or i could create another config files wit the options and use it as a dependencies.
+  OTHER POSSIBILITY: (i like this one more)  write a modification of this:
+  ```makefile
+  all:
+  	@while [ -z "$$CONTINUE"]; do \
+	read -r -p "instructions" CONTINUE; \
+	done; \
+	[ $$CONTINUE = 'string' ] || ( @echo or other instruction; exit 1;)
+	@echo or other instruction
+  ```
+  NOTES:
+  * -z evaluates to True if the string is null, I won't use this in my case cause i want the loop to go on, or i could use it and set CONTINUE to "" after each successfull loop
+  * I need to use the double $ sign cause CONTINUE is not a makefile variable, but a shell variable (think about it, it makes complitely sense after all)
+  * || is OR
+  * @ it's "not tell", it avoid printing out "echo" or "while" while executing
+  * remeber the spaces after and before [ and ], it results in an error otherwise
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
