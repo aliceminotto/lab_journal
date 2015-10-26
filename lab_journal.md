@@ -536,6 +536,26 @@ c.executemany('do this value(?,?,?);', lista)
   * @ it's "not tell", it avoid printing out "echo" or "while" while executing
   * remeber the spaces after and before [ and ], it results in an error otherwise
 
+* wrote Makefile (orrible) that can be used for any simulation (check tomorrow if the dependencies work, plus add the data dependency)
+```bash
+SRC=./LNKMODEL/mprostest.py
+
+OPTIONS=$$OPTIONS
+
+SRC_EXE=export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/tsl/software/testing/gsl/1.16/x86_64/bin/lib; \
+bsub -q TSL-Prod128 -We 1 "source python-2.7.4; python $(SRC) $(OPTIONS)"
+```
+
+```makefile
+include config.mk
+
+all : $(SRC)
+        @while [ -z "$$OPTIONS" ]; do \
+        echo "insert option for the simulation, mandatory path_to_main_directory number_of_runs number_of_jumps interval_between_jumps, n to exit" && read -r OPTIONS; \
+        done; \
+        if [ "$$OPTIONS" = "n" ]; then exit 0; else $(SRC_EXE); fi;
+```
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
