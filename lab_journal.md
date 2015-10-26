@@ -522,8 +522,8 @@ c.executemany('do this value(?,?,?);', lista)
   BUT this way i would have to launche the makefile multiple times (i should add a dependecies for the value or something similar), or i could create another config files wit the options and use it as a dependencies.
   OTHER POSSIBILITY: (i like this one more)  write a modification of this:
   ```makefile
-  all:
-  	@while [ -z "$$CONTINUE"]; do \
+ all:
+ 	@while [ -z "$$CONTINUE"]; do \
 	read -r -p "instructions" CONTINUE; \
 	done; \
 	[ $$CONTINUE = 'string' ] || ( @echo or other instruction; exit 1;)
@@ -548,6 +548,7 @@ PART 1:
 2. finish Makefile and config.mk
 
 PART 2:
+
 1. ask carlos what are the probabilites from m5 to m8 and what are the parameters saved with them (Lth, beta1, beta2, wo, Ntot)
 2. "     "     "    "   "  parameters saved in CDATAV.p
 3. decide if i do need a database with the images. If so how do I solve the memory problem? If not, I could save CDATAV but it is huge compared to images, is it CDATAVcom enough (still more space then images btw)? If we decide to store this file there will be need to release the clusterV. py script to recreate the plot, so what about this?
