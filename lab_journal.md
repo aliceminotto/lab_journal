@@ -521,14 +521,14 @@ c.executemany('do this value(?,?,?);', lista)
   So I could write in the command line **make options='string w/ all the option i want to give to the python script', leave the config script as it is, and add in the makefile receipt $(options) after the rule.
   BUT this way i would have to launche the makefile multiple times (i should add a dependecies for the value or something similar), or i could create another config files wit the options and use it as a dependencies.
   OTHER POSSIBILITY: (i like this one more)  write a modification of this:
-  ```makefile
- all:
+```makefile
+ all :
  	@while [ -z "$$CONTINUE"]; do \
 	read -r -p "instructions" CONTINUE; \
 	done; \
 	[ $$CONTINUE = 'string' ] || ( @echo or other instruction; exit 1;)
 	@echo or other instruction
-  ```
+```
   NOTES:
   * -z evaluates to True if the string is null, I won't use this in my case cause i want the loop to go on, or i could use it and set CONTINUE to "" after each successfull loop
   * I need to use the double $ sign cause CONTINUE is not a makefile variable, but a shell variable (think about it, it makes complitely sense after all)
@@ -550,5 +550,7 @@ PART 1:
 PART 2:
 
 1. ask carlos what are the probabilites from m5 to m8 and what are the parameters saved with them (Lth, beta1, beta2, wo, Ntot)
+
 2. "     "     "    "   "  parameters saved in CDATAV.p
+
 3. decide if i do need a database with the images. If so how do I solve the memory problem? If not, I could save CDATAV but it is huge compared to images, is it CDATAVcom enough (still more space then images btw)? If we decide to store this file there will be need to release the clusterV. py script to recreate the plot, so what about this?
