@@ -556,6 +556,33 @@ all : $(SRC)
         if [ "$$OPTIONS" = "n" ]; then exit 0; else $(SRC_EXE); fi;
 ```
 
+#####27/10/2015
+
+* c's code has finished (folder **change_DT_Qi**), I'm running my makefile to create all the figures for the four DT.
+
+*read a lot about relational and non relational DBs. I'll stick w/ the first type since I always have the same kind and number of data to put in columns and i think having more tables will be good given the nature of data.
+
+* NOTES about **pickle**: if I dump more object while the file is open, i can retrieve them FIFO. Btw if i re-open the file with 'wb' and dump something everything will be overwritten (just like normal files).
+
+* read this article about NGM (s's project): http://onlinelibrary.wiley.com/doi/10.1111/j.1365-313X.2011.04619.x/full
+
+* the program that simulate evolution of plant pathogene genome has finally finished running. Here are the resulting plots (used my Makefile):
+  DT5000:
+  ![average length for DT5000](https://www.dropbox.com/s/2s5gmayou5bgezo/averagesl.png?dl=1)
+  ![average number of units DT5000](https://www.dropbox.com/s/t6ftjtx6t57xit2/averagesn.png?dl=1)
+  
+  DT10000:
+  ![average length DT10000](https://www.dropbox.com/s/q1nm0j6w6608li6/averagesl.png?dl=1)
+  ![average number of units DT10000](https://www.dropbox.com/s/xiizxlerkk90ftp/averagesn.png?dl=1)
+
+  DT15000:
+  ![average length DT15000](https://www.dropbox.com/s/i4osyemm52wlwfb/averagesl.png?dl=1)
+  ![average number of units DT15000](https://www.dropbox.com/s/dso2ta8bh1v8d07/averagesn.png?dl=1)
+
+  DT20000:
+  ![average length DT20000](https://www.dropbox.com/s/s8viyn02eu9mys9/averagesl.png?dl=1)
+  ![average number of units DT20000](https://www.dropbox.com/s/fjukq22h59i8l8e/averagesn.png?dl=1)
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
