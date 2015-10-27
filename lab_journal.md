@@ -583,6 +583,10 @@ all : $(SRC)
   ![average length DT20000](https://www.dropbox.com/s/s8viyn02eu9mys9/averagesl.png?dl=1)
   ![average number of units DT20000](https://www.dropbox.com/s/fjukq22h59i8l8e/averagesn.png?dl=1)
 
+* talked to c: i need to stop creating eps images (already commented in the code) cause it's too time consuming, changed the interval in the y and x axis for average length plot cause it was not informative (multiple time the same number), and to eliminate vertical lines in the plot in the **new** folder (the ine w/o jumps, cause they have no meaning, it's running again now w/ this modification).
+
+* the other important code to run is in the Cvcomparison.ipynb c's notebook. It will plot changes in number of units or length keeping the same Qi (C) but changing the DT, and vicerversa. I will need to modify the code so it can iterate over the folder i'm interested into. Btw before modify and run this code I need to do the same with clusterdataI, II, III and IV, cause they give output required as an input by the code i want to run. By the way I'm not interested in the images they are making so I can comment and skip that part.
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
