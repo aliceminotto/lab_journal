@@ -593,9 +593,9 @@ all : $(SRC)
   STILL NEED TO PUT THIS IN THE CLUSTERV FILE IN MODEL_SCRIPTS
 
 * dicuss w/ c, I wrote a code that simulate (similar to LotkaVolterra-red quuen) the population size for different strains of a pathogen. The formula that describe the variation in time is:
-  $Ni(t+1)=((ri*NH*Ni)/(b*NH+sum(ri*Ni))-Ni$
+  $$Ni(t+1)=((ri*NH*Ni)/(b*NH+sum(ri*Ni))-Ni$$
   (code is in scripts repository)
-  the equilibrium will be reached at $N=(0.5-b/ri)*NH$ (easy to demonstrate from the above formula, given equilibrium is reached when N at t+1 is equal to N at t).I'm storing the data in a pickled dictionary where each key is a strain, who has as values a list of: list of size of population, list of time, float equilibrium. (the eq is teorichal for the strain living alone in the environment, as eplained later). 
+  the equilibrium will be reached at $$N=(0.5-b/ri)*NH$$ (easy to demonstrate from the above formula, given equilibrium is reached when N at t+1 is equal to N at t).I'm storing the data in a pickled dictionary where each key is a strain, who has as values a list of: list of size of population, list of time, float equilibrium. (the eq is teorichal for the strain living alone in the environment, as eplained later). 
   what we can see plotting the data is that if r is similar for the differnt strains they tend to coexist (the plotting code is in **scripts** repository too). we will use this in the new model, where r will be calculated judging Eff and targets presence. In that case we will semplify and keep as new strains just the ones that have r>= than the previous existing strain. (othe r thing we notice, but it makes complitely sense is that there are oscillations around the equilibrium value and this is because of the death rate).
 
 ####_work in progress/to do list_
