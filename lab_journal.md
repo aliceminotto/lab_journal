@@ -587,6 +587,15 @@ all : $(SRC)
 
 * the other important code to run is in the Cvcomparison.ipynb c's notebook. It will plot changes in number of units or length keeping the same Qi (C) but changing the DT, and vicerversa. I will need to modify the code so it can iterate over the folder i'm interested into. Btw before modify and run this code I need to do the same with clusterdataI, II, III and IV, cause they give output required as an input by the code i want to run. By the way I'm not interested in the images they are making so I can comment and skip that part.
 
+#####28/10/2015
+
+* was able to eliminate vertical lines in the plot for simulation without jumps (commented all "stem") in **new** folder. I'm trying to fix the vertical ticks so that they are not the same.
+
+* dicuss w/ c, I wrote a code that simulate (similar to LotkaVolterra-red quuen) the population size for different strains of a pathogen. The formula that describe the variation in time is:
+  Ni(t+1)=((ri*NH*Ni)/(b*NH+sum(ri*Ni))-Ni
+  (code is in scripts repository)
+  the equilibrium will be reached at N=(0.5-b/ri)*NH (easy to demonstrate from the above formula, given equilibrium is reached when N at t+1 is equal to N at t).
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
