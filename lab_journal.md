@@ -598,16 +598,19 @@ all : $(SRC)
   the equilibrium will be reached at $$N=(0.5-b/ri)*NH$$ (easy to demonstrate from the above formula, given equilibrium is reached when N at t+1 is equal to N at t).I'm storing the data in a pickled dictionary where each key is a strain, who has as values a list of: list of size of population, list of time, float equilibrium. (the eq is teorichal for the strain living alone in the environment, as eplained later). 
   what we can see plotting the data is that if r is similar for the differnt strains they tend to coexist (the plotting code is in **scripts** repository too). we will use this in the new model, where r will be calculated judging Eff and targets presence. In that case we will semplify and keep as new strains just the ones that have r>= than the previous existing strain. (othe r thing we notice, but it makes complitely sense is that there are oscillations around the equilibrium value and this is because of the death rate).
 
+#####29/10/2015
+
+* running again the c's **mprostest.py** script for DT5000, DT10000, DT15000 and DT20000 cause we need more data.
+  need tio have 50 runs (so that it can be compared with **new** simulation, i.e. the one without jumps. to do so I'm running the script for 30 other runs for each DT, BUT of course i had to change the seed, otherwise i would have had the same results. so i stored the old seeds in a file for each folder named **meta**, the new one can be found in the code itself ( i changed the main definition of R0 and RUNS so that it start creating folders from RUN20 and don't overwrite the old ones.
+
+* trying to re write c's **Cvarcomparison.py** so that suits our new sitation (moreover that version isn't considering Eff and TEs length and numbers, so this need to be put into the code too).
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
 * parallel python, what's the main difference between multiprocessing and pp?
 * see first point on 16/10/2015
 * create database for c's data
-
-PART 1:
-
-2. finish Makefile and config.mk
 
 PART 2:
 
