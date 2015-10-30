@@ -605,6 +605,14 @@ all : $(SRC)
 
 * trying to re write c's **Cvarcomparison.py** so that suits our new sitation (moreover that version isn't considering Eff and TEs length and numbers, so this need to be put into the code too).
 
+#####30/10/2015
+
+* talked w/ c: the yesterday formual had a small error. Indeed if we take the continuous formula w/ deltas as a definition we will have that the previous formula is correct for **N(t+1)-N(t)**, so we have N(t) both on the right and on the left and they go away. If we think now at the eqiluibrium for a single population we have that b>r. 
+  I had another bug in the code as i was looping on ri but not Ni in the summatory, fixed it. 
+  Now what we can see is that we actually have waves in the resulting plot, and usually there are not coexistence of different strain (they can still happen at the right b and ri values).
+  here's an example output where each new strain has a better r than the previous one, and the third strain arises before the second could reach its equilibrium:
+  ![exaple plot of pop dynamics](https://www.dropbox.com/s/gc5tnwpt5d28xzx/path_var.pplot.png?dl=1)
+
 ####_work in progress/to do list_
 
 * install pygsl locally (it's giving problems and i don't get way, it can't find numpy, but that's actually installed)
