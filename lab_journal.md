@@ -612,6 +612,8 @@ all : $(SRC)
   Now what we can see is that we actually have waves in the resulting plot, and usually there are not coexistence of different strain (they can still happen at the right b and ri values).
   here's an example output where each new strain has a better r than the previous one, and the third strain arises before the second could reach its equilibrium:
   ![exaple plot of pop dynamics](https://www.dropbox.com/s/gc5tnwpt5d28xzx/path_var.pplot.png?dl=1)
+  here's another example with increasing, but similar, values of r:
+  ![other example plot](https://www.dropbox.com/s/3otuj0pxlj9mjna/path_var.pplot%202.png?dl=1)
 
 ####_work in progress/to do list_
 
