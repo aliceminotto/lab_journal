@@ -35,3 +35,11 @@ The result of all these considerations is a deteministic model (add image here o
 Another experiment was to wash out the stress factor after 30' or 60'. This way they were able to determine that at 30' the apoptotic response is reversible, while ti is no more at 60' (nad this makes biological sense if you think about it), so basically the second jumps in the curve doesn't exist (add image here).
 
 ***
+
+####**seeing the future - a demo of light speed optical sequence alignment**
+#####_5/11/2015_
+
+the new technology is not yet available, but the idea (and the prototypes), is to use ligth to speed up very much the process of alignment (it can actually have many other applications, not crystal clear to the very developpers). The tech. uses crystal liquid to transmit informations and the pixel light is detected by a camera. This way you will be able ideally to permorm hexabytes of calculation on a desk (the device should be connected to a desk computer).
+the program will be mainly open source but will require an effort from the community to dvelop them (problems here: how much time? will the results of these new 'alghorithms?' be comparable to the old ones?).
+there are not yet precise information about the accuracy of the system (they expect to have the same accuracy as common blast), and the result are not discrete cause they are detecting ligth intensity, but continuous, this way enabling researchers to detect similarities between aa or bases too.
+problems here: what about the ligth biases? don't they expect the same problems as Illumina? (but consider we are summing these problems to the previous ones, would they be avoidable running the same experiment multiple times?)
