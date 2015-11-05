@@ -19,3 +19,13 @@
 * talked w/ c about the new model and looked at the code. the structure og the Go (genome of the pathogen) will be a list of effectirs gene, each of it is ideally linked to a list of 0 and 1 for each target in the set of targets. In relaity it is implemented as a list of target w/ score > than 0 that are key to a dictionary w/ their scores. Moreover the score is not going to be really 1, but is going to be a score between 0 and 1. btw this is a binomial distribution so the probability to have n successes (1) over k trial (the targets) is described as such.
   the average number of successes will be lambdak +- the fluctuation (standard deviation, that is the same under sqrt), where lambda is the probability of success (how much the trial is biased). in our simulation labda has to be quite small cause we expect that the majority of the gene in the target pool will not be targeted. the code will get a random number from the binomial distribution and use it to determine the number of effectors of the host.
 the problem now is to determine how to calclate the value r (same as in the previous dynamics population simulation), by the scores of each effector gene, so that it makes biological sense. the average is not really a good idea, cause it doesn't sense the additional vales. c had a formula that for each effector gives a scoe=re w that is a sigmoid, so we have a treshold (below the effector is not good), and a maximum (can't be better than that). these ws has to be synthetized in the score r i was talking about.
+
+#####4/11/2015
+
+* thinking about the score problem, i couldn't come out w/ anything. ros problems=nothing is working today
+
+#####5/11/2015
+
+* going trough **longest increasing subsequence** algorithms
+
+* seminar on new technology (other file)
