@@ -175,4 +175,14 @@ for x in pts1:
 
   ![plot for c=0.9](https://www.dropbox.com/s/jrtfxx5e4p11jnl/trail_plot0.9.png?dl=1)
 
+  NOTES: 
+  * fixed the syntha of the title so that it all fits Tex and it's fancier
+  * in the final version will need to fix the axes labells as in clusterV.py so that they can't be repeated
 
+  OBSERVATIONS:
+  * from these graphs it looks like the c value doesn't have such a great impact as i expected (actually none, how is this even possible? will talk to c, maybe i plotted something wrong, or it could have an effect visible just when we plot separately effectors gene and trasposable elements?). Regarding the impact of the jump frequency it looks like in all the cases DT5000 and DT10000 populations behave in the same manner, while the eveolution is slowed down in the case of DT15000 and DT2000 (other important question: how is it possible that i can't see the plateau phase i saw in the compV plots? this shouldn't happen, i need to check the plot code).
+
+ * read article from **Nathure Methods**
+   > **_Assembly and diploid architecture of an individual human genome via single-molecule technologies_** (_Pendleton etal._)
+   > Molecular maps have the potential to span regions of high simi- larity at great depth, as individual molecules can exceed 1 Mb in size. However, their nonrandom breakage can lead to systematic failures in detection. This limitation can be mitigated by creating multiple genome maps that use distinct recognition sequences (using high-quality sequence contigs to bridge across maps). Resolving repetitive regions is more than simply an issue of ‘com- pleteness’; these regions have been shown to mediate large-scale rearrangements in the genome
+   > This study provides a framework for integrating multiple platforms: high-quality short reads for SNVs and indels, long reads for structural variation, and long-read assembly and genome maps for large-scale genome rearrangements. By using a collection of technologies, we can finally begin to circumvent biases induced by overreliance on a single reference genome
