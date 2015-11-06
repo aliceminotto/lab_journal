@@ -33,3 +33,23 @@ the problem now is to determine how to calclate the value r (same as in the prev
 #####6/11/2015
 
 * writing new code for plotting results of simulation for same DT or same Qi in different runs.
+
+* useful example from tutorial to display standarc deviation as a colored area in plot:
+  ```python
+  mu1 = X1.mean(axis=1)
+sigma1 = X1.std(axis=1)
+mu2 = X2.mean(axis=1)
+sigma2 = X2.std(axis=1)
+
+# plot it!
+fig, ax = plt.subplots(1)
+ax.plot(t, mu1, lw=2, label='mean population 1', color='blue')
+ax.plot(t, mu1, lw=2, label='mean population 2', color='yellow')
+ax.fill_between(t, mu1+sigma1, mu1-sigma1, facecolor='blue', alpha=0.5)
+ax.fill_between(t, mu2+sigma2, mu2-sigma2, facecolor='yellow', alpha=0.5)
+ax.set_title('random walkers empirical $\mu$ and $\pm \sigma$ interval')
+ax.legend(loc='upper left')
+ax.set_xlabel('num steps')
+ax.set_ylabel('position')
+ax.grid()
+  ```
