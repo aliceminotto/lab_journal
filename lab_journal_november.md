@@ -53,3 +53,108 @@ ax.set_xlabel('num steps')
 ax.set_ylabel('position')
 ax.grid()
   ```
+
+* w/ the following draft code i created the following plots where we keep a constant value of c comparing the DTs (need to check the code w/ c cause im not 100% sure about how he's storing the data).
+  ```python
+  import pickle
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.ticker as mtick
+import argparse
+import os
+plt.style.use('bmh')
+parser=argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,epilog=("""
+""")) ###*
+########each directory has a different DT
+parser.add_argument("p1",help="path to the right directory")
+parser.add_argument("p2", help="path to the second directory")
+parser.add_argument("p3", help="path to the third directory")
+parser.add_argument("p4", help="path to the last directory")
+parser.add_argument("r", type=int, help="number of runs for directory")
+###*parser.add_argument("j", type=int, help="number of jumps")###*
+args=parser.parse_args() ###*
+pth1=args.p1
+pth2=args.p2
+pth3=args.p3
+pth4=args.p4
+RUNS=args.r
+main_path=[pth1,pth2,pth3,pth4]
+print pth1,pth2,pth3,pth4
+###*xi=range(1,(args.j+1))###*
+##############files with data##########################
+n1=pth1+"CDATAVcomp.p"
+n2=pth2+"CDATAVcomp.p"
+n3=pth3+"CDATAVcomp.p"
+n4=pth4+"CDATAVcomp.p"
+print n1, n2, n3, n4
+f1=open(n1,"rb")
+NOPE1=pickle.load(f1)
+f1.close()
+f2=open(n2,"rb")
+NOPE2=pickle.load(f2)
+f2.close()
+f3=open(n3,"rb")
+NOPE3=pickle.load(f3)
+f3.close()
+f4=open(n4,"rb")
+NOPE4=pickle.load(f4)
+
+#######plot same Qi different DT#################
+#print NOPE1[0][1], 'tempo?'
+#print NOPE1[0][2]
+'''fig, axesa = plt.subplots(1,figsize=(10, 8))
+fig, axesb = plt.subplots(1,figsize=(10, 8))'''
+
+'''axesb.set_ylabel("$< Number$ $of$ $units >_{Ens}$", fontsize=40)
+axesb.set_xlabel("$Time$ $(Evolutionary$ $events)$",fontsize=40)
+axesb.xaxis.set_tick_params(labelsize=20)
+axesb.xaxis.set_major_formatter(mtick.FormatStrFormatter('%1.e'))
+axesb.yaxis.set_tick_params(labelsize=20)
+axesb.yaxis.set_major_formatter(mtick.FormatStrFormatter('%1.e'))'''
+
+#Data=[t,LAV,NAV,STDN,STDL]
+T1=NOPE1[0]
+T2=NOPE2[0]
+T3=NOPE3[0]
+T4=NOPE4[0]
+
+pts1=NOPE1[1].keys()
+pts2=NOPE2[1].keys()
+pts3=NOPE3[1].keys()
+pts4=NOPE4[1].keys()
+#print pts1, pts2, pts3, pts4
+if pts1==pts2==pts3==pts4:
+    print 'ok, proceed'
+    c=0.1
+for x in pts1:
+    fig, axesa = plt.subplots(1,figsize=(10, 8))
+
+    axesa.set_ylabel("$< Lengths >_{Ens}$", fontsize=40)
+    axesa.set_xlabel("$Time$ $(Evolutionary$ $events)$",fontsize=40)
+    axesa.xaxis.set_tick_params(labelsize=20)
+    axesa.xaxis.set_major_formatter(mtick.FormatStrFormatter('%1.e'))
+    axesa.yaxis.set_tick_params(labelsize=20)
+    axesa.yaxis.set_major_formatter(mtick.FormatStrFormatter('%1.e'))
+
+    axesa.plot(T1,NOPE1[1][x],label="$\Delta T=5.0\\times 10^3$")
+    axesa.plot(T2,NOPE2[1][x],label="$\Delta T= 1.0\\times 10^4$")
+    axesa.plot(T3,NOPE3[1][x],label="$\Delta T= 1.5 \\times 10^4$")
+    axesa.plot(T4,NOPE4[1][x],label="$\Delta T= 2.0\\times 10^4$")
+
+    axesa.legend(loc='best', fancybox=True, framealpha=0.5)
+
+    val_c=c
+    titstr='$c=$'+str(c)
+    print titstr
+    c+=0.1
+    axesa.set_title(titstr, fontsize=40)
+
+    #axesa.set_xscale('log')
+    axesa.set_xlim([0,20000])
+    #axesa.set_xlim([0,80000])
+
+    fig.savefig(pth1+'trail_plot'+str(c-0.1)+'.png',format='png' ,dpi=1200, bbox_inches='tight')
+  ```
+
+  Here are the resulting plots:
+    
