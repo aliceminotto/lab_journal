@@ -157,4 +157,22 @@ for x in pts1:
   ```
 
   Here are the resulting plots:
-    
+  ![plot for c=0.1](https://www.dropbox.com/s/j62wtkk8z8fc4p8/trail_plot0.1.png?dl=1)
+
+  ![plot for c=0.2](https://www.dropbox.com/s/vveewdh0a6j0vdv/trail_plot0.2.png?dl=1)
+
+  ![plot for c=0.3](https://www.dropbox.com/s/a6piwy7wt2t0i43/trail_plot0.3.png?dl=1)
+
+  ![plot for c=0.4](https://www.dropbox.com/s/9viylsfl2nhr56e/trail_plot0.4.png?dl=1)
+
+  ![plot for c=0.5](https://www.dropbox.com/s/f7w9tu6hxptcpfi/trail_plot0.5.png?dl=1)
+
+  ![plot for c=0.6](https://www.dropbox.com/s/zta38ws2po0vb9n/trail_plot0.6.png?dl=1)
+
+  ![plot for c=0.7](https://www.dropbox.com/s/qmnyqrk6xlqo2jx/trail_plot0.7.png?dl=1)
+
+  ![plot for c=0.8](https://www.dropbox.com/s/ixq44bfp6py8vz6/trail_plot0.8.png?dl=1)
+
+  ![plot for c=0.9](https://www.dropbox.com/s/jrtfxx5e4p11jnl/trail_plot0.9.png?dl=1)
+
+
