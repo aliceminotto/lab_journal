@@ -29,3 +29,7 @@ the problem now is to determine how to calclate the value r (same as in the prev
 * going trough **longest increasing subsequence** algorithms
 
 * seminar on new technology (other file)
+
+#####6/11/2015
+
+* writing new code for plotting results of simulation for same DT or same Qi in different runs.
