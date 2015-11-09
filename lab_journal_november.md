@@ -188,3 +188,21 @@ for x in pts1:
    > This study provides a framework for integrating multiple platforms: high-quality short reads for SNVs and indels, long reads for structural variation, and long-read assembly and genome maps for large-scale genome rearrangements. By using a collection of technologies, we can finally begin to circumvent biases induced by overreliance on a single reference genome
 
 * very useful python synthax: **\*args** send to a function a variable number of NON-KEYWORDED variables. on the other side **\*\*kwargs** does the same but allows to send NAMED ARGUMENTS to a function (i.e. x where 2 was assigned to x). then u can iterate over **args** or **kwargs**. Note that only the synthax is needed (the one/two star/s), but is common practice to keep these names (so do it). they could be used when calling a function, too, but i find this case less useful.
+
+#####9/11/2015
+
+* NOTE on python: ***for key in d** is the same as **for key in d.keys()** but w/ a better perfromance.
+
+* NOTE on python: Dictionaries have a 'get()' method. If you do d['key'] and key isn't there, you get an exception. If you do d.get('key'), you get back None if 'key' isn't there. You can add a second argument to get that item back instead of None, eg: d.get('key', 0).
+
+* changed the **comparison_plot.py** code so that it produces two sets of images, the first one just like the previous week, the new one plotting not just the total length over time, but the length of effector genes and the length of the TEs over time.
+  Again i see the same as the last week, so there is no (or almost no) difference between c values, while there is a small difference depending on the DT between jumps. (not necessarely in the order u can imagine). Moreover i can't see the plateau phase i was expeting (why this? i looked at clusterV code and it looks like I'm plotting the right arrays????)
+
+* IMPORTANT NOTE i forgot on the model: it will be interesting to see if pathogen A jumped to host 2 from host 1 can return after some DT to the original host and w/ which fitness value (better? worse? there will be another pathogen at his place? can he defeat it?).
+
+* 3 of the 4 (all except DT5000) simulations at the very last run crushed w/
+  ```bash
+  IOError: [Errno 122] Disk quota exceeded: '../RUN49/n8/pts13plotdata.p'
+963 377
+../RUN49/n8/pts13plotdata.p
+  ```
