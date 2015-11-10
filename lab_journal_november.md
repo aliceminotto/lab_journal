@@ -206,3 +206,11 @@ for x in pts1:
 963 377
 ../RUN49/n8/pts13plotdata.p
   ```
+
+#####10/11/2015
+
+* so the cluster had a problem (run out of space?), so i killed the programs runnig and launch them again just for the remaing runs (47 to 49 for DT5000, just 49 for the other three) w/ a different seed (the old seed are in meta files).
+
+* example of the plot for TEs and Eff length created yesterday (just one cause they're more or less the same)
+  ![trial plot for length of Eff and TEs over time for different time gap between jumps](https://www.dropbox.com/s/1af9j8qrem8s96m/trial_plot_eff_te0.5.png?dl=1)
+
