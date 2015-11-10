@@ -219,3 +219,5 @@ for x in pts1:
 * in **comparison_plot.py** added part to plot number of units (total and differentiating between effector genes and transposable elements) over time, keeping the same C value and comparing different DTs.
 
 * the plot are fine, in the previous code **clusterV.py** i was just plotting more time on the x axis. I can change this (i should as I'm only plotting 20000 evolutionary evenets that is the same interval as the last jumping strain I'm considering)
+  here is another example for 50000 evolutionary events:
+  ![length of eff and TEs for different DT](https://www.dropbox.com/s/j7cczpo4gm8gfz5/trial_plot_eff_te0.1.png?dl=1)
