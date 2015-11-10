@@ -214,3 +214,8 @@ for x in pts1:
 * example of the plot for TEs and Eff length created yesterday (just one cause they're more or less the same)
   ![trial plot for length of Eff and TEs over time for different time gap between jumps](https://www.dropbox.com/s/1af9j8qrem8s96m/trial_plot_eff_te0.5.png?dl=1)
 
+* i made a mistake launching the simulation for DT5000, so for the way the code is wrtitten is doing again RUN46, BUT it's saving data proceedeng w/ the numbers in plot, i'll need to erase the plot w/ numbers>40 (or put them in another folder w/ different run number).
+
+* in **comparison_plot.py** added part to plot number of units (total and differentiating between effector genes and transposable elements) over time, keeping the same C value and comparing different DTs.
+
+* the plot are fine, in the previous code **clusterV.py** i was just plotting more time on the x axis. I can change this (i should as I'm only plotting 20000 evolutionary evenets that is the same interval as the last jumping strain I'm considering)
