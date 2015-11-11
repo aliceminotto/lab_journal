@@ -221,3 +221,13 @@ for x in pts1:
 * the plot are fine, in the previous code **clusterV.py** i was just plotting more time on the x axis. I can change this (i should as I'm only plotting 20000 evolutionary evenets that is the same interval as the last jumping strain I'm considering)
   here is another example for 50000 evolutionary events:
   ![length of eff and TEs for different DT](https://www.dropbox.com/s/j7cczpo4gm8gfz5/trial_plot_eff_te0.1.png?dl=1)
+
+#####11/11/2015
+
+* so the code i run yesterday for DT5000 started at RUN46 instead of 47 (my bad). as said it didn't overwrite the previous results, so i just manually created folder **RUN49** and moved there the new files, then renamed them so that the numbers go from 1 to 40 and not from 41 to 80. that said RUN49 is actually the forst run w/ the third seed, 47 is the second and 48 the third. (if for any reason i need to recreate the same exact results of this simultaion).
+
+* the plotting **comaprison_var.py** code finished and here as some figures (always just on the firs 20 runs for each DT, will do more today)
+  plot for the same c, comparing different DTs, total number of units over time (just one cause they all look the same for different c values)
+  ![plot number of units over time](https://www.dropbox.com/s/v9vvfhhazzqkwqs/trial_plot_unit0.5.png?dl=1)
+  note the strange swap between the blu and magenta lines: i see that one for all c values, if it's a seed artifact it should go away at least in some plot when i run the code over the whole 50 runs. (i will add the simulation with no jumps too)
+  ![same but distinguish tes and effector genes](https://www.dropbox.com/s/lrsgxlgtqzgdmkj/trial_plot_unit_eff_Te0.5.png?dl=1)
