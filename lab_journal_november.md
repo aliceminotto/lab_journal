@@ -231,3 +231,15 @@ for x in pts1:
   ![plot number of units over time](https://www.dropbox.com/s/v9vvfhhazzqkwqs/trial_plot_unit0.5.png?dl=1)
   note the strange swap between the blu and magenta lines: i see that one for all c values, if it's a seed artifact it should go away at least in some plot when i run the code over the whole 50 runs. (i will add the simulation with no jumps too)
   ![same but distinguish tes and effector genes](https://www.dropbox.com/s/lrsgxlgtqzgdmkj/trial_plot_unit_eff_Te0.5.png?dl=1)
+
+* modified the code **comparison_plot.py** so that the color stays the same in different plots for the same DT. added part to plot number of units of TEs and effector genes in differentc c vakues but for the same DT (expected 4 plots). (i made a mostake here cause i din't tell to make dotted line for tes, but i'll wait to see if the code is fine and chiange it later). All the plots generated are now going to the **~/images/** folder.
+
+* NOTE: RUN **CLUSTERV.PY** BEFORE **COMPARISON_PLOT.PY** FOR THE 50 RUNS!!!
+
+* modified the code again to get the nice color stay the same for each c despite being te or eff data. (don't have previous plot cause of a type mistake)
+
+* TO DO:
+    1. check how many n/ are in **new** folder and determine how to use it
+    2. when it's fine insert that simulation in **comparison_plot.py** too
+    3. run **clusterV.py** for each DT for all 50 runs to get CDATAV for comparison_plot.py
+    4. run comparison_plot on everything!!!
