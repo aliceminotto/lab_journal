@@ -243,3 +243,5 @@ for x in pts1:
     2. when it's fine insert that simulation in **comparison_plot.py** too
     3. run **clusterV.py** for each DT for all 50 runs to get CDATAV for comparison_plot.py
     4. run comparison_plot on everything!!!
+
+* inserted after #* and till line 78 lines in code to add **new** to the plots
