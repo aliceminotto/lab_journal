@@ -239,8 +239,8 @@ for x in pts1:
 * modified the code again to get the nice color stay the same for each c despite being te or eff data. (don't have previous plot cause of a type mistake)
 
 * TO DO:
-    1. ~check how many n/ are in **new** folder and determine how to use it~
-    2. ~when it's fine insert that simulation in **comparison_plot.py** too~
+    1. ~~check how many n/ are in **new** folder and determine how to use it~~
+    2. ~~when it's fine insert that simulation in **comparison_plot.py** too~~
     3. run **clusterV.py** for each DT for all 50 runs to get CDATAV for comparison_plot.py
     4. run comparison_plot on everything!!!
 
@@ -260,5 +260,9 @@ for x in pts1:
 * trying to plot the derivatives for each plot in a new figure w/ np.polyfit function --> need to check i'm doing it right and creating a new plot for this.
 
 * changed the config.mk file so that clusterV.py consider 50 runs
+
+* got back to dashed line cause it was better, derivateives was not correct, strted again, will ask c for the last plots
+
+* matplotlib tutorial at http://www.labri.fr/perso/nrougier/teaching/matplotlib/
 
 * IMAGES:
