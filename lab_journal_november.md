@@ -249,4 +249,10 @@ for x in pts1:
 #####12/11/2015
 
 * the code sropped w/ error 1 ValueError: x and y must have same first dimension
-  I'm adding assert at the biginning to check if the assumption T1=T2=T3=T4 is correct (should be). Well actually it raised an AssertionError and that should be because we approximate for DT15000 number of jumps to 13 (closest integer). I changed the assert to compare just the other three values and that should work i believe. I changed the lines so that they consider the time of the y values and not just the same value for all the data.
+  I'm adding assert at the biginning to check if the assumption T1=T2=T3=T4 is correct (should be). Well actually it raised an AssertionError and that should be because we approximate for DT15000 number of jumps to 13 (closest integer). I changed the assert to compare just the other three values and that should work i believe. I changed the lines so that they consider the time of the y values and not just the same value for all the data. (the new assertion works so that was ht eproblem!!) i added infinity to the plots comparing DT.
+
+* looking for a way to calculate the derivatives
+
+* changed line style for TEs from '--' to ':' to meake plots more clear
+
+* given the result about the length it looks like for the same DT the length forthe effector genes is constant for any value of c, while, as it makes sense, the length of the TEs is more randomic, even if it possible to see an average that goes to a max value.
