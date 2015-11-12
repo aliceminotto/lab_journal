@@ -245,3 +245,8 @@ for x in pts1:
     4. run comparison_plot on everything!!!
 
 * inserted after #* and till line 78 lines in code to add **new** to the plots
+
+#####12/11/2015
+
+* the code sropped w/ error 1 ValueError: x and y must have same first dimension
+  I'm adding assert at the biginning to check if the assumption T1=T2=T3=T4 is correct (should be). Well actually it raised an AssertionError and that should be because we approximate for DT15000 number of jumps to 13 (closest integer). I changed the assert to compare just the other three values and that should work i believe. I changed the lines so that they consider the time of the y values and not just the same value for all the data.
