@@ -256,3 +256,7 @@ for x in pts1:
 * changed line style for TEs from '--' to ':' to meake plots more clear
 
 * given the result about the length it looks like for the same DT the length forthe effector genes is constant for any value of c, while, as it makes sense, the length of the TEs is more randomic, even if it possible to see an average that goes to a max value.
+
+* trying to plot the derivatives for each plot in a new figure w/ np.polyfit function --> need to check i'm doing it right and creating a new plot for this.
+
+* IMAGES:
