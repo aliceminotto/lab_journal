@@ -241,7 +241,7 @@ for x in pts1:
 * TO DO:
     1. ~~check how many n/ are in **new** folder and determine how to use it~~
     2. ~~when it's fine insert that simulation in **comparison_plot.py** too~~
-    3. run **clusterV.py** for each DT for all 50 runs to get CDATAV for comparison_plot.py
+    3. ~~run **clusterV.py** for each DT for all 50 runs to get CDATAV for comparison_plot.py~~
     4. run comparison_plot on everything!!!
 
 * inserted after #* and till line 78 lines in code to add **new** to the plots
@@ -265,4 +265,8 @@ for x in pts1:
 
 * matplotlib tutorial at http://www.labri.fr/perso/nrougier/teaching/matplotlib/
 
-* IMAGES:
+#####13/11/2015
+
+* clusterV.py on the four DT folders is completed. I've just launched the **comparison_var.py** on all the runs (i think it will take at least a couple of hours), the old images are in **images/images_first_20_runs/**.
+
+* added plot for derivatives of each plot as c explained (stop just launche docde to check faster for error). added labels to the two series of data of TEs and effectors (check this when output the first image!!!). Also, I changed the time on the x axis so that it plot result to 200000 evolutionary events (that is the length of the simulation).
