@@ -270,3 +270,11 @@ for x in pts1:
 * clusterV.py on the four DT folders is completed. I've just launched the **comparison_var.py** on all the runs (i think it will take at least a couple of hours), the old images are in **images/images_first_20_runs/**.
 
 * added plot for derivatives of each plot as c explained (stop just launche docde to check faster for error). added labels to the two series of data of TEs and effectors (check this when output the first image!!!). Also, I changed the time on the x axis so that it plot result to 200000 evolutionary events (that is the length of the simulation).
+
+* i'm using the numpy function diff to calculate the derivatives (before doing that I'm making the lists numpy arrays). The funcion on a list X=[x1,x2,x3...xn] calculates a new list Y=[x2-x1,x3-x2,...,xn-xn-1], of course Y will have one element less than X, so I had to change the time list to be plotted and I used T[1:].
+
+* //Arduino meeting//
+
+* got Overflow error (don't get why given I'm using more or less the same data and in the same quantity as before, looked in the web and there is not real solution to this except sampling before plotting -this would be fine given the large amount of data i have-, anyway i'm trying overcome the program closing the images after saving (i wasn't doing that).
+
+* i'm keeping the first serie of plots (commented it before running again).
