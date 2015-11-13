@@ -278,3 +278,5 @@ for x in pts1:
 * got Overflow error (don't get why given I'm using more or less the same data and in the same quantity as before, looked in the web and there is not real solution to this except sampling before plotting -this would be fine given the large amount of data i have-, anyway i'm trying overcome the program closing the images after saving (i wasn't doing that).
 
 * i'm keeping the first serie of plots (commented it before running again).
+
+* so i still get the overflowerror, I'm now trying to sample the derivatives list averaging over 10 values each time. (i deleted the T in plotting for semplicity, cause it should work automatically).
