@@ -284,3 +284,5 @@ for x in pts1:
 #####16/11/2015
 
 * i had again OverflowError during the weekend, I diveded the script in two (**comparison_plot.py** and **comparison_plot_derivatives.py**) so that in the meanwhile I try to fix that i can proceed working on labels and so on in the main code.
+
+* using the averaging function: no more overflowerror. Fixing labels in the plots, with white alpha channels. The derivative plot is not very informative as it is so i'm setting the limits of the axis to see better just the interesting part
