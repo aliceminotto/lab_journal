@@ -280,3 +280,7 @@ for x in pts1:
 * i'm keeping the first serie of plots (commented it before running again).
 
 * so i still get the overflowerror, I'm now trying to sample the derivatives list averaging over 10 values each time. (i deleted the T in plotting for semplicity, cause it should work automatically).
+
+#####16/11/2015
+
+* i had again OverflowError during the weekend, I diveded the script in two (**comparison_plot.py** and **comparison_plot_derivatives.py**) so that in the meanwhile I try to fix that i can proceed working on labels and so on in the main code.
