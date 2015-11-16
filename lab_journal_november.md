@@ -290,3 +290,5 @@ for x in pts1:
 * finally here is a list of all the full name colors available in matplotlib: http://matplotlib.org/examples/color/named_colors.html
 
 * fixed (hopely) annotations w/ position, size, background color (white w/ alpha channel .5) and shape. changed names of y axis for derivatives plot in Delta over T.
+
+* branched master of **model_scripts** for the two separate files for plotting data and their derivatives (name **separate_plottig_der**)
