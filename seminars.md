@@ -43,3 +43,18 @@ the new technology is not yet available, but the idea (and the prototypes), is t
 the program will be mainly open source but will require an effort from the community to dvelop them (problems here: how much time? will the results of these new 'alghorithms?' be comparable to the old ones?).
 there are not yet precise information about the accuracy of the system (they expect to have the same accuracy as common blast), and the result are not discrete cause they are detecting ligth intensity, but continuous, this way enabling researchers to detect similarities between aa or bases too.
 problems here: what about the ligth biases? don't they expect the same problems as Illumina? (but consider we are summing these problems to the previous ones, would they be avoidable running the same experiment multiple times?)
+
+***
+
+####**_G-Quadruplex: the DNA quadruplex helix_**
+#####_Shankar Balasubramanian_
+#####17/11/2015
+
+The prof thinks that the double helix is the status of DNA when is "resting", not doing anything special. It was seen by difrraction analysis that there is this other possible structure, the G-tetra, that happens in G rich regions. In this case four G bases (on a ssDNA) are coordinated with other two Gs of the group and a central monovalent cation, that provides electron density to the structure (K^+ > NH_4 ^+ > Na^+ > Li^+). Potassium appears to be the best cation (more stable structure) because of its radius, notice it is also the most abundant in the cell environment.
+A ssDNA that is G rich is tought to self assemble in particoular structures:
+(put image here)
+(it can actually be organized in other kind of structures too, as we'll say later).
+It was suggested an interaction of this kind of structure with telomerase enzyme. 
+An algorithm was implemented to detect PQS (Predicted Quadruplex Sequence) by the sequence, it appears to have almost 90% success rate. PQS are very very stable and, theoretically, they are found (>300000) in promoters, first introns (it looks like they are especially present in upstream elements), transcription end site, gene bodies, repetitive elements (so it looks like they distributin in the genome is not randomic).
+A class of small molecules was synthetized that bind these $G structures stabilizing them and wiothout intercalating in the double helix.
+
