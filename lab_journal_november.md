@@ -294,3 +294,9 @@ for x in pts1:
 * branched master of **model_scripts** for the two separate files for plotting data and their derivatives (name **separate_plottig_der**)
 
 * now i get (on both codes): **ValueError: width and height must each be below 32768**. since the only "important" thing i changed, except for annotations that i don't think can be the problem was adding plt.close() after each plot as suggested in the web to make it faster i deleted it and i'm trying again (on both).
+
+#####17/11/2015
+
+* fixed the ValueError (the annotation were pushing the image size to be wrong, that cause i was using -1000 on all the plots but the y axis range is actually changing).
+
+* launched both codes on 50 runs (will put the code toghtther? or meybe not for velocity reasons?).
