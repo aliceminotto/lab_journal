@@ -242,7 +242,7 @@ for x in pts1:
     1. ~~check how many n/ are in **new** folder and determine how to use it~~
     2. ~~when it's fine insert that simulation in **comparison_plot.py** too~~
     3. ~~run **clusterV.py** for each DT for all 50 runs to get CDATAV for comparison_plot.py~~
-    4. run comparison_plot on everything!!!
+    4. ~~run comparison_plot on everything!!!~~
 
 * inserted after #* and till line 78 lines in code to add **new** to the plots
 
@@ -299,4 +299,6 @@ for x in pts1:
 
 * fixed the ValueError (the annotation were pushing the image size to be wrong, that cause i was using -1000 on all the plots but the y axis range is actually changing).
 
-* launched both codes on 50 runs (will put the code toghtther? or meybe not for velocity reasons?).
+* launched both codes on 50 runs (will put the code toghtther? or meybe not for velocity reasons?). Changed yaxis limits (and x too) for derivatives plot so that we can se better the interesting part. Again, it looks like c as no effects.
+
+* started to write code to plot distribution of length of effector genes and TEs (starting from pts#plotdata.p), it is **~/model_scripts/histogram_plots.py**.
