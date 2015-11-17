@@ -57,4 +57,19 @@ A ssDNA that is G rich is tought to self assemble in particoular structures:
 It was suggested an interaction of this kind of structure with telomerase enzyme. 
 An algorithm was implemented to detect PQS (Predicted Quadruplex Sequence) by the sequence, it appears to have almost 90% success rate. PQS are very very stable and, theoretically, they are found (>300000) in promoters, first introns (it looks like they are especially present in upstream elements), transcription end site, gene bodies, repetitive elements (so it looks like they distributin in the genome is not randomic).
 A class of small molecules was synthetized that bind these $G structures stabilizing them and wiothout intercalating in the double helix.
+Moreover an antibody against this structer has been designed so that it can be visialized in the cell. Using this antibody it was also possible to study the dynamics of these structures during the cell cycle: the cells were syncronized, at a pattern was seen about thi structures' detection, in particoular they are more visible during the S phase.
+If the strustures are then stabilized with the molecules I talked about above (the main one being PDS) it can be seen that the visualization of G4 is possible in all the phases just like in the S phase.
 
+A co-staining w/ the telomerase was tried but most of G4 do not colocalize with it, as already predicted with the algorithm.
+
+Another essay was done using the antibody on naked DNA (not in cell and not organized as chromatin): the DNA was sonicated and the fragments are then immunoprecipitated. This way it is possible to find the DNA fragments that are enriched in quadruplex helix. The library was then sequenced.
+This was very good cause the peaks identified with the pulldown essay well correlated with what was predicted by the algorithm.
+
+PDS (=pyrodostatin) is the molecule that stabilize G4 they are more focusing on. there are some small evidence that this molecule caould be able to inhibit cell growth.
+gammaH2AX is a classic staining for a phosforilation of the H2 histon involved in the damage response, it was seen a lot of its signal with PDS (BUT it requires translation or transcription). Their hipotesis is that the cell cycle blockage increases the probability of a dsbreak in the position the G4 are.
+
+Thay also looked at the transcription levels of a lot of oncogenes and they found out that especially SRC is silenced by PDS.
+
+Wound heling essay in SRC overexpressing cells (very metastatic ones): it was seen that the cellular motibility is strongly inhibited by PDS (more than with doxorubicin), because PDS inhibits SRC (here i'm supposing it was already found a linkage between cellular motility and SRC expression).
+
+It looks like exists at least one helicasis to unwind the G4 structures (hPif1 in many cases colocalize with PDS).
