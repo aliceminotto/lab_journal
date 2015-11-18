@@ -302,3 +302,7 @@ for x in pts1:
 * launched both codes on 50 runs (will put the code toghtther? or meybe not for velocity reasons?). Changed yaxis limits (and x too) for derivatives plot so that we can se better the interesting part. Again, it looks like c as no effects.
 
 * started to write code to plot distribution of length of effector genes and TEs (starting from pts#plotdata.p), it is **~/model_scripts/histogram_plots.py**.
+
+#####18/11/2015
+
+* fixing problems in **histogram_plots.py** script. Note that the properties of hist are a little different form the ones of the other plot i used, so c is not ok to define a color and '--' is not ok, but i should use 'dashed'.
