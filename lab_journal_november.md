@@ -319,4 +319,8 @@ for x in pts1:
   1. as already observed it doesn't look like there is a significant difference caused by c value and DT has his main effect on v, as it could be expected
   2. the effectors length reach a maximum and it is more or less a gaussian with center in 0 (need to check is gaussian and not some other curve but it looks like this and it agrees w/ lot of other biological observations), while the TEs lengths has a maximum (I think it is due to the simulation length itself), but the frequencies appear to stay the same for all the classes considered.
 
-* 
+* created another version of the script that only consider the frequencies obtained at the end of the simulation time (i thought it would make more sense, especially for the TEs), the script is in the same folder as the other one and it's **histogram_plots_endtime.py**, the plots are saved in the subfolder **images/histograms/end_of_simulation_time/**
+
+* fixed a bug and launche d both version again (assignment of new file name to check in the **new** folder was wrong due to forget change c_value to 'n0/' after copy paste the snippet of code). (noticed cause the curve for new was different in c=0.1 and other plots and it shouldn't)
+
+
