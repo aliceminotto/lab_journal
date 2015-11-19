@@ -323,4 +323,4 @@ for x in pts1:
 
 * fixed a bug and launche d both version again (assignment of new file name to check in the **new** folder was wrong due to forget change c_value to 'n0/' after copy paste the snippet of code). (noticed cause the curve for new was different in c=0.1 and other plots and it shouldn't)
 
-
+* changed the script so that it creates a plot 2x2 where the first row is the beginning of the simulation frequency plot, and the second row the end of the simulation frequency plot, all comapring the different DTs used in simulation.
