@@ -305,4 +305,11 @@ for x in pts1:
 
 #####18/11/2015
 
-* fixing problems in **histogram_plots.py** script. Note that the properties of hist are a little different form the ones of the other plot i used, so c is not ok to define a color and '--' is not ok, but i should use 'dashed'.
+* fixing problems in **histogram_plots.py** script. Note that the properties of hist are a little different form the ones of the other plot i used, so c is not ok to define a color and '--' is not ok, but i should use 'dashed'. changed figsize, added common title with **suptitle** (one figure w/ two subplots), using **normed=1** to scale the frequency among different DTs (also, this way i can just ignore the different number of jumps for each time interval, that caused DT5000 to seem much higher in all frequencies).
+
+* stored the full list of images and derivates in a zip file in dropbox for c to see them
+
+#####19/11/2015
+
+* going on w/ **histogram_plots.py** script. I need to add a common legend to the images. (note  that the scripts take a lot cause it is unpickling a huge number of files).
+
