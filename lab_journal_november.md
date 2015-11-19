@@ -313,3 +313,10 @@ for x in pts1:
 
 * going on w/ **histogram_plots.py** script. I need to add a common legend to the images. (note  that the scripts take a lot cause it is unpickling a huge number of files).
 
+* note i forgot yesterday: i changed the number of bins in histogram, that is the number of frequency classes in the plot, default is 10, too low for this purpose. Now I'm creating a new class for 100 intervals.
+
+* from the very first plot created (c=0.1) distribution of length for effector genes and TEs I can already see that:
+  1. as already observed it doesn't look like there is a significant difference caused by c value and DT has his main effect on v, as it could be expected
+  2. the effectors length reach a maximum and it is more or less a gaussian with center in 0 (need to check is gaussian and not some other curve but it looks like this and it agrees w/ lot of other biological observations), while the TEs lengths has a maximum (I think it is due to the simulation length itself), but the frequencies appear to stay the same for all the classes considered.
+
+* 
