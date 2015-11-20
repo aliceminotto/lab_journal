@@ -331,4 +331,8 @@ for x in pts1:
 
 * modifying the code as c wrote me, ie we need histograms for every jumps (ill try doing a plot for each DT w/ all the jumps plus maybe some plots comparing the DTs for certain times (not all cause we have different number of jumps)). Second c suggested to use scatterplots. (will modify last plot to scatter too at the end).
 
-* 
+* my idea 4 the plots:
+  1. eff plot w/ 5 plot each one for a different DT, in each of them are dyspleyd all the jumps (each jump is a tick on the x axis)
+  2. same but for TEs
+  (will take huge amount of time to process all pickled files)
+
