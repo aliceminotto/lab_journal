@@ -345,4 +345,7 @@ for x in pts1:
 * the other script (**version2**) is plotting after reading all the file that correspond to the same jump in doifferent runs (again, same DT and c). I'm then dividing the frequency value for the number of runs considered, the plots look quite different (and i had to set a limit to x axis cause i had outlyers that didn't allow to see the plot as it should).
   ![example plot iterating over 50 runs](https://www.dropbox.com/s/dotcwukbpsvc5ga/lendistribution_plot_eff0.1_5000%202.png?dl=1)
 
-
+* TO DO: 
+  * do the same for TEs (maybe in the same figures, add a subplot)
+  * take care of color generator for DT!=5000
+  * is there something strange/to be adresses at min size of effector genes? think/talk about this
