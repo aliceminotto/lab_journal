@@ -326,3 +326,9 @@ for x in pts1:
 * changed the script so that it creates a plot 2x2 where the first row is the beginning of the simulation frequency plot, and the second row the end of the simulation frequency plot, all comapring the different DTs used in simulation.
 
 * changed the number of steps for TEs (still looks misleading to me), so that they are the same number as the steps for Effector genes.
+
+#####20/11/2015
+
+* modifying the code as c wrote me, ie we need histograms for every jumps (ill try doing a plot for each DT w/ all the jumps plus maybe some plots comparing the DTs for certain times (not all cause we have different number of jumps)). Second c suggested to use scatterplots. (will modify last plot to scatter too at the end).
+
+* 
