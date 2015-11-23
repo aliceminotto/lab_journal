@@ -347,9 +347,9 @@ for x in pts1:
   ![example plot iterating over 50 runs](https://www.dropbox.com/s/dotcwukbpsvc5ga/lendistribution_plot_eff0.1_5000%202.png?dl=1)
 
 * TO DO: 
-  * do the same for TEs (maybe in the same figures, add a subplot)
+  * ~~do the same for TEs~~ (maybe in the same figures, add a subplot)
   * ~~take care of color generator for DT!=5000~~
-  * is there something strange/to be adresses at min size of effector genes? think/talk about this
+  * ~~is there something strange/to be adresses at min size of effector genes? think/talk about this~~
 
 #####23/11/2015
 
@@ -362,4 +362,11 @@ for x in pts1:
   https://en.wikipedia.org/wiki/Gamma_distribution
   http://link.springer.com/article/10.1007/BF00163155 (ask for access to this one!!!)
 
-*
+* launched the programs for TEs too (made copy of the scripts, so i can use them on different files togheter, i could make just one but i would need to change the bash file each time, so whatever).
+
+* talked to c about the min size, he said well add a caption explaining this (there was no treshold indeed in his simulation code). Btw we are more interested in the single run in this case cause evolution is indeed methaporically a single run. So I'm running the code for single run for Effector genes and TEs on RUN0 for each DT and other 2 runs I'm randomly choosing: usually one of the two is biologically meaningful (like run0, see previous plot), while the other one has no real biological sense cause it started with a pool of effector genes too short and they get shorter and close to 0 (from literature a random orf that is not an evolved protein is going to be around 24-30aa, ie 72-90bp, falling in the first frequency class). In literature it is also known (see previous links) that usually (there is not an hard treshold) proteins are between 100 and 1000 aa, also because of stability and structural reasons.
+  Moreover it is expected that the length distribution is a gamma distribution (again, see previous link) with shape parameter between 1.5 and 3 depending on the taxa, and for my plots, if we consider the ones w/ biological meaning it is.
+
+* there is still need to do the averages too cause they will be needed for the paper (authomatized the code).
+
+* What i see is that for effector genes there is a tendency fot them to become shorter, while the frequency distribution for TEs remain the same. Just plotting the averages you can see that the last jumps have a higher frequency, but it's the same for all the classes, so the distribution is the same, we are just seeing an increase in their number, not in their size.
