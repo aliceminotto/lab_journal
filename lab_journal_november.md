@@ -370,3 +370,5 @@ for x in pts1:
 * there is still need to do the averages too cause they will be needed for the paper (authomatized the code).
 
 * What i see is that for effector genes there is a tendency fot them to become shorter, while the frequency distribution for TEs remain the same. Just plotting the averages you can see that the last jumps have a higher frequency, but it's the same for all the classes, so the distribution is the same, we are just seeing an increase in their number, not in their size.
+
+* useful python notes on these slides: http://cdn.oreillystatic.com/en/assets/1/event/95/Python%20103_%20Memory%20Model%20_%20Best%20Practices%20Presentation.pdf
