@@ -348,9 +348,18 @@ for x in pts1:
 
 * TO DO: 
   * do the same for TEs (maybe in the same figures, add a subplot)
-  * take care of color generator for DT!=5000
+  * ~~take care of color generator for DT!=5000~~
   * is there something strange/to be adresses at min size of effector genes? think/talk about this
 
 #####23/11/2015
 
 * launched the program for single run on run11 (random chosen) to see if it can explain the difference between the plot for single run and the one for multiple runs (it looks like so)
+
+* still think there's something wrong in the model at small length, probably need a treshold (protein <100aa are very rare, so are protein >1000aa, but those ones are not very frequent in the simulation, neither).
+  useful links for this:
+  http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1150220/pdf/gki615.pdf
+  http://www.biomedcentral.com/1756-0500/5/85
+  https://en.wikipedia.org/wiki/Gamma_distribution
+  http://link.springer.com/article/10.1007/BF00163155 (ask for access to this one!!!)
+
+*
