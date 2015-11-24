@@ -386,3 +386,11 @@ for x in pts1:
   > The lower the α value, the greater the variation of the protein length.
 
  This is talking about the gamma distribution for protein length, here gamma is the shape parameter, and it is calculated as m^2/var, where m and var are the mean and variance. The results for the species considered in the paper agree w/ the result of the papaers linked yesterday, w/ values ranging from 1.23 (_Cenorabditis elegans_) to 2.85 (_Aquifex aeolicus_).
+
+* useful fature in PythonI could use next: when i have to create a dictionary w/ all the values as lists and I'd like to use **d[key].append(item)** (or also += item) instead of checking if the key already has a value and if not initialize it to an empty list it is possible to use **defaultdict**:
+  ```python
+  from collections import defaultdict
+  diz=defaultdict(list)
+  #whatever code i need
+  ```
+
