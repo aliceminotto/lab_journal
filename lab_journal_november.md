@@ -376,3 +376,12 @@ for x in pts1:
   ![average length distribution for TEs, DT5000, c=0.1](https://www.dropbox.com/s/rfqtwc9b0frf0ct/lendistribution_plot_tes0.1_5000.png?dl=1)
 
 * useful python notes on these slides: http://cdn.oreillystatic.com/en/assets/1/event/95/Python%20103_%20Memory%20Model%20_%20Best%20Practices%20Presentation.pdf
+
+#####24/11/2015
+
+* note from 
+  >######Protein-length distributions for the three domains of life, 
+  >_Jianzhi Zhang_
+
+  > The lower the α value, the greater the variation of the protein length.
+  This is talking about the gamma distribution for protein length, here gamma is the shape parameter, and it is calculated as m^2/var, where m and var are the mean and variance. The results for the species considered in the paper agree w/ the result of the papaers linked yesterday, w/ values ranging from 1.23 (_Cenorabditis elegans_) to 2.85 (_Aquifex aeolicus_).
