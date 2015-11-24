@@ -393,4 +393,6 @@ for x in pts1:
   diz=defaultdict(list)
   #whatever code i need
   ```
+  it is also possible to use this feature initializing **diz=defaultdict(int)**, in this case the first time a key is looked for (to change it) the value is initialize to 0. Moreover **diz=defaultdict(set)** is also valid.
 
+* also another useful thing is itertools, could be useful if i need to create a dictionary from to list (one for keys and one for values). in this case i can do **diz=dict(itertools.izip(lista1,lista2))**. note that: 1. i need to import itertools, 2. the values are going to be changed with the last occurrence if the key is repeated, 3. the length will be the same as the shortest list w/o arising any error
