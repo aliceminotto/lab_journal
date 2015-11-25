@@ -405,3 +405,10 @@ for x in pts1:
   ```
   pandoc -f markdown -t latex
   ```
+  where -f is --from and -t is --to. By the way also markdown_github is supported. To write formulas just write them in plain latex even if it is a .md documents, it should work fine.
+
+* downloaded and installed LyX
+
+* signed up to **Overleaf** and modified some files in latex (added images and tables as well).
+
+* here are the themes for LaTex presentations : http://deic.uab.es/~iblanes/beamer_gallery/index.html
