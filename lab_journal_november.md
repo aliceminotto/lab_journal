@@ -398,3 +398,10 @@ for x in pts1:
 * also another useful thing is itertools, could be useful if i need to create a dictionary from to list (one for keys and one for values). in this case i can do **diz=dict(itertools.izip(lista1,lista2))**. note that: 1. i need to import itertools, 2. the values are going to be changed with the last occurrence if the key is repeated, 3. the length will be the same as the shortest list w/o arising any error
 
 * installed macTex and started w/ Tex
+
+#####25/11/2015
+
+* installed pandoc to convert markdown to latex documents. To do so from terminal you need to type 
+  ```
+  pandoc -f markdown -t latex
+  ```
