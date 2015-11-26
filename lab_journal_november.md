@@ -425,5 +425,14 @@ for x in pts1:
   Using a generator could be even better cause it doesn't have te cost to store the whole list.
   Btw from the documentation:
   > **map(function,iterable,...)**
+  >
   > apply function to every item of _otarable_ and return a _list_ of the results.
+  >
   > If additional _itarable_ arguments are passed, function must take that many arguments and it is applied to the items from _iterable_ in parallel. If one _itarable_ is shorter than another it is assumed to be extended with _None_ items.
+
+  Other thigs to remember: if possible, use local variable, they are accessed faster.
+  Can be useful to use **xrange** instead of **range** too (useless in Python 3* cause they are the same): actually the difference is usually irrilevant, except for particoular cases, from the _doc_:
+  
+  > **xrange(start, stop[, step])**
+  >
+  > This function is very similar to **range()**, but returns an _xrange object_ instead of a list. This is an opaque sequence type which yields the same values as the corresponding list, without actually storing them all simultaneously. The advantage of **xrange()** over **range()** is minimal (since **xrange()** still has to create the values when asked for them) except when a very large range is used on a memory-starved machine or when all of the range’s elements are never used (such as when the loop is usually terminated with break).
