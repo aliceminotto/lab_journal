@@ -418,3 +418,12 @@ for x in pts1:
 * changing the database codes to use the directory structures when the parameters i want are not at the end of the pickled file (ie when i used the original code of c and not the new one).
 
 * permormed a test to determine what is the best method to get the number from **pts34plotdata.p** names. Compared my method (use strip with a list w/ all letters and dot, can be used only if the letters and dot are at the beginning and end compared to the number) and the methid usually suggested (but not the re one that i do not like), to use a translation table (this one works for every string composed od letters and numbers to get the numbers). For my files my methid is 75% faster, 25% faster if for any reason i've already have to import string in the main code.
+
+* interesting article on loop optimization: https://www.python.org/doc/essays/list2str/.
+  First of all it is better to check any result found in the web before trusting it cause the inner implementation of several functions has changed in the different python releases.
+  For SIMPLE loops it seems better to use the **map** calling a function (but only if it is a built in function!!!!), and this is because the implicite loop in map is written in C.
+  Using a generator could be even better cause it doesn't have te cost to store the whole list.
+  Btw from the documentation:
+  > **map(function,iterable,...)**
+  > apply function to every item of _otarable_ and return a _list_ of the results.
+  > If additional _itarable_ arguments are passed, function must take that many arguments and it is applied to the items from _iterable_ in parallel. If one _itarable_ is shorter than another it is assumed to be extended with _None_ items.
