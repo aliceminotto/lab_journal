@@ -436,3 +436,5 @@ for x in pts1:
   > **xrange(start, stop[, step])**
   >
   > This function is very similar to **range()**, but returns an _xrange object_ instead of a list. This is an opaque sequence type which yields the same values as the corresponding list, without actually storing them all simultaneously. The advantage of **xrange()** over **range()** is minimal (since **xrange()** still has to create the values when asked for them) except when a very large range is used on a memory-starved machine or when all of the range’s elements are never used (such as when the loop is usually terminated with break).
+
+* running first working version (it's just storing the path to the files at the moment, will run again pickling the files themselves if everything is fine, will probably take weeks)
