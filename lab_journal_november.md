@@ -412,3 +412,9 @@ for x in pts1:
 * signed up to **Overleaf** and modified some files in latex (added images and tables as well).
 
 * here are the themes for LaTex presentations : http://deic.uab.es/~iblanes/beamer_gallery/index.html
+
+#####26/11/2015
+
+* changing the database codes to use the directory structures when the parameters i want are not at the end of the pickled file (ie when i used the original code of c and not the new one).
+
+* permormed a test to determine what is the best method to get the number from **pts34plotdata.p** names. Compared my method (use strip with a list w/ all letters and dot, can be used only if the letters and dot are at the beginning and end compared to the number) and the methid usually suggested (but not the re one that i do not like), to use a translation table (this one works for every string composed od letters and numbers to get the numbers). For my files my methid is 75% faster, 25% faster if for any reason i've already have to import string in the main code.
