@@ -451,3 +451,53 @@ DT=get_par[5][2:]
 	except ValueError:
 		DT='inf'  
 ```
+
+* other possible way to test the performance of various steps in a Python program is to use **cProfile** or **profile** (both need to be imported at the beginning). They are mostly the same, but the first one is in C w/ a reduced overhead, but it is not available on all systems.
+  If you need to test a function that takes a single argument you can do ```cProfile.run('function_name("argument")')```.
+  here is a brief explenation of the output (so i don't have to look again at the doc): the first line displays the count of the function calls, the primitive are the ones that are NOT called via recursion. then you will get a table with: ncalls,tottime,percall(time per call),cumtime (time considering subfunctions), percall (this time considering cumulative time), filename:lineno (which function are we talking about). If in the first column there are two numbers, the second one is the number of primitive calls.
+  This is cool: instead of changing a previous script or whatever, you can do ```python -m cProfile [-o output_file] [-s sort_order (only works if no o)] myscript.py]```
+  So for example this is the output for my wright-fisher simulation:
+  ```
+332014464 function calls in 2297.708 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 __future__.py:48(<module>)
+        1    0.000    0.000    0.000    0.000 __future__.py:74(_Feature)
+        7    0.000    0.000    0.000    0.000 __future__.py:75(__init__)
+        6    0.000    0.000    0.000    0.000 hashlib.py:100(__get_openssl_constructor)
+        1    0.005    0.005    0.005    0.005 hashlib.py:56(<module>)
+        1    0.000    0.000    0.001    0.001 random.py:100(seed)
+ 80244000  115.014    0.000  139.916    0.000 random.py:273(choice)
+        1    0.003    0.003    0.009    0.009 random.py:40(<module>)
+        1    0.000    0.000    0.000    0.000 random.py:655(WichmannHill)
+        1    0.000    0.000    0.000    0.000 random.py:72(Random)
+        1    0.000    0.000    0.000    0.000 random.py:805(SystemRandom)
+        1    0.000    0.000    0.001    0.001 random.py:91(__init__)
+     2000    0.902    0.000    0.963    0.000 wright_fisher_simulation.py:17(initialize_variable)
+        1  622.590  622.590 2297.708 2297.708 wright_fisher_simulation.py:3(<module>)
+ 10914046    2.501    0.000    2.501    0.000 wright_fisher_simulation.py:63(<genexpr>)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_md5}
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha1}
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha224}
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha256}
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha384}
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha512}
+    40122    1.860    0.000    4.300    0.000 {all}
+        1    0.000    0.000    0.000    0.000 {binascii.hexlify}
+        1    0.001    0.001    0.001    0.001 {function seed at 0x100697ed8}
+        6    0.000    0.000    0.000    0.000 {getattr}
+        6    0.000    0.000    0.000    0.000 {globals}
+ 80244001   10.953    0.000   10.953    0.000 {len}
+        1    0.000    0.000    0.000    0.000 {math.exp}
+        2    0.000    0.000    0.000    0.000 {math.log}
+        1    0.000    0.000    0.000    0.000 {math.sqrt}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+ 80244000 1527.252    0.000 1527.252    0.000 {method 'keys' of 'dict' objects}
+ 80244000   13.950    0.000   13.950    0.000 {method 'random' of '_random.Random' objects}
+        1    0.000    0.000    0.000    0.000 {method 'union' of 'set' objects}
+    40122    1.725    0.000    1.725    0.000 {method 'values' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {posix.urandom}
+    42123    0.954    0.000    0.954    0.000 {range}
+  ```
