@@ -441,13 +441,13 @@ for x in pts1:
 
 #####27/11/2015
 
-* the script to update the database has finished running, so db is ready (i downloaded **sqlitebrowser** to visualize it). talked to d and it is fine to leave just the path to the files. The length was not so bad after all cause for the three folders DT10000, DT15000, DT20000 it has just taken about 2.5h.
-  Will launch again on the **new** folder (i forgot yesterday)==> could lead to some problems for the name of the directory.
-  I added this snippet to the code to solve this: (if the folder name is not in the format DT# but it is a word, DT is considered to be inf)
-  ```python
-  DT=get_par[5][2:]
-	try:
-		int(DT)
-	except ValueError:
-		DT='inf'
+* the script to update the database has finished running, so db is ready (i downloaded **sqlitebrowser** to visualize it). talked to d and it is fine to leave just the path to the files. The length was not so bad after all cause for the three folders DT10000, DT15000, DT20000 it has just taken about 2.5h.  
+  Will launch again on the **new** folder (i forgot yesterday)==> could lead to some problems for the name of the directory.  
+  I added this snippet to the code to solve this: (if the folder name is not in the format DT# but it is a word, DT is considered to be inf)  
+  ```python  
+  DT=get_par[5][2:]  
+	try:  
+		int(DT)   
+	except ValueError:  
+		DT='inf'  
   ```
