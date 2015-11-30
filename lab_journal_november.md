@@ -503,3 +503,13 @@ DT=get_par[5][2:]
   ```
 
 #####30/11/2015
+
+* stathistical notes: _Multimodal Distribution_  
+  from Wikipedia:  
+  > When the two modes are unequal the larger mode is known as the major mode and the other as the minor mode. The least frequent value between the modes is known as the antimode. The difference between the major and minor modes is known as the amplitude.
+  > Examples of variables with bimodal distributions include [...] the age of incidence of Hodgkin's lymphoma [...].
+  > It is not uncommon to encounter situations where an investigator believes that the data comes from a mixture of two normal distributions. Because of this, this mixture has been studied in some detail.
+  > A mixture of two normal distributions has five parameters to estimate: the two means, the two variances and the mixing parameter. A mixture of two normal distributions with equal standard deviations is bimodal only if their means differ by at least twice the common standard deviation. Estimates of the parameters is simplified if the variances can be assumed to be equal. 
+  > Bimodal distributions are a commonly used example of how summary statistics such as the mean, median, and standard deviation can be deceptive when used on an arbitrary distribution.
+
+* going through the HTML tutorial on **w3schools**
