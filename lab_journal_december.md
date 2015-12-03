@@ -35,3 +35,25 @@
   ```c++  
 a>b ? a : b      // evaluates to whichever is greater, a or b. 
   ```
+
+#####3/12/2015
+
+* **C++**: i can do this
+  ```c++
+  #include <iostream>
+#include <sstream>
+using namespace std;
+
+int main () {
+    string a;
+    string b;
+    getline (cin, a);
+    cin >> b;
+    cout << a << "\n";
+    cout << b << "\n";
+    int intero;
+    stringstream(b) >> intero;
+    cout << intero+10 << "\n";
+}  
+  ```
+  but note that if i give b a string of letters instead of a number the last passage doesn't raise an error, it just returns 10 (b is considered to be 0 confermed by the fact i get an error if i try to divide by b="word").
