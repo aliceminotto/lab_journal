@@ -57,3 +57,6 @@ int main () {
 }  
   ```
   but note that if i give b a string of letters instead of a number the last passage doesn't raise an error, it just returns 10 (b is considered to be 0 confermed by the fact i get an error if i try to divide by b="word").
+
+  Interesting syntax: ```do statement while (condition);```, in this case the while loop will be executed at least once cause the condition is evaluated after the first execution.
+  In a ```for``` loop i can skip all the three fields: initialization, condition or increase, note that with no initialization or increase this is basically a ```while``` loop. a ```for``` loop w/ no condition is equivalent to python ```while True```. to execute more than one expression in a field they need to be saparated by comma.
