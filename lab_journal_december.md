@@ -86,3 +86,15 @@ return 0;
 ```
 is going to print to standard output ```6``` and ```9```. Tha last return 0 is optional and just means that main terminated w/ no errors (main returns an interger, and it is 0 if everything was fine).
 
+* **Javascript**: 
+  > Since || returns first operand if the first operand is truthy and the second operand if the first operand is falsy, the construct value || defaultValue returns value if value is not undefined and defaultValue if value is undefined.
+
+  > Trying to access a property of an object that doesn't
+// exist returns undefined (it does not throw an error).
+
+  > you can access elements 
+// beyond the length of the array without
+// having any error thrown; it simply returns
+// undefined.
+
+  > v
