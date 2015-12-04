@@ -62,3 +62,27 @@ int main () {
   In a ```for``` loop i can skip all the three fields: initialization, condition or increase, note that with no initialization or increase this is basically a ```while``` loop. a ```for``` loop w/ no condition is equivalent to python ```while True```. to execute more than one expression in a field they need to be saparated by comma. Another available synta is ```for ( declaration : range ) statement;``` that is the same as python ```for element in iterable```.
   If i want to moduify a variable (global) from inside a function that received it as a parameter, i will need to put an ```&``` after the type in the parameter declaration. This will actually change the value of the global variable.
   ALSO keep in mind that usoing references instead of values can result in a big improvement in case the program has to create a copy of some big object (like long lists).
+
+#####4/12/2015
+
+* **C++**: a function can be called with optional values, ie tha last parameter has to be given a default value to be used IF the function is called w/ less parameters. So for example:
+  ```c++
+#include <iostream>
+using namespace std;
+
+int somma (int a, int b=1)
+{
+int res;
+res=a+b;
+return (res);
+}
+
+int main ()
+{
+cout << somma(5) << "\n";
+cout << somma(5,4) << "\n";
+return 0;
+}
+```
+is going to print to standard output ```6``` and ```9```. Tha last return 0 is optional and just means that main terminated w/ no errors (main returns an interger, and it is 0 if everything was fine).
+
