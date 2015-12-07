@@ -98,4 +98,9 @@ Synthetic Lethality: it looks like BRCA-/- cells are more sensitive to PDSI (the
 
 ***
 
+####**_The BioJS Workshop and Hackathon_**
+#####3 and 4/12/2015
 
+The use of nodejs allows to use javascript both on the web browser (usual use) AND on the server side like it was another programming language. Installed nmp to install components by command line and u need to have git.
+Cloned an hand on repository on the desktop so we can make a mess with it.
+d3 is used to create svg images.
