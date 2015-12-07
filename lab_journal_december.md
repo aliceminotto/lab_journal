@@ -97,4 +97,9 @@ is going to print to standard output ```6``` and ```9```. Tha last return 0 is o
 // having any error thrown; it simply returns
 // undefined.
 
-  > v
+  > http://overapi.com/javascript/
+
+#####7/12/2015
+
+* had a long meeting about the new model to code in the new simulation. started the code w/ c. wrote the main function (parallelized with ```os.fork```), the import script and the two function ```NEWHOST()``` and ```NEWPATHOGEN()``` to create the new host and the new pathogen. the new pathogen is just created at the beginning of each simulation, while, also at the beginning, we are creatin a list of hosts, one for each jump. each host is characterized by a list of effector enes randomly selected from the pool (random length in a certain defined range).
+  Each pathogen is implemented as a dictionary of effector genes, each one is a dictionary with keys the targeted genes and values the score of this connection. Will need to have a funciton for the evolution of the pathogen and one to calculate the fitness, the fitness will depend on how many and how much the genes present in the host are targeted by the pathogen, BUT each gene can be targeted wioth a maximum score of 1, despite the number of effector genes that are linked to it (because more makes no biologicalk sense anyway), at the end we can weigth the score considering the length of the list of target genes.
