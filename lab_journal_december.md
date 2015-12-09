@@ -115,3 +115,21 @@ is going to print to standard output ```6``` and ```9```. Tha last return 0 is o
 * as the main program is in the ```main()``` function that was called at the end of the main file, i added the line ```if __name__=="__main__": main()```. this make the syntax works like in C or others programming language. Anyway in this particoular case it shoukldn't matter, but it is good preactice cause it prevents the main code being executed if for any reason I want to import the file as a module in another code to use its functions. (otherwise it would be immidiatly eecuted)
 
 * arduino meeting.
+
+#####9/12/2015
+
+* put import at the beginning of all the modules instead of using dependency injection so that the modules can be tested by themself and it looks like:
+  > it will not re-load the module but will add it to subtwo's namespace so subtwo can use it.
+  (that was exactly what i was worried about)
+  This is also suggested in the PEP 0008 guide, and for our Zen ```Readability counts```
+
+* about the style: it is ok to break a long line w/ two different styles options, my favourite would be _hanging indent_, in this case remember that no arguments can sit in the first line (of course all has to be inside braces), and use 2 tab instead of one to make clear that this is not a block. For example:
+  ```python
+>>> def guida(
+...             argomento1,argomento2,
+...             argomento3):
+...     print argomento1,argomento2,argomento3
+...
+>>> guida('ciao','a','tutti')
+ciao a tutti
+```
