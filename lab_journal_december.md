@@ -122,6 +122,8 @@ is going to print to standard output ```6``` and ```9```. Tha last return 0 is o
   > it will not re-load the module but will add it to subtwo's namespace so subtwo can use it.
   (that was exactly what i was worried about)
   This is also suggested in the PEP 0008 guide, and for our Zen ```Readability counts```
+  Moreover:
+  > Imports are always put at the top of the file, just after any module comments and docstrings, and before module globals and constants.
 
 * about the style: it is ok to break a long line w/ two different styles options, my favourite would be _hanging indent_, in this case remember that no arguments can sit in the first line (of course all has to be inside braces), and use 2 tab instead of one to make clear that this is not a block. For example:
   ```python
@@ -133,3 +135,10 @@ is going to print to standard output ```6``` and ```9```. Tha last return 0 is o
 >>> guida('ciao','a','tutti')
 ciao a tutti
 ```
+  Moreover:
+  > Use ```''.startswith()``` and ```''.endswith()``` instead of string slicing to check for prefixes or suffixes.
+  > ```startswith()``` and ```endswith()``` are cleaner and less error prone. 
+
+  > For sequences, (strings, lists, tuples), use the fact that empty sequences are false.
+
+* so sent c an idea about how to handle the transformation probabilities. since the effector genes are organized in island just like the bacterial pathogenica island it could make sense (let's see what c says) to consider group of effectors genes as cluster and calculate the probabilty of transformation according to the score of the cluster and not that of the single gene. this would be both easier to code and would take into account **genetic draft** and **background selection**. Moreover i was afraid that then the need to another transformation (ie recombination) would arise, but in the same Kamoun's papaer it is stated that these islands are characterized by **mesosynteny**, ie conservation of gene content but not gene order or orientation (that we are not considering in this model).
