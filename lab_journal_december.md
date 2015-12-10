@@ -144,3 +144,9 @@ ciao a tutti
 * so sent c an idea about how to handle the transformation probabilities. since the effector genes are organized in island just like the bacterial pathogenica island it could make sense (let's see what c says) to consider group of effectors genes as cluster and calculate the probabilty of transformation according to the score of the cluster and not that of the single gene. this would be both easier to code and would take into account **genetic draft** and **background selection**. Moreover i was afraid that then the need to another transformation (ie recombination) would arise, but in the same Kamoun's papaer it is stated that these islands are characterized by **mesosynteny**, ie conservation of gene content but not gene order or orientation (that we are not considering in this model).  
   INTERRRRRRESTINGGGG: mesosynteny is typical of fungi!!! From the dictionary of Genomics, Transcriptomics and Proteomics (and many papers online):
   > A special type of sequence conservation between fungal species, characterized by a retained gene content, but shuffled gene order and orientation. In the concept of meso-synteny, intra-, but not inter-chromosomal translocation are allowed.
+
+#####10/12/2015
+
+* update: the mesosinteny idea is originally from; http://www.genomebiology.com/2011/12/5/R45
+  It also looks like the evolution is so fast in these organisms that can be actually observed in fields in seasons time (the generation time is ~hours? i previously read something very different about it stating that they are annual?).
+
