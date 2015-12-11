@@ -150,3 +150,8 @@ ciao a tutti
 * update: the mesosinteny idea is originally from; http://www.genomebiology.com/2011/12/5/R45
   It also looks like the evolution is so fast in these organisms that can be actually observed in fields in seasons time (the generation time is ~hours? i previously read something very different about it stating that they are annual?).
 
+* going on w/ the coding, add transformation function to define probabilities for the possible events (c formulas): mutation (w/ all its possibilities), duplication, deletion, hgt, nothing happens. Of course the last one will always be the most probable one. Also added the function, taken from my previous code, for the population dynamics (it depends from the size of population at time -1, size of host population, fitness of the pathogen and fitness of all the other strains).
+  To do:
+  * define when to introduce a new strain (note that in the formulas we are already considering a driven evolution cause we don;t care about all the mutations that case the pathogen to be less fit cause that it going to disappear in long term).
+  * also call the function to define probabilities and events inside the transformation function and not one after the other for code stability
+  * test the program (the function already are) and pay attention in particoular to the deep copy of the dictionary 
