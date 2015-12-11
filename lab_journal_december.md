@@ -160,4 +160,8 @@ ciao a tutti
 
 #####11/12/2015
 
-* 
+* link to the Gillespie Algorithm (that btw is very expensive so it is usually semplified using next reaction method or tau-leaping <--look for them!!!): http://pubs.acs.org/doi/pdf/10.1021/j100540a008 
+  From the paper:
+  > [...]the stochastic approach regards the time evolution as a kind of random-walk process which is governed by a single dif- ferential-difference equation (the “master equation”.[...]the stochastic master equation is often mathematically intractable. [...] 
+
+* TO DO: when c replies my email, rewrite the code w/ classes to make it more efficient!!!
