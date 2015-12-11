@@ -155,3 +155,8 @@ ciao a tutti
   * define when to introduce a new strain (note that in the formulas we are already considering a driven evolution cause we don;t care about all the mutations that case the pathogen to be less fit cause that it going to disappear in long term).
   * also call the function to define probabilities and events inside the transformation function and not one after the other for code stability
   * test the program (the function already are) and pay attention in particoular to the deep copy of the dictionary 
+  Also. take a look here for the way we are defining which of the events (mutation-duplication-deletion-hgt-nothing) is appening for the given effector: https://en.wikipedia.org/wiki/Gillespie_algorithm
+
+#####11/12/2015
+
+* 
