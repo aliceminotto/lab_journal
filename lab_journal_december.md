@@ -180,3 +180,6 @@ ciao a tutti
 
 * still working on the code. Main problem now: the code is working, but for some magic, even if given a <code>random.seed()</code> in the main file, before calling any other function in other modules, the results of the simulation are not always the same (??????????????????????????????????????????????????).  
   Worse, they are the same in the previous code i wrote, and i kept all the function in the modules almost the same (except to have the need t use classes this time). Anyway on the plus side, the original code seems to work fine, so we can still use that one.
+
+* it looks like SOMETHING is actually reseeding the random generator, moving around an explicit <code>get_state()</code> function made me see that it is probaly happening in the t loop. Any way i added an explicit <code>get_state()</code> at line 102 (just outside the loop, there the state is not changing), AND I'm now passing this state to the <code>transform()</code> function, then reseeding with <code>rk.set_state(state)</code>. Still no idea why all this mess, but it looks like it's working now.
+  Also, I did a benchmark for this code and it's fine (for DT=5000 and NJ=10 it tooks just 10 min), still need to pickle some othe rinfo anyway.
