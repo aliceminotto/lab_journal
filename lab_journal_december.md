@@ -165,3 +165,18 @@ ciao a tutti
   > [...]the stochastic approach regards the time evolution as a kind of random-walk process which is governed by a single dif- ferential-difference equation (the “master equation”.[...]the stochastic master equation is often mathematically intractable. [...] 
 
 * TO DO: when c replies my email, rewrite the code w/ classes to make it more efficient!!!
+
+* looked at **_namedtuple()_**, still i think classes would be better here
+
+#####14/12/2015
+
+* rewriting the model with classes so increase performance and readibility, need to add population dynamics and jumps too (in this order)
+
+#####15/12/2015
+
+* going on w/ yesterday job
+
+#####16/12/2015
+
+* still working on the code. Main problem now: the code is working, but for some magic, even if given a (<code>)random.seed()(/<code>) in the main file, before calling any other function in other modules, the results of the simulation are not always the same (??????????????????????????????????????????????????).
+  Worse, they are the same in the previous code i wrote, and i kept all the function in the modules almost the same (except to have the need t use classes this time). Anyway on the plus side, the original code seems to work fine, so we can still use that one.
