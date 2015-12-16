@@ -183,3 +183,10 @@ ciao a tutti
 
 * it looks like SOMETHING is actually reseeding the random generator, moving around an explicit <code>get_state()</code> function made me see that it is probaly happening in the t loop. Any way i added an explicit <code>get_state()</code> at line 102 (just outside the loop, there the state is not changing), AND I'm now passing this state to the <code>transform()</code> function, then reseeding with <code>rk.set_state(state)</code>. Still no idea why all this mess, but it looks like it's working now.
   Also, I did a benchmark for this code and it's fine (for DT=5000 and NJ=10 it tooks just 10 min), still need to pickle some othe rinfo anyway.
+
+* alternative for what I just did: recreate a seed, depending on the time in simulation and main seed (i've doubt that is good or not to have se same state every time i call the transform function).   
+  Moreover, woould probably be useful for storing and plotting data adding a <code>Genome.id</code> method, storing the id of the object (with Python function <code>id()</code>). When dooing it remember that:
+  * id() is just assured to be unique for object with the same lifespan, for object w/ different life span it could be repeated (it's the memory adress of the object).
+  * ids are not going to be incremental, they will be int or long int
+  * PAY PARTICOULAR ATTENTION TO THE DEEP COPY FUNCTION AND CHECK THAT IT WILL SUBSTITUTE THE ID KEEPING THE OLD ONE
+  * if the above is getting too complex, i could also use <code>itertools counter</code> to give each instance of the class an unique and incremental id
