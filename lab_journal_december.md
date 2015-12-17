@@ -190,3 +190,8 @@ ciao a tutti
   * ids are not going to be incremental, they will be int or long int
   * PAY PARTICOULAR ATTENTION TO THE DEEP COPY FUNCTION AND CHECK THAT IT WILL SUBSTITUTE THE ID KEEPING THE OLD ONE
   * if the above is getting too complex, i could also use <code>itertools counter</code> to give each instance of the class an unique and incremental id
+
+#####17/12/2015
+
+* i decided to use itertools not to have conflict between the <code>Object.id()</code> and actual id in memory.  
+  Moreove i decided to change the seed and resetting the seed when i call <code>transform()</code>: this should be safe and random (better than use <code>set_state(status)</code> probably, because i will use global seed + t as seed and so chane it in time).
