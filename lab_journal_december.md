@@ -195,3 +195,5 @@ ciao a tutti
 
 * i decided to use itertools not to have conflict between the <code>Object.id()</code> and actual id in memory.  
   Moreove i decided to change the seed and resetting the seed when i call <code>transform()</code>: this should be safe and random (better than use <code>set_state(status)</code> probably, because i will use global seed + t as seed and so chane it in time).
+
+* update: not working. setting the state, as i thought, resulted in having always the same results, despite the number of iterations. For some reason resseding the generator at the beginning of the <code>transform()</code> is not working neither (also reseeding at the beginning od the other called functions...). I'm starting thinking there is some math that because of the implementation doesn't give always the sam results??
