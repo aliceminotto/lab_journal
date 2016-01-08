@@ -25,3 +25,9 @@
   * eliminate legend from 4.7 to 4.10
 
   * all done on <code>comparison_plot.py</code> and <code>comparison_plot_derivatives.py</code> and launched.
+
+#####8/1/2016
+
+* moved **CDATAV.p** from **old_images** to main **new** folder to get images again with yesterday changes.
+
+* re launched last two because i forgot to change the launch files and i moved tthe scripts to **scripts** repository.
