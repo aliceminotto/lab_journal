@@ -46,3 +46,10 @@
 
 * interesting: from the model it is seen that the ratio between targets that can be targeted in the pathogen and the ones actually present in the host converge after some evolutionary time, meaning that the host is actually becoming adapted.
 * to do: semilog plot for some of the images already created on the y axis.
+
+#####12/1/2016
+
+* the problem was that the code was hanging cause it took tooooo much time to create a suitable pathogen for the host (i.e. with r>.5). the possible solutions to this were:
+  * changing the treshold value to a lower one, starting with a pathogen that is less fit, like it just jumped from a different host.
+  * create an initial pathogen in a not complitely random way, being able to create it with r>.5 much faster.
+  At the moment we are using the first solution with <code>r>.1</code>, and launching 10 processes at a time.
