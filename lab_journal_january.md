@@ -53,3 +53,19 @@
   * changing the treshold value to a lower one, starting with a pathogen that is less fit, like it just jumped from a different host.
   * create an initial pathogen in a not complitely random way, being able to create it with r>.5 much faster.
   At the moment we are using the first solution with <code>r>.1</code>, and launching 10 processes at a time.
+
+* modified c's notebook to have a python code running on the server to obtain the plot.
+
+* launche the simulation for:
+  * DT1000
+  * DT5000
+  * DT10000
+  * DT20000
+  All of these had <code>r>.1</code>, <code>MU1=1.0/3</code> and <code>MU2=2.0/3</code>.
+
+* we also need to address (^ time gap between host jumps), the role of the parameter, so I'm rnning other simulations changing NTO (maximum number of gene targeted by an effector) (values 10, 5, 3), MU1 and MU2. MU1 and MU2 are used in the random choice of having the gain of a link (number<mu1), nothing, or removal of a link (number>mu2). I'm changing this value simmetrically (at the moment), after added some coefficient eta and beta: beta is going to be 3-eta (mu2 resulting has to be <=1, so beta has to be between 1 and 3 to have a right increase), and i'm changing eta from 1 to 0.5 to 0.1.
+  I'm now addressing the possible combination of these parameters for DT=1000. All the results (and images when ready) are stored in the cluster in the **results_second_model/** folder, inside subfolders, each of contains a meta file with all the parameters used in the simulation.
+
+* changed NEO=3 insted of 5 to avoid probability problem during the caclulation. Rerunning everything
+
+* beta=1.5-eta and not 3 cause it went over 1.0. Anyway this way is not simmetrical, but the opposite (tell c tomorrow).
