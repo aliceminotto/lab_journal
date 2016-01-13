@@ -69,3 +69,14 @@
 * changed NEO=3 insted of 5 to avoid probability problem during the caclulation. Rerunning everything
 
 * beta=1.5-eta and not 3 cause it went over 1.0. Anyway this way is not simmetrical, but the opposite (tell c tomorrow).
+
+#####13/1/2016
+
+* finished running what wrote yesterday, plus all the plots and additional DT (with already exaplined changes in NTO and MUs) 500, 5000 and 10000.
+
+* observations: from yesterday runs it looks like, as it may be obvious, that at the beginning of the simulation if a strain has a very high r value (close to 1), and there is a jump, this results (almost always) in a huge decrease of the fitness. On the opposite if the jump happen at the end of the simulation for a strain with an equally high r value, this usually results in a more mild decrease in the fitness. I thought this is due to the fact that at the beginning of the simulation the number of genes is limited and an high r is due mainly to high specificity towards the target gene present in the host, while at the end all the strain tend to have higher r, probably due to an increase in the total number of effector genes. This was confirmed looking at the plots for the number of genes.
+
+* other minor observations to check: after running the simulation for DT500 and others it looks that maybe the NTO and MU parameters have a more visible effect for low DT (this can be the case cause the strains have not enought itme to reach a good fitness before the jump happens). In particoular it looks like the slope to reach an average high fitness is decreasing when the mutation probability is >> than the probability to gain targets (or lose them).  
+  Another observation is that at the end of the simulation less strains arise in the same DT (i see this comparing the new strains per jump), this is probably due to the implementation itself (as we thought it would have made sense like this), cause if a pathogen is already fixed the probability to mutate is lower AND we are just introducing new strands if they have a better r compared to the mother strain.
+
+* to do next days: switch from this r calculation function to the other one (<code>g_p_mapa2</code>) as this one is linear, and the other one is semi linear (Hill function, will have to pass 1 as parameter so), so the r increase over the evolutionary time should be slower. (the same -more or less- could be obtained multiplying the present function for a factor that makes the result smaller)
