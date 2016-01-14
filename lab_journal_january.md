@@ -83,11 +83,19 @@
 
 * example plots for what i was explaining:
   ![genome evolution of different strains over time, DT1000 NTO=5 and mu coefficient=0.5](https://www.dropbox.com/s/uze2hgccrszvdhw/0typevol_1000_5_05.png?dl=1)
-  fitness for the same parameters:
+  fitness for the DT=1000,NTO=10 and mu coefficient=0.5 parameters:
+  ![fitness nto 10](https://www.dropbox.com/s/xeipvr5bomxf8bh/0rratestyp_1000_10_05.png?dl=1)
+  number of effectors:
+  ![nuber of effectors nto=10](https://www.dropbox.com/s/492bkblwv3bjd4r/0typngenevol_1000_10_05.png?dl=1)
+  For NTO=5. Fitness:
   ![fitness same parameters](https://www.dropbox.com/s/whcwvfct6naqhjw/0rratestyp_1000_5_05.png?dl=1)
   evolution of number of effectors:
   ![number of effector plot, same parameters](https://www.dropbox.com/s/8sfl5ysz5gwwhb2/0typngenevol_1000_5_05.png?dl=1)
+  For NTO=3. Fitness:
+  ![fitness for nto=3](https://www.dropbox.com/s/pi4pftxclnqh5lp/1rratestyp_3_05.png?dl=1)
+  Number of genes:
+  ![number of genes, nto=3](https://www.dropbox.com/s/qkrsvaewbcygfi9/1typngenevol_3_05.png?dl=1)
 
 #####14/1/2016
 
-* running the version with the hill function to calculate the fitness
+* running the version with the hill function to calculate the fitness (at the moment I'm just doing DT=1000 to see the differences)
