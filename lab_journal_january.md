@@ -80,3 +80,6 @@
   Another observation is that at the end of the simulation less strains arise in the same DT (i see this comparing the new strains per jump), this is probably due to the implementation itself (as we thought it would have made sense like this), cause if a pathogen is already fixed the probability to mutate is lower AND we are just introducing new strands if they have a better r compared to the mother strain.
 
 * to do next days: switch from this r calculation function to the other one (<code>g_p_mapa2</code>) as this one is linear, and the other one is semi linear (Hill function, will have to pass 1 as parameter so), so the r increase over the evolutionary time should be slower. (the same -more or less- could be obtained multiplying the present function for a factor that makes the result smaller)
+
+* example plots for what i was explaining:
+  ![genome evolution of different strains over time, DT1000 NTO=5 and mu coefficient=0.5](https://www.dropbox.com/s/uze2hgccrszvdhw/0typevol_1000_5_05.png?dl=1)
