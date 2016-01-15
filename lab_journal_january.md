@@ -103,3 +103,7 @@
 * trying to fix the branches problem, I think it is due to <code>deepcopy()</code> function not bing used anymore (???). Testing now for results.
 
 * note: the verison of <code>hpmodel2_2.py</code> that uses the Hill function it's still running, being cosiderabely slower than the linear version (this is probably due to the fact the the linear function breaks at !, while this one never reaches 1 by definition, but is just asymptotic).
+
+#####15/1/2016
+
+* still looking at the branches problem, adding some <code>assert</code> to check if i can find when the duplication is happening
