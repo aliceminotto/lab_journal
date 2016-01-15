@@ -107,3 +107,10 @@
 #####15/1/2016
 
 * still looking at the branches problem, adding some <code>assert</code> to check if i can find when the duplication is happening
+
+* FINALLY found the bug and fixed it (it was due to something very stupid, ie if the strain with the max id died in a jump is not going to be in the set of alive strains retained in the next jump and so the methid we were using to determine the id of the strain was a mess because it was based on the max id found in the cictionary at that time. we just needed to move this line outside of the for loop. (anyway the very very good news is that because the branch are due to this all the plots without branches, ie 95% are fine and we do not need to re make them).
+
+* todo:
+  * small table with average r after jumps for a serie of different parameters
+  * semilog pot for old simulation
+  * figures for old simulation with the average fitness
