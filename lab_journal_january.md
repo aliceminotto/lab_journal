@@ -113,4 +113,20 @@
 * todo:
   * small table with average r after jumps for a serie of different parameters
   * semilog pot for old simulation
-  * figures for old simulation with the average fitness
+  * ~~figures for old simulation with the average fitness~~
+
+#####18/1/2016
+
+* created script in <code>scripts/plotting/</code> to generate plots for the first model simulation (DT5000, DT10000 and DT20000) with the average fitness over the simulation. (note: there's nothing interesting i can see here)
+DT5000:
+![DT5000 average fitness](https://www.dropbox.com/s/fhv4wvi6gbiuzuj/average_fitness_5000.png?dl=1)
+DT10000:
+![DT10000 average fitness](https://www.dropbox.com/s/aubdwhhy6961zlc/average_fitness_10000.png?dl=1)
+DT20000:
+![DT20000 average fitness](https://www.dropbox.com/s/zvadxcx3bmqnsjh/average_fitness_20000.png?dl=1)
+
+* studying nodejs and plot streaming from sensor
+
+#####19/1/2016
+
+*
