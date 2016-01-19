@@ -129,4 +129,21 @@ DT20000:
 
 #####19/1/2016
 
-*
+* i clearly made a mess with yesterday plots, so fixing it (i have the plot the whole time not an average over eah jump!!!)
+
+* fixed it. Now the plots make sense. These are the plot for DT5000 for increasing values of c (the mutation rate).
+  ![DT5000 c=0.1](https://www.dropbox.com/s/qvq45r8wj99zf76/average_fitness_n0_5000.png?dl=1)
+  ![DT5000 c=0.2](https://www.dropbox.com/s/vorpd8my4wyav4s/average_fitness_n1_5000.png?dl=1)
+  ![DT5000 c=0.3](https://www.dropbox.com/s/ckyhkht3gvunmgo/average_fitness_n2_5000.png?dl=1)
+  ![DT5000 c=0.4](https://www.dropbox.com/s/qqzserlap2ly812/average_fitness_n3_5000.png?dl=1)
+  ![DT5000 c=0.5](https://www.dropbox.com/s/guzgtfbdpdo878v/average_fitness_n4_5000.png?dl=1)
+  ![DT5000 c=0.6](https://www.dropbox.com/s/enfxhzjetvj8blo/average_fitness_n5_5000.png?dl=1)
+  ![DT5000 c=0.7](https://www.dropbox.com/s/xme5hiovndetrlz/average_fitness_n6_5000.png?dl=1)
+  ![DT5000 c=0.8](https://www.dropbox.com/s/vupl7qhalolop9c/average_fitness_n7_5000.png?dl=1)
+  ![DT5000 c=0.9](https://www.dropbox.com/s/d1246k08evv55at/average_fitness_n8_5000.png?dl=1)
+  Here we can see an increase in the fitness during the simulation, ad more interesting (even if kind of obvious, but means that the simulation itself makes sense) there's a decrease in this value when there is a jump (see below the different pattern for DT10000 and DT20000 for the c value 0.5), and then it increase again.
+  Moreover we can see the effect of the c value than increasing change the slope of the curve (it happens the same for DT10000 and DT20000, but I'm not posting here all the plots).
+  DT10000 c=0.5:
+  ![average fitness DT10000 c=0.5](https://www.dropbox.com/s/2vhmchmpecod9iu/average_fitness_n4_10000.png?dl=1)
+  DT20000 c=0.5:
+  ![average fitness DT20000 c=0.5](https://www.dropbox.com/s/50bgsfdqvsp8pvi/average_fitness_n4_20000.png?dl=1)
