@@ -196,3 +196,11 @@ DT20000:
     plt.ticklabel_format(style='sci', scilimits=(0,0))
     ax_inset.plot(range(100000,101000),plot_this[100000:101000],"k")
   ```
+
+*
+
+* TO DO LIST: 
+  * fix all the position for the inset plots
+  * change c's <code>clusterV.py</code> to plot averages with extinctions between two jumps
+  * use it to plot all the <code>high_mutation*</code> simulations
+  * get 40 more runs for DT100 high mutation rate to get better plots
