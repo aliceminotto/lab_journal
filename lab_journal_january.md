@@ -163,3 +163,16 @@ DT20000:
   ![DT20000 c=0.5 average fitness](https://www.dropbox.com/s/kajxjf5ks0zp8n0/average_fitness_n4_20000%20%281%29.png?dl=1)
   c=0.9:
   ![DT20000 c=0.9 average fitness](https://www.dropbox.com/s/5x9ip3dlu38ph59/average_fitness_n8_20000.png?dl=1)
+
+  For no jumps this is one run:
+  ![no jumps one run fitness](https://www.dropbox.com/s/mgthdwqk3eoiima/one_fitness_n0_nojumps.png?dl=1)
+  And this is the average:
+  ![no jumps average fitness](https://www.dropbox.com/s/ei8etgtycaowbne/average_fitness_n0_nojumps.png?dl=1)
+  These are oviously not very good beacuse this does not reflect a real situation, anyway this result is given by the model tself, tat is not considering host, and has max tresholds for number of TEs and Eff and lengths. This is the reason we try to see what happen changing the recombination rate (see below, better), and the reason this model had to be made better by the second model, that considers more and more parameters (more realistic).
+  Other note is that the "strange" situation seen at the beginning of all the plots is due to an unstable state at the beginning of the simulation, should not be considered as a result.
+
+  Increased the recombination rate. Rerun everything overnight with more runs (20 for DT100 and DT2000, 100 for no jumps). Will have results tomorrow.
+
+#####20/1/2015
+
+* the simulation finished overnight. run the scripts for the fitness plots.
