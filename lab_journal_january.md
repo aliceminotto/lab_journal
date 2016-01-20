@@ -138,7 +138,7 @@ DT20000:
   ![DT5000 c=0.4](https://www.dropbox.com/s/qqzserlap2ly812/average_fitness_n3_5000.png?dl=1)
   ![DT5000 c=0.5](https://www.dropbox.com/s/guzgtfbdpdo878v/average_fitness_n4_5000.png?dl=1)
   ![DT5000 c=0.6](https://www.dropbox.com/s/enfxhzjetvj8blo/average_fitness_n5_5000.png?dl=1)
-  ![DT5000 c=0.7](https://www.dropbox.com/s/xme5hiovndetrlz/average_fitness_n6_5000.png?dl=1)
+  i![DT5000 c=0.7](https://www.dropbox.com/s/xme5hiovndetrlz/average_fitness_n6_5000.png?dl=1)
   ![DT5000 c=0.8](https://www.dropbox.com/s/vupl7qhalolop9c/average_fitness_n7_5000.png?dl=1)
   ![DT5000 c=0.9](https://www.dropbox.com/s/d1246k08evv55at/average_fitness_n8_5000.png?dl=1)
   Here we can see an increase in the fitness during the simulation, ad more interesting (even if kind of obvious, but means that the simulation itself makes sense) there's a decrease in this value when there is a jump (see below the different pattern for DT10000 and DT20000 for the c value 0.5), and then it increase again.
@@ -147,3 +147,19 @@ DT20000:
   ![average fitness DT10000 c=0.5](https://www.dropbox.com/s/2vhmchmpecod9iu/average_fitness_n4_10000.png?dl=1)
   DT20000 c=0.5:
   ![average fitness DT20000 c=0.5](https://www.dropbox.com/s/50bgsfdqvsp8pvi/average_fitness_n4_20000.png?dl=1)
+
+* the images are weird because the actual fitness, is 1-the value considered (moreover, as easily seen, there was a typo in the average function, cause the max value is 1. I plotted them again with 1-value and fixing the scale. I also plotted a typical run, and not just the average.
+  The curve is good (meaning is what expected, cause after the jump there is a decrease in fitness, thean then increase until the next jump), but as it can be see in the next images, the overall fitness stays quite low.
+  We so tried to run the simulation again for DT100 (new), DT20000 and no jumps, but changing the recombination rate by 100x. This results in the following changes in fitness.
+  Typical run fitness for DT20000 and c=0.1:
+  ![DT20000 c=0.1 typical run fitness](https://www.dropbox.com/s/k2rgcxl1euomzpm/one_fitness_n0_20000.png?dl=1)
+  c=0.5:
+  ![DT20000 c=0.5 typical run fitness](https://www.dropbox.com/s/yzol703yfx8m65u/one_fitness_n4_20000.png?dl=1)
+  c=0.9:
+  ![DT20000 c=0.9 typical run fitness](https://www.dropbox.com/s/27brhyeh69bixju/one_fitness_n8_20000.png?dl=1)
+  Average fitness for DT20000 and c=0.1:
+  ![DT20000 c=0.1 average fitness](https://www.dropbox.com/s/2xhrb24hi8yxxwq/average_fitness_n0_20000.png?dl=1)
+  c=0.5:
+  ![DT20000 c=0.5 average fitness](https://www.dropbox.com/s/kajxjf5ks0zp8n0/average_fitness_n4_20000%20%281%29.png?dl=1)
+  c=0.9:
+  ![DT20000 c=0.9 average fitness](https://www.dropbox.com/s/5x9ip3dlu38ph59/average_fitness_n8_20000.png?dl=1)
