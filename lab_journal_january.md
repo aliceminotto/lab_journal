@@ -176,3 +176,23 @@ DT20000:
 #####20/1/2015
 
 * the simulation finished overnight. run the scripts for the fitness plots.
+
+* here the results for high recombination rate and nojumps:
+  over one single run:
+  ![high rec rate no jumps, one run fitness](https://www.dropbox.com/s/x9x199xp3epgxp4/one_fitness_n0_highmutation_nojumps.png?dl=1)
+  averaged over 100 runs:
+  ![high rec rate, no jumps, average fitness](https://www.dropbox.com/s/n8qeq1vq5zvf9q2/average_fitness_n0_highmuation_nojumps.png?dl=1)
+  Because these run are complitely new (note that with this rec rate we have A LOT of extinctions, that's why the simulation is so fast compaed to the previous we had done), I also run the <code>clusterV.py</code> script to get the other figures.
+
+* adding inset to the plots for high recombination rate and DT100 (this means 2000 jumps, so they're very noisy). This snippet of matplotlib will make the trick:
+  ```python
+  if c_value=='n0/':
+        ax_inset=fig1.add_axes([0.5,0.5,0.3,0.3])
+    else:
+        ax_inset=fig1.add_axes([0.5,0.1,0.3,0.3])
+    ax_inset.xaxis.set_major_formatter(mtick.ScalarFormatter(useMathText=True))
+    plt.ticklabel_format(style='sci', scilimits=(0,0))
+    ax_inset.yaxis.set_major_formatter(mtick.ScalarFormatter(useMathText=True))
+    plt.ticklabel_format(style='sci', scilimits=(0,0))
+    ax_inset.plot(range(100000,101000),plot_this[100000:101000],"k")
+  ```
