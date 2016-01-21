@@ -200,7 +200,27 @@ DT20000:
 *
 
 * TO DO LIST: 
-  * fix all the position for the inset plots
-  * change c's <code>clusterV.py</code> to plot averages with extinctions between two jumps
+  * ~~fix all the position for the inset plots~~
+  * change c's <code>clusterV.py</code> to plot averages with extinctions between two jumps and ~~add colors to randomwalk~~
   * use it to plot all the <code>high_mutation*</code> simulations
-  * get 40 more runs for DT100 high mutation rate to get better plots
+  * ~~get 40 more runs for DT100 high mutation rate to get better plots~~[running]
+
+#####21/1/2016
+
+* simulation finished overnught. running script (both clusterV.py and fitness ones) to get the new plots (it takes a crazy amount of time).
+
+* in the meanwhile studying javascript and bash
+
+* notes about bash:
+  <code>sed</code> looks for a substring in files
+  
+  notes on modyfing <code>~/.bash_profile</code>: here i can define all the aliases i need. to start using the changes in the current session without starting a new temrinal i have to type:
+  ```bash
+  source ~/.bash_profile
+  ```
+  i can also define here variables (convention uppercase), remember that as i used them in makefile they are always precedeed (does this exist?) by <code>$</code>. Remeber to write <code>export</code> to use a variable in all child processes.
+  <code>PS1</code> is a varibale that defines the markup and style of the command prompt
+  VERY IMPORTANT the <code>$PATH</code> environment variable stores a list of directories separated by colons, that are the directories that contain scripts (so here is were are the script and stuff you can launch from command line in any directory, when install something new in strange location, i can add the path to this variable to make it works fine).
+  the command <env> returns a list of environment variables.
+
+* observation: the average fitness in the simulation for DT100 and high recombination is increasing, but i can't see this pattern in any of the runs i plotted as single run. so i'm quite sure the curve is due to the fact that the runs that result in extinctions were not fit at all at the beginning and are pushing the average down (while I'm not considering them anymore at the end cause they are ded).
