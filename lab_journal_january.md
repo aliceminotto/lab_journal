@@ -223,4 +223,22 @@ DT20000:
   VERY IMPORTANT the <code>$PATH</code> environment variable stores a list of directories separated by colons, that are the directories that contain scripts (so here is were are the script and stuff you can launch from command line in any directory, when install something new in strange location, i can add the path to this variable to make it works fine).
   the command <env> returns a list of environment variables.
 
+* SLURM training [add notes here]
+
 * observation: the average fitness in the simulation for DT100 and high recombination is increasing, but i can't see this pattern in any of the runs i plotted as single run. so i'm quite sure the curve is due to the fact that the runs that result in extinctions were not fit at all at the beginning and are pushing the average down (while I'm not considering them anymore at the end cause they are ded).
+
+#####22/1/2016
+
+* still plotting with all the changes needed for publication suitable images.  
+  note: probably so slow cause the resource on this server are now limited as they are migrating to the other one.
+  Added colors to the randomwalk plot for high recombination rate and DT=100.
+  Added inset for average plots of the same simulation in position that don't overlap with the main plot (very noisy, zooming in 1000 evolutionary events, ie 10 jumps).
+
+* studying html and CSS in the meanwhile.
+  So the CSS stylesheet are always in this form:
+  ```css
+  p {
+	color: blue;
+	font-family: Vivaldi, cursive; /*this will apply the first available in the user computer*/
+  }
+  ```
