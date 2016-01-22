@@ -242,3 +242,21 @@ DT20000:
 	font-family: Vivaldi, cursive; /*this will apply the first available in the user computer*/
   }
   ```
+  Also, remember, when setting <code>width</code> or <code>height</code>, that px has to be just after the value, without any space.
+  To have roound borders, i need to set the property <code>border-radius</code> to npx.
+  I can also put mutiple selctors on the same line if i want to style just the lement that are nested (for example header in div will be <code>div h3 {}</code>.Because of the cascading behaviour the more specific the instruction the higher their priority. To make sure to grab just the element that are _directly_ nestedi need to write <code>parent_selector > child_selector { /*some code here*/}</code>.
+  The special selector <code>*</code> apply the style to the whole page (basically it works as in bash).
+  special selector are <code>class</code> and <code>id</code>. in CSS they are identified by <code>.class</code> or <code>#id</code>.
+  Remember that there are also <code>pseudo-class_selectors</code>, for example i caould use <code>a:hover</code>to change how a links looks like when you pass the cursor over it (other useful are a:link, a:visited, selector:first-child, selectro:nth-child(number)).
+  The <code>display</code> property can take the following values (from [codeacademy](http://www.codecademy.com) ):
+  > *block*: This makes the element a block box. It won't let anything sit next to it on the page! It takes up the full width.
+  >*inline-block*: This makes the element a block box, but will allow other elements to sit next to it on the same line.
+  >*inline*: This makes the element sit on the same line as another element, but without formatting it like a block. It only takes up as much width as it needs (not the whole line).
+  >*none*: This makes the element and its content disappear from the page entirely!
+  The <code>float</code> property is useful not to have elements overlapping each others.
+  The property <code>clear</code> will position the element below the last one on the right, left or both, as specified.
+
+* working on fixing c's <code>clusterV.py</code> to make it works with exctinctions between jumps. (so far i hae the plot for a single run -one that survives for all the evolutionary events considered-, but i still need the averages).
+
+* I'm launching a trial of clusterV.py on 5 runs to check if it fails somewhere (since it's taking a lifetime). Remember to change back the name of the output!!
+   UPDATE: fixed it (not in a very elegant way, but it works fine), i just added <code>try ... except</code> syntax to avoid the cases with exctinctions. I'm now running the code on all 100 runs data (I'll probably have it on monday?). I also commented all the <code>print</code> cause the mails i was getting were too heavy.
