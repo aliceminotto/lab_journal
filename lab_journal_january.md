@@ -260,3 +260,26 @@ DT20000:
 
 * I'm launching a trial of clusterV.py on 5 runs to check if it fails somewhere (since it's taking a lifetime). Remember to change back the name of the output!!
    UPDATE: fixed it (not in a very elegant way, but it works fine), i just added <code>try ... except</code> syntax to avoid the cases with exctinctions. I'm now running the code on all 100 runs data (I'll probably have it on monday?). I also commented all the <code>print</code> cause the mails i was getting were too heavy.
+
+#####25/1/2016
+
+* <code>clusterV.py</code> is still running (O.O).
+
+* looked generally at the paper draft, discussed some results.
+
+* plotting lengths and number of units over time for different c values in semilog and loglog scale to see if there's something more visible than in the "normal" ones.
+
+* created a github project to put all the codes in and started working on its website:
+  TODO Website:
+  (installed gem-github and jeckyll to work locally)
+  * add an image as header background --> change color of text accordingly both in header and body (titles and links)
+  * check on a bigger computer the heigth of the header, decrease it if needed
+  * make the two buttons i just created fixed on the left, change their links when the project is ready
+  * make the body part float on the right accordingly
+  * add the id navigator in the stylesheet
+  * change the footer to tell who is mantaining the project (add link to github profiles/team), that the main theme was modified, add a contact email
+
+  TODO Project:
+  * add all the script in a ordered fashion
+  * add argparse to all the script, and instructions in the README
+  * add folder with important images/images to be displayed in the website
