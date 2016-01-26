@@ -283,3 +283,7 @@ DT20000:
   * add all the script in a ordered fashion
   * add argparse to all the script, and instructions in the README
   * add folder with important images/images to be displayed in the website
+
+#####26/1/2016
+
+* [this]("http://leewc.com/tutorials/set_up_GitHub_pages_Jekyll_tutorial/") is the only tutorial that actually makes sense that i was able to find about how to edit and see github webpages before commit.
