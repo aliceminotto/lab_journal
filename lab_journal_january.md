@@ -272,18 +272,22 @@ DT20000:
 * created a github project to put all the codes in and started working on its website:
   TODO Website:
   (installed gem-github and jeckyll to work locally)
-  * add an image as header background --> change color of text accordingly both in header and body (titles and links)
-  * check on a bigger computer the heigth of the header, decrease it if needed
-  * make the two buttons i just created fixed on the left, change their links when the project is ready
-  * make the body part float on the right accordingly
-  * add the id navigator in the stylesheet
-  * change the footer to tell who is mantaining the project (add link to github profiles/team), that the main theme was modified, add a contact email
+  * ~~add an image as header background --> change color of text accordingly both in header and body (titles and links)~~
+  * ~~check on a bigger computer the heigth of the header, decrease it if needed~~
+  * ~~make the two buttons i just created fixed on the left, change their links when the project is ready~~
+  * ~~make the body part float on the right accordingly~~ [THIS WAS BAD]
+  * ~~add the id navigator in the stylesheet~~
+  * ~~change the footer to tell who is mantaining the project (add link to github profiles/team), that the main theme was modified, add a contact email~~
 
   TODO Project:
   * add all the script in a ordered fashion
   * add argparse to all the script, and instructions in the README
   * add folder with important images/images to be displayed in the website
 
-#####26/1/2016
+#####26/1/2016 and 27/1/2016
 
 * [this]("http://leewc.com/tutorials/set_up_GitHub_pages_Jekyll_tutorial/") is the only tutorial that actually makes sense that i was able to find about how to edit and see github webpages before commit.
+
+* done first part of the todolist. Tha layout of the website is now fine (Martin helpd with the navigator position [it is needed a javascript, that basically tells to chage the position and display when you reach some point, same to adapt the layout to smaller screens and smartphones]).
+
+* fixed first model and second model script so that they are nicer (added argparse to change parameters by command line, help to have a list of all the parameters, docstring at the beginning, deleted all the old commented lines of no use). uploaded them on github project repository and linked them to the website, also wrote the how to use section for the simulations.
