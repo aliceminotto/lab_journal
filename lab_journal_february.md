@@ -19,4 +19,4 @@
 
 * galaxy training -see other file-
 
-* NOTE: i can use this <a href:"http://htmlpreview.github.io">link</a> to see a preview of the page in a branch.
+* NOTE: i can use this [link](http://htmlpreview.github.io) to see a preview of the page in a branch.
