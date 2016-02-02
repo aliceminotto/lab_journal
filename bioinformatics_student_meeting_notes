@@ -1,0 +1,10 @@
+BASH:
+awk '{if($4=="blabla")print$0}'
+$0 is the whole line
+$1, $2, $3... are the columns of the file
+bioawk to process bam/sam file
+
+for a website to be indexed by google you can register to google analytics and copy paste their code at the end of the html document.
+
+***
+

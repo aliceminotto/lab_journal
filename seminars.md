@@ -111,3 +111,5 @@ d3 is used to create svg images.
 #####2/2/2016
 
 used both by experimental biologist and bioinfromaticians.
+it is possible to import datasets (there should't be a limit here), as well as tools. history (keep track of tools and dataset used) can also be shared with other users.
+It is possible to create a workflow pretty easily, and galaxy is able to tell if an output is actually ok to be used as input for the next step.
