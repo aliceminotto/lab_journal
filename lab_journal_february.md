@@ -20,3 +20,18 @@
 * galaxy training -see other file-
 
 * NOTE: i can use this [link](http://htmlpreview.github.io) to see a preview of the page in a branch.
+
+#####meanwhile
+
+* fork Dan's github repository for the training webpage of the lab, copy-pasted content from the previous website.
+  Added <code>.html</code> files for the buttons in the navigation bar.
+  added links in the navbar and make the right tab active at a given time.
+  Added a CSS file to define <hr/> to use to divide sections and footer in the website.
+
+* changed the README file in a branche for the genome size evolution project so that it doesn't say anymore that nothing is working, as i really hope is not true anymore.
+
+#####10 and 11/2/2016
+
+* wrote a file using the <code>csv</code> python module to order the data from the second model simulations in a huge csv file like following:  
+  DT,NTO,ETA,RUN,JUMP,STRAIN,EFFECTOR,TARGET,SCORE,FITNESS,FIRST_APP,TIME,SIZE
+  The code name is <code>tidy_table_second_model.py</code> and it is in scripts.
