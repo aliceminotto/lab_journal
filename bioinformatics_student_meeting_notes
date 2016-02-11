@@ -8,3 +8,15 @@ for a website to be indexed by google you can register to google analytics and c
 
 ***
 
+```bash
+#SBATCH requirement (-mem -t)
+
+srun bablabla.sh
+sacct --long
+``` 
+to check jobs in the SLURM
+
+<code>sattach [jobid]</code>
+instead of <code>bpeek</code>
+
+***
