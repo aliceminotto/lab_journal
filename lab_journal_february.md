@@ -35,3 +35,39 @@
 * wrote a file using the <code>csv</code> python module to order the data from the second model simulations in a huge csv file like following:  
   DT,NTO,ETA,RUN,JUMP,STRAIN,EFFECTOR,TARGET,SCORE,FITNESS,FIRST_APP,TIME,SIZE
   The code name is <code>tidy_table_second_model.py</code> and it is in scripts.
+
+* the table is getting to big (more than 150GB for the first simulation)==> gave up on this.
+
+#####12/2/2016
+
+* worked w/ c on the manuscript, it has to be shorter. correct some typos, add tables, delete some sentences and add some comments.
+
+#####15/2/2016
+
+* working on modifying the population dynamics images. instead of one plot with all the jumps for each DT I should get one plot made of four subplots: the first one will dysplay just the first jump, the second one the first two jumps, than the first five jumps and all the twenty jumps. The plots will have to share the y axis to save space and have a common title.
+
+* created 4 subplots and plotted the right number of jumps in a loop.
+added black stem with:
+  ```python
+markerline, stemlines, baseline=subp.stem(ts,Rs,linefmt='--', markerfmt='.', basefmt='',stemlineswidth=0.1)
+        plot.setp(stemlines, 'linewidth', 1, 'color', 'k')
+```
+  To save space i used <code>plot.tight_layout()</code>.
+  To share the y axis i added <code>sharey=ax1</code> whe naming the subplot, to hide the y axis in the second column:
+  ```python
+  if subp==ax2 or subp==ax4:
+            plot.setp(subp.get_yticklabels(), visible=False)
+```
+
+#####16/2/2016
+
+* going on with the figures. I have to hide the offset in the second column.
+  After tryng lot of options that didn't work, the best solution in this case was to get rid of <code>sharey=ax1</code> because it will be shared anyway as I'm setting the <code>ylim</code>, then adding the following line to the previous code:
+  ```python
+if subp==ax2 or subp==ax4:
+            plot.setp(subp.get_yticklabels(), visible=False)
+            subp.yaxis.set_major_formatter(mtick.FormatStrFormatter('%.0f'))
+```
+  I also made the line thicker for visualization purposes.
+
+* i could also fix these: increase the font-size of the labels as they are very small and i don't think you can read them on paper. Add the x axis and y axis label.
