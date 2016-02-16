@@ -71,3 +71,10 @@ if subp==ax2 or subp==ax4:
   I also made the line thicker for visualization purposes.
 
 * i could also fix these: increase the font-size of the labels as they are very small and i don't think you can read them on paper. Add the x axis and y axis label.
+
+* fixed the label size. I think not to put labels because they are going to be repeated and to take space, so it would probably be better put a note in the description. (anyway the population dynamics is probably not going to the paper after all??).
+  These would be the new plots:
+  ![DT 500 population dynamics](https://www.dropbox.com/s/lewhypl7vusqbty/0popdyn_500.png?dl=1)
+  ![DT 1000 population dynamics](https://www.dropbox.com/s/1gq3zk878zp736h/0popdyn_1000.png?dl=1)
+  ![DT 5000 population dynamics](https://www.dropbox.com/s/y5o0l8ned9ba7zg/0popdyn_5000.png?dl=1)
+  ![DT 10000 population dynamics](https://www.dropbox.com/s/cg4xhjp34qbxmls/0popdyn_10000.png?dl=1)
