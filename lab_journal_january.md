@@ -286,7 +286,7 @@ DT20000:
 
 #####26/1/2016 and 27/1/2016
 
-* [this]("http://leewc.com/tutorials/set_up_GitHub_pages_Jekyll_tutorial/") is the only tutorial that actually makes sense that i was able to find about how to edit and see github webpages before commit.
+* [this](http://leewc.com/tutorials/set_up_GitHub_pages_Jekyll_tutorial/) is the only tutorial that actually makes sense that i was able to find about how to edit and see github webpages before commit.
 
 * done first part of the todolist. Tha layout of the website is now fine (Martin helpd with the navigator position [it is needed a javascript, that basically tells to chage the position and display when you reach some point, same to adapt the layout to smaller screens and smartphones]).
 
