@@ -78,3 +78,9 @@ if subp==ax2 or subp==ax4:
   ![DT 1000 population dynamics](https://www.dropbox.com/s/1gq3zk878zp736h/0popdyn_1000.png?dl=1)
   ![DT 5000 population dynamics](https://www.dropbox.com/s/y5o0l8ned9ba7zg/0popdyn_5000.png?dl=1)
   ![DT 10000 population dynamics](https://www.dropbox.com/s/cg4xhjp34qbxmls/0popdyn_10000.png?dl=1)
+
+#####17/2/2016
+
+* goign o w/ the tsltraining website: added folder with the badges pages and the needed pages.
+
+* TO IMPROVE: ~~Add in css a style for the anchor (actually just change the position of <code></a></code>~~, as i don't want them to show as link. The category finder in the main page is empty. no badges found for molecular biology nor sterile practice. ~~also it would be nice to relocate all the badges images in the website itself~~.
