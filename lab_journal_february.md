@@ -135,3 +135,13 @@ sbatch submit.sh command.sh
   This way i can just change the second part reusing the first one as many times as i want.
 
 * so i'm finally running the new version of clusterV on the <code>new</code> folder.
+
+* IMPORTANT: both the <code>*.sh</code> scripts need to be executable. change <code>chmod 755</code>.
+
+* uploaded in github the files with data for the first model
+
+* TODO: 
+  * tell about these files in the webpage
+  * deleted by mistake <code> import multiprocessing etcetc</code> in mprostest.py in github, need to add this
+
+* launched a trial to see if i an plot the derivatives (remember that the time will be -1). launched the simulation for 1 run of the first model DT5000 to save a list of the events occurring.
