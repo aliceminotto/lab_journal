@@ -84,3 +84,54 @@ if subp==ax2 or subp==ax4:
 * goign o w/ the tsltraining website: added folder with the badges pages and the needed pages.
 
 * TO IMPROVE: ~~Add in css a style for the anchor (actually just change the position of <code></a></code>~~, as i don't want them to show as link. The category finder in the main page is empty. no badges found for molecular biology nor sterile practice. ~~also it would be nice to relocate all the badges images in the website itself~~.
+
+* added an additional navigation bar in the footer with styling
+
+#####18/2/2016
+
+* added a contact form with formspree.io, added a twitter follow button  
+  i used formspree instead of PHP cause github pages are static and do not allow the use of PHP (there are a lot of tutorial to create a PHP contact form but it woouldn't work).
+
+* note that bootstrap column are nested (so in my case i have a div that span 7 col, the div inside it still go up to a sum of 12)
+
+* deleted the twitter button cause the account is not active anymore (the code is still there commented)
+
+* try to add the TSL logo in the top navbar before the button but it looks very ugly to me (the code is till there commented)
+
+* added a thank you page for when you submit a form
+
+#####22/2/2015
+
+* launched new carlos' version of <code>clusterV.py</code> for the derivateves and changed the plotting script accordingly (it is just a trial in <code>change_DT_Qi/</code> folder at the moment) over the weekend.
+  Still miss the results for the case without jumps cause the hpc node died.
+
+* switching to slurm cluster. After *several* crazy errors I finally have one <code>submit.sh</code> script and a <code>command.sh</code> script. The first one contains the list of resources needed, while the second one is actually launching the script with <code>srun</code>.
+  Here's the final version. *submit.sh*:  
+  ```bash
+  #!/bin/bash
+#SBATCH -p normal
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH --mem 32768
+#SBATCH -t 0-5:00
+#SBATCH -o slurm.%N.%j.out
+#SBATCH -e slurm.%N.%j.err
+#SBATCH --mail-type=END,FAIL
+#SBATCH --mail-user=alice.minotto@tsl.ac.uk
+
+srun $@
+```
+  The *command.sh* script:
+  ```bash
+  #!/usr/bin/bash
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/tsl/software/testing/gsl/1.16/x86_64/bin/lib; \
+source python-2.7.4; \
+python /usr/users/TSL_20/minottoa/change_DT_Qi/clusterV.py /usr/users/TSL_20/minottoa/new/ 50 10
+```
+  To run it i need to do  
+  ```bash
+sbatch submit.sh command.sh
+```
+  This way i can just change the second part reusing the first one as many times as i want.
+
+* so i'm finally running the new version of clusterV on the <code>new</code> folder.
