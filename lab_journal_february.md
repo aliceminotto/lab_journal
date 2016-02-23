@@ -142,6 +142,24 @@ sbatch submit.sh command.sh
 
 * TODO: 
   * tell about these files in the webpage
-  * deleted by mistake <code> import multiprocessing etcetc</code> in mprostest.py in github, need to add this
+  * ~~deleted by mistake <code> import multiprocessing etcetc</code> in mprostest.py in github, need to add this~~
 
 * launched a trial to see if i an plot the derivatives (remember that the time will be -1). launched the simulation for 1 run of the first model DT5000 to save a list of the events occurring.
+
+* the derivatives plot are very confused due to the large fluctuations
+
+#####23/2/2016
+
+* slurm killed my simulation with events due to overtime. launched again after changed the timeout in the submit.sh script.
+  Also i just got a problem [OS error 13] because i do not have permission to create a folder. This is very weird since i've already used the script before, ayway i <code>chmod 777</code> the folder where i want the result.
+
+* plotting some of the figures for the paper with an inset.
+
+* *NOTHING* is working today:
+  * the job to get events from the first model simulation that died is still pending
+  * the last version to plot the len distribution of te is not saved (??????? this is incredibly weird since i always modified the same file, anyway i need to retrieve all the options that i used previously)
+  * c sent me a notebook to plot the derivatives, BUT:
+    * jupyter is not working anymore on the laptop, neither i'm able to reinstall it, despite actually having what needed (broken after the pc died????)
+    * found out that the last simulation (the one for no jumps) probably died with the all cluster so CDATAV is incomplete and i will need to run <code>clusterV.py</code> again, but no resources in the cluster
+    * the files are very heavy and can't be managed easily on a personal computer
+    * (i knew this but i forgot) there's no matplotlib on the laptop
