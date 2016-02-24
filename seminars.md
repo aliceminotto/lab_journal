@@ -113,3 +113,18 @@ d3 is used to create svg images.
 used both by experimental biologist and bioinfromaticians.
 it is possible to import datasets (there should't be a limit here), as well as tools. history (keep track of tools and dataset used) can also be shared with other users.
 It is possible to create a workflow pretty easily, and galaxy is able to tell if an output is actually ok to be used as input for the next step.
+
+***
+
+####**_Genomics in Fish Breeding Programs for developing countries_**
+#####_John Bonzie_
+#####24/2/2016
+
+they focus on Tilopias species in African (and southasian) countries.
+They use mostly breeding and phenotypic screening to get improved species.
+The genetically improved species are not very spread at the moment for a quite long list of reasons, mainly linked to the socioeconomical situation of the countries (that also make scientific research quite difficoult as it's hard to actually have nice controls groups).
+They were able to get fish increased in size (not more numerous) and with a shorter period of generation. despite this it is not clear the mprovement, but they calculated 40% economical income more.
+They already know some problems are going to arise, i think te one that is most worrying is the disease suceptibility: we have already seen this situations with salmons in north america, but i think in this countries would be much worse the impact of a fish epidemy, so this is something to solve BEFORE actually hjaving the problem.
+Also they are trying (with carps) to keep using the tradizional bangladesh way of growing the fish toghether (mixed aquacultur).
+
+***
