@@ -163,3 +163,24 @@ sbatch submit.sh command.sh
     * found out that the last simulation (the one for no jumps) probably died with the all cluster so CDATAV is incomplete and i will need to run <code>clusterV.py</code> again, but no resources in the cluster
     * the files are very heavy and can't be managed easily on a personal computer
     * (i knew this but i forgot) there's no matplotlib on the laptop
+
+#####24/2/2016
+
+* went to SLURM workshop anf figured out important things:
+  >TSL
+  >the time limit for the available queues is:
+  >2h for development
+  >6h for short
+  >7d for medium
+  >-- for long and interactive (but we are asked to exit from the last one when we don't need it anymore)
+  >
+  >IF you put a time requirement in your bash script you don't need to choose a queue, and it is actually better as your job will have higher priority (because if you don't the system will suppose that you need the max time for the queue).
+  >IF you exceed the time limit your job will be KILLED.
+  >Same if you exceed the memory limit. If you don't specify a memory limit the default is 4G (2G for interactive).
+  >
+  >If you want to set the queue from the bash script (you can do it from command line anyway) you will need to type:
+  >```unset SBATCH_PARTITION```
+  >(this will be valid for the present session, if you always need it, put it in <code>.bashrc</code> or <code>.bashprofile</code>).
+  Moreover the queues are not actually separeted (not even by institutes).
+
+* I relaunche both the code to get the figures for the paper with a very low time limit (now it's not pending despite the memory requirement), and the simulation for the events (that just started running).
