@@ -195,3 +195,9 @@ sbatch submit.sh command.sh
   Launche again both for DT5000 and 10000 (no more because i think it's doing something weird with the location of the output files and i want to check before risking to overwrite stuff.
 
 * also yesterday got rid of contact form in TSL trianing website and put email and link to TSL website instead.
+
+* changed c notebook to get derivatives (pending obviously).
+
+* [This](https://computing.llnl.gov/linux/slurm/squeue.html) may be useful to use SLURM
+
+* software node is active, the warning was there by mistake. it can be accessed just like for hpc.
