@@ -186,3 +186,12 @@ sbatch submit.sh command.sh
 * I relaunche both the code to get the figures for the paper with a very low time limit (now it's not pending despite the memory requirement), and the simulation for the events (that just started running).
 
 * i finally have the distribution plots with the following modifications: the "bad plot" is in an inset, with axes with ticks and tick labels. The inset is transparent and so the legend. The legend has just 5 cases for Eff. I added 20% on the y axis to allow more space for legend and inset. I added marker to the legend. set y lim both to inset and mai plot, starting at 0.
+
+#####25/2/2016
+
+* remade the plot for length distribution of effectors for DT5000 because i forgot to change the legend step.
+
+* the simulation for the events died overnight (there were no pickle imported in the main script). moved the saving in pdt.py, i also think it will be better to have more smaller files instead of a huge one.
+  Launche again both for DT5000 and 10000 (no more because i think it's doing something weird with the location of the output files and i want to check before risking to overwrite stuff.
+
+* also yesterday got rid of contact form in TSL trianing website and put email and link to TSL website instead.
