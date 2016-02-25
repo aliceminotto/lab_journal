@@ -201,3 +201,9 @@ sbatch submit.sh command.sh
 * [This](https://computing.llnl.gov/linux/slurm/squeue.html) may be useful to use SLURM
 
 * software node is active, the warning was there by mistake. it can be accessed just like for hpc.
+
+* fixed a mistake in c der notebook (concatenating string and llst on line 76) and add some print as a debigging tool. (it failed). launche again with the modifications. updated in github repo.
+
+* simulation for DT5000 finally runing
+
+* put the contact and email in TSL traing website in contact page too
