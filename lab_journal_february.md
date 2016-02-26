@@ -207,3 +207,10 @@ sbatch submit.sh command.sh
 * simulation for DT5000 finally runing
 
 * put the contact and email in TSL traing website in contact page too
+
+#####26/2/2016
+
+* code for der failed because didn't save the changes (they were saved in another folder???????). Launched again with corrections.
+
+* the simulation for DT5000 and DT10000 were hanging (running but doing nothing), so i killed them, the new list was not being passed to the saving function.
+  Launched again with correction and also for the other DT.
