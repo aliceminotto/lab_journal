@@ -214,3 +214,21 @@ sbatch submit.sh command.sh
 
 * the simulation for DT5000 and DT10000 were hanging (running but doing nothing), so i killed them, the new list was not being passed to the saving function.
   Launched again with correction and also for the other DT.
+
+#####29/2/2016
+
+* the simulation for the events finished running over the weekend and the derivatives plots are now ready
+
+* wrote a script to make an heatmap with the events
+  tried differents things:
+  * first 100 events after the first jump for all the cases
+  * first 100 events after first jump for c=0.6 diffrent DT
+  * first 100 events after first jump for DT=5000 different c values
+  Then plotted 50 events before and after jumps 2,3,4. Again for the previous cases considered.
+  Will be used all cases with jumps.
+  Tried different colormaps, added labels (for the heatmap is needed a numpy array, i used <code>imshow()</code> with <code>interpolation="none" or "nearest"</code>. discretized colorbar and changed proportion of the figure to make it be squarish and not very long and short.
+  There is not a very clear pattern, and i do think it's nice, but you can see that the situation is actually changing after a jump.
+  Also these are the events:
+  > effectors: 0-hgt, 1 mutation, 2-duplication, 3-silencing 4-del
+  > tes: 5- hgt, 6-duplication, 7-deletion
+  
