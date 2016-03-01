@@ -233,5 +233,4 @@ sbatch submit.sh command.sh
   > tes: 5- hgt, 6-duplication, 7-deletion
   
   Example image:
-  ![heatmap first 100 evolutionary events](https://drive.google.com/file/d/0B0fjEP5GlvhVbkNHTy1KVGtQcjQ/view?usp=sharing)
-
+  ![heatmap first 100 evolutionary events](https://www.dropbox.com/s/7qxbuu6buflodck/heatmap_events.png?dl=1)
