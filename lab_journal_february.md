@@ -232,3 +232,6 @@ sbatch submit.sh command.sh
   > effectors: 0-hgt, 1 mutation, 2-duplication, 3-silencing 4-del
   > tes: 5- hgt, 6-duplication, 7-deletion
   
+  Example image:
+  ![heatmap first 100 evolutionary events](https://www.evernote.com/shard/s713/res/fa9ec8f4-dcf5-4a4c-a3c8-815a9e2514f0)
+
