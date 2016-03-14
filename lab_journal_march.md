@@ -26,3 +26,11 @@
 * ```git fetch``` brings changes from the origin t the local repo
   Despite this the changes ar not on te local master, but on origin/master, so i also need to merge them with ```git merge origin/merge```
 * ```git push origin my_branch``` to push a branch to remote
+
+#####7/3/2016
+
+* SQL
+
+#####8/3/2016
+
+* to smooth data i can calculate the average value of a point wiith its two neighbours
