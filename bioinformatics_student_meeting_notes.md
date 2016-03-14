@@ -33,7 +33,7 @@ Here there are 4 spaces t work, a terminal, the text editor for the script, a sp
 to run automatically a command written in the text editor press ctrl+Enter.
 to visualize the plot you have to write <code>plot</code> in the terminal command line.
 
-To use a column in the dataset you can use <code>$<code> like this:
+To use a column in the dataset you can use <code>$</code> like this:
 ```R
 data$name_of_column
 ```
